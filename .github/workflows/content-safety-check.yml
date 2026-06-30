@@ -1,0 +1,80 @@
+name: Content Safety Check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "app/blog/**"
+      - "data/interactions.json"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  scan-content:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          # Only need current + previous commit to compute a diff.
+
+      - name: Get changed content
+        id: diff
+        run: |
+          git diff HEAD~1 HEAD -- app/blog/ data/interactions.json > content_diff.txt
+          echo "Diff size: $(wc -l < content_diff.txt) lines"
+
+      - name: Scan diff for red-flag content
+        uses: anthropics/claude-code-base-action@beta
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            You are a strict, narrow content safety reviewer. You are not
+            being asked for opinions or style feedback — only to check the
+            diff below against a fixed checklist. Read the diff in
+            content_diff.txt (added/changed lines only — lines starting
+            with "+").
+
+            Flag a VIOLATION if any added or changed line contains:
+            1. A specific dosage recommendation or instruction (e.g. "take
+               500mg", "increase your dose of X").
+            2. An instruction to start, stop, or change a medication or
+               supplement regimen (e.g. "stop taking X", "switch to Y").
+            3. A definitive causal claim about an interaction stated as
+               certain rather than hedged ("X causes Y" / "X will always")
+               where the surrounding context doesn't support that level of
+               certainty.
+            4. A diagnostic or treatment claim (telling the reader what
+               condition they have or how to treat it).
+            5. A new interaction claim added to data/interactions.json
+               with no "sources" entry, or with a source field that's
+               empty or clearly fabricated.
+
+            Do NOT flag: appropriately hedged language ("may interact
+            with", "is associated with"), the standing medical disclaimer,
+            or general educational explanation of mechanisms.
+
+            Output format — exactly one of:
+            - If no violations: output the single line "PASS" and nothing
+              else.
+            - If violations found: output "FAIL" on the first line, then
+              a short bullet list of each violation with the offending
+              line quoted and which rule it breaks. Be specific enough
+              that someone fixing it knows exactly what to change.
+          claude_args: >-
+            --max-turns 5
+            --model claude-sonnet-4-6
+            --allowedTools "Read"
+
+      - name: Enforce result
+        run: |
+          if grep -q "^FAIL" <<< "${{ steps.scan-content.outputs.execution_output || steps.scan-content.outputs.text }}"; then
+            echo "Content safety check failed. See the scan step output above for details."
+            exit 1
+          fi
+          echo "Content safety check passed."
