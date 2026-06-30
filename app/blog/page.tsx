@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'iron-levothyroxine-interaction',
+    title: 'Iron Supplements and Levothyroxine: A Clinically Important Interaction',
+    description:
+      'Iron supplements can significantly reduce levothyroxine absorption through chelation in the GI tract. What the evidence shows and why it matters for thyroid patients.',
+    date: '2026-06-30',
+  },
+  {
     slug: 'st-johns-wort-drug-interactions',
     title: "St. John's Wort Drug Interactions: What the Evidence Shows",
     description:
