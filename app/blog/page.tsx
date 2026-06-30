@@ -9,6 +9,20 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'fish-oil-blood-thinners',
+    title: 'Fish Oil and Blood Thinners: What the Evidence Shows',
+    description:
+      'Omega-3 fatty acids have antiplatelet effects that may interact with warfarin and other anticoagulants. The clinical evidence is mixed but the combination is worth understanding.',
+    date: '2026-06-30',
+  },
+  {
+    slug: 'magnesium-drug-interactions',
+    title: 'Magnesium Drug Interactions: What Gets Affected and Why',
+    description:
+      'Magnesium supplements interact with antibiotics, bisphosphonates, and other medications through chelation in the GI tract — and some medications deplete magnesium over time. What the NIH ODS fact sheet documents.',
+    date: '2026-06-30',
+  },
+  {
     slug: 'iron-levothyroxine-interaction',
     title: 'Iron Supplements and Levothyroxine: A Clinically Important Interaction',
     description:

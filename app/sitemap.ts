@@ -26,5 +26,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/magnesium-drug-interactions',
+      lastModified: new Date('2026-06-30'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/fish-oil-blood-thinners',
+      lastModified: new Date('2026-06-30'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }

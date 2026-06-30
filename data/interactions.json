@@ -167,6 +167,63 @@
         }
       ],
       "last_reviewed": "2026-06-30"
+    },
+    {
+      "id": "omega3-warfarin",
+      "a": "omega-3 fatty acids",
+      "b": "warfarin",
+      "aliases_a": ["fish oil", "fish oil supplement", "EPA", "DHA", "eicosapentaenoic acid", "docosahexaenoic acid", "omega-3", "omega 3"],
+      "aliases_b": ["coumadin"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Omega-3 fatty acids (EPA and DHA) can inhibit platelet aggregation through effects on thromboxane and prostacyclin production. Combined with warfarin's anticoagulant action, this may produce an additive effect on bleeding tendency.",
+      "summary": "Omega-3 fatty acids may have additive effects with warfarin on bleeding risk. The clinical evidence on whether fish oil supplements meaningfully change INR is mixed, but the combination is noted as a potential interaction in anticoagulant management guidelines. People on warfarin who take fish oil supplements should inform their prescribing provider.",
+      "sources": [
+        {
+          "title": "Omega-3 Fatty Acids — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-06-30"
+    },
+    {
+      "id": "vitamin-d-thiazide-diuretics",
+      "a": "vitamin d",
+      "b": "thiazide diuretics",
+      "aliases_a": ["vitamin d3", "cholecalciferol", "vitamin d2", "ergocalciferol", "calciferol"],
+      "aliases_b": ["hydrochlorothiazide", "hctz", "chlorthalidone", "metolazone", "indapamide", "microzide", "hygroton"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Vitamin D enhances intestinal calcium absorption. Thiazide diuretics reduce urinary calcium excretion by the kidneys. Both effects together raise circulating calcium levels, and the combination may lead to hypercalcemia — elevated blood calcium.",
+      "summary": "Combining vitamin D supplements with thiazide diuretics may increase the risk of hypercalcemia (high blood calcium), because both raise calcium levels through different mechanisms. This interaction is recognized in vitamin D prescribing information and is noted in the NIH ODS vitamin D fact sheet.",
+      "sources": [
+        {
+          "title": "Vitamin D — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-06-30"
+    },
+    {
+      "id": "potassium-ace-inhibitors",
+      "a": "potassium",
+      "b": "ace inhibitors",
+      "aliases_a": ["potassium supplement", "potassium chloride"],
+      "aliases_b": ["lisinopril", "enalapril", "ramipril", "captopril", "benazepril", "quinapril", "fosinopril", "perindopril", "trandolapril", "moexipril"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "ACE inhibitors reduce aldosterone secretion, which decreases the kidney's ability to excrete potassium. Taking supplemental potassium on top of this impaired excretion can lead to hyperkalemia — elevated blood potassium levels, which can affect heart rhythm.",
+      "summary": "Potassium supplements combined with ACE inhibitors may cause hyperkalemia (high blood potassium), which can disrupt heart rhythm. ACE inhibitors already increase potassium retention, so additional supplemental potassium warrants monitoring. This interaction is documented in the NIH ODS potassium fact sheet.",
+      "sources": [
+        {
+          "title": "Potassium — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Potassium-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-06-30"
     }
   ]
 }
