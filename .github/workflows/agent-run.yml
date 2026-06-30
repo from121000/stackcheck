@@ -68,13 +68,23 @@ jobs:
             journal entry is fine; finished code with no journal entry and
             no commit is the failure mode to avoid.
 
+            CRITICAL — a local commit is NOT the end of your task. You MUST
+            run `git push` after your final commit, as a distinct, explicit
+            last step. Committing without pushing means none of your work
+            actually reaches the repository — it's the same as not having
+            done it at all. Before you finish or run low on turns, run
+            `git status` to confirm your branch isn't ahead of origin with
+            unpushed commits, and if it is, push immediately. Treat "push
+            succeeded" as your actual definition of done, not "commit
+            succeeded."
+
             If there's nothing meaningful to do this run, say so in the
             journal and stop — don't make busywork changes just to have
             something to commit.
           claude_args: >-
             --max-turns 60
             --model claude-sonnet-4-6
-            --allowedTools "Read,Edit,Write,Bash(git:*),Bash(npm:*),Bash(node:*)"
+            --allowedTools "Read,Edit,Write,Bash(git:*),Bash(npm:*),Bash(node:*),Bash(mkdir:*),Bash(mv:*),Bash(ls:*),Bash(cat:*)"
 
       - name: Verify site still builds
         run: |
