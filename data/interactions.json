@@ -1,0 +1,115 @@
+{
+  "_schema_notes": "Read this before adding entries. Each entry describes a known interaction between two substances (supplements and/or medications). The checker matches user-entered substances against the 'a' and 'b' fields (case-insensitive, and against 'aliases') and surfaces the entry if both are present in the user's stack. DO NOT add an entry without a real, checkable source in 'sources'. DO NOT use 'severity: high' unless the source material itself characterizes it that way. Every new entry must follow this exact shape — do not invent new top-level fields without updating this notes block to explain why.",
+
+  "schema": {
+    "id": "string, unique, kebab-case, e.g. 'sjw-warfarin'",
+    "a": "string, primary name of substance A, lowercase",
+    "b": "string, primary name of substance B, lowercase",
+    "aliases_a": "array of strings, alternate names/spellings for A",
+    "aliases_b": "array of strings, alternate names/spellings for B",
+    "category": "one of: 'supplement-supplement', 'supplement-medication'",
+    "severity": "one of: 'low', 'moderate', 'high' — only use a level the source material itself supports",
+    "mechanism": "string, plain-language explanation of WHY this interaction happens, not just that it does",
+    "summary": "string, 1-3 sentences, hedge appropriately ('may', 'is associated with'), no dosage or start/stop instructions",
+    "sources": "array of objects: { title, url, publisher }. At least one required. Prefer NIH ODS, peer-reviewed journals, or established drug-interaction references.",
+    "last_reviewed": "ISO date string, set when entry is added or last verified"
+  },
+
+  "entries": [
+    {
+      "id": "vitamin-k-warfarin",
+      "a": "vitamin k",
+      "b": "warfarin",
+      "aliases_a": ["vitamin k1", "phylloquinone", "vitamin k2", "menaquinone"],
+      "aliases_b": ["coumadin"],
+      "category": "supplement-medication",
+      "severity": "high",
+      "mechanism": "Warfarin works by inhibiting vitamin K-dependent clotting factors. Vitamin K intake directly opposes this mechanism, which can reduce warfarin's anticoagulant effect.",
+      "summary": "Vitamin K can reduce the ability of warfarin to prevent blood clotting. People on warfarin are typically advised to keep their vitamin K intake consistent rather than avoiding it entirely, since sudden changes (increases or decreases) are what destabilize INR control.",
+      "sources": [
+        {
+          "title": "Dietary Supplements: What You Need to Know",
+          "url": "https://ods.od.nih.gov/factsheets/WYNTK-Consumer/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-06-30"
+    },
+    {
+      "id": "sjw-warfarin",
+      "a": "st. john's wort",
+      "b": "warfarin",
+      "aliases_a": ["st johns wort", "hypericum perforatum", "sjw"],
+      "aliases_b": ["coumadin"],
+      "category": "supplement-medication",
+      "severity": "high",
+      "mechanism": "St. John's Wort induces the cytochrome P450 3A4 enzyme system, which speeds up the metabolism (breakdown) of many drugs, including warfarin, lowering their effective blood levels.",
+      "summary": "St. John's Wort has been associated with decreased anticoagulation effect and unstable INR values when taken with warfarin, due to faster drug metabolism.",
+      "sources": [
+        {
+          "title": "Clinically relevant safety issues associated with St. John's wort product labels",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2483264/",
+          "publisher": "PMC / peer-reviewed"
+        }
+      ],
+      "last_reviewed": "2026-06-30"
+    },
+    {
+      "id": "sjw-ssri",
+      "a": "st. john's wort",
+      "b": "ssri",
+      "aliases_a": ["st johns wort", "hypericum perforatum", "sjw"],
+      "aliases_b": ["selective serotonin reuptake inhibitor", "citalopram", "sertraline", "fluoxetine", "escitalopram"],
+      "category": "supplement-medication",
+      "severity": "high",
+      "mechanism": "St. John's Wort increases serotonin, dopamine, and norepinephrine availability through reuptake inhibition, similar to SSRIs. Combined with an SSRI, this can push serotonin levels too high.",
+      "summary": "Combining St. John's Wort with SSRI antidepressants may dangerously elevate serotonin levels, with a risk of serotonin syndrome, a serious condition. This combination is generally considered one to actively avoid rather than just monitor.",
+      "sources": [
+        {
+          "title": "The Effects of St. John's Wort and its Interactions with SSRI's",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12420457/",
+          "publisher": "European Psychiatry / peer-reviewed"
+        }
+      ],
+      "last_reviewed": "2026-06-30"
+    },
+    {
+      "id": "sjw-oral-contraceptives",
+      "a": "st. john's wort",
+      "b": "oral contraceptives",
+      "aliases_a": ["st johns wort", "hypericum perforatum", "sjw"],
+      "aliases_b": ["birth control pills", "the pill", "ocp"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "St. John's Wort induces CYP3A4 metabolism, which can lower circulating levels of the hormones in oral contraceptives.",
+      "summary": "St. John's Wort may reduce the effectiveness of oral contraceptives, with case reports describing breakthrough bleeding and unplanned pregnancy associated with concurrent use.",
+      "sources": [
+        {
+          "title": "Clinically relevant safety issues associated with St. John's wort product labels",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2483264/",
+          "publisher": "PMC / peer-reviewed"
+        }
+      ],
+      "last_reviewed": "2026-06-30"
+    },
+    {
+      "id": "antioxidants-chemotherapy",
+      "a": "vitamin c",
+      "b": "chemotherapy",
+      "aliases_a": ["ascorbic acid", "vitamin e", "antioxidant supplements"],
+      "aliases_b": ["chemo", "cancer chemotherapy"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Some chemotherapy drugs work partly by generating oxidative stress in cancer cells. High-dose antioxidant supplements could theoretically counteract this mechanism, though research on real-world clinical impact is mixed.",
+      "summary": "Antioxidant supplements such as vitamins C and E might reduce the effectiveness of some types of cancer chemotherapy. Anyone undergoing chemotherapy should discuss any supplement use with their oncology team before starting or continuing.",
+      "sources": [
+        {
+          "title": "Dietary Supplements: What You Need to Know",
+          "url": "https://ods.od.nih.gov/factsheets/WYNTK-Consumer/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-06-30"
+    }
+  ]
+}
