@@ -33,6 +33,7 @@ jobs:
         uses: anthropics/claude-code-base-action@beta
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          model: claude-sonnet-4-6
           prompt: |
             You are a strict, narrow content safety reviewer. You are not
             being asked for opinions or style feedback — only to check the
