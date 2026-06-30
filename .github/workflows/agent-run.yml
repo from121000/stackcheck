@@ -1,0 +1,62 @@
+name: Autonomous Agent Run
+
+on:
+  schedule:
+    # Runs once daily at 06:00 UTC. The agent decides per AGENT.md whether
+    # there's meaningful work to do each run; an uneventful run is fine.
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+    # Lets you manually trigger a run from the GitHub Actions tab —
+    # use this for the first supervised dry run before trusting the cron.
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: stackverify-agent
+  cancel-in-progress: false
+  # Prevents two runs overlapping if a manual trigger and the cron
+  # schedule ever collide.
+
+jobs:
+  agent-run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # Hard wall-clock ceiling. If a run is still going after 30 minutes,
+    # something's wrong (stuck loop, runaway tool calls) — kill it rather
+    # than let it run indefinitely.
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Claude agent
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Read AGENT.md and agent/log.md in full before doing anything else.
+            Decide the highest-leverage next action toward the 30-day goal
+            described in AGENT.md, given the current state of the repo and
+            your journal history. Do that work. Commit your changes with a
+            clear message. Append a new entry to agent/log.md describing
+            what you found, what you decided, what you did, and what the
+            next run should know. If there's nothing meaningful to do this
+            run, say so in the journal and stop — don't make busywork
+            changes just to have something to commit.
+          claude_args: >-
+            --max-turns 40
+            --model claude-sonnet-4-6
+            --allowedTools "Read,Edit,Write,Bash(git:*),Bash(npm:*),Bash(node:*)"
+
+      - name: Verify site still builds
+        run: |
+          npm ci
+          npm run build
+        # If the agent's changes broke the build, fail loudly here rather
+        # than letting a broken commit sit on main silently. Vercel will
+        # also fail its own build on a bad commit, but this catches it
+        # within the same job for a clearer audit trail.
