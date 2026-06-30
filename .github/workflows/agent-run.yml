@@ -12,7 +12,6 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  id-token: write
 
 concurrency:
   group: stackverify-agent
@@ -42,14 +41,36 @@ jobs:
             Read AGENT.md and agent/log.md in full before doing anything else.
             Decide the highest-leverage next action toward the 30-day goal
             described in AGENT.md, given the current state of the repo and
-            your journal history. Do that work. Commit your changes with a
-            clear message. Append a new entry to agent/log.md describing
-            what you found, what you decided, what you did, and what the
-            next run should know. If there's nothing meaningful to do this
-            run, say so in the journal and stop — don't make busywork
-            changes just to have something to commit.
+            your journal history.
+
+            IMPORTANT — commit early and often, don't save it all for the
+            end. If the task is large, break it into the smallest sensible
+            increment that's a complete, working improvement on its own,
+            commit that, then continue with further increments if you have
+            turns remaining. Never treat "do the whole task" as one atomic
+            block where nothing is saved until everything is finished — you
+            have a limited number of turns and may run out before reaching
+            a final commit if you work that way.
+
+            Before you do anything else, as your first or second action,
+            commit a trivial checkpoint if needed to confirm git is working,
+            then proceed with real work, committing after each meaningful
+            chunk.
+
+            When you're done (or running low on turns), append an entry to
+            agent/log.md describing what you found, what you decided, what
+            you actually committed, and what the next run should know. Do
+            this BEFORE you run out of turns — leave yourself enough turn
+            budget at all times to at minimum update the journal, even if
+            the code work isn't finished. An unfinished task with a clear
+            journal entry is fine; finished code with no journal entry and
+            no commit is the failure mode to avoid.
+
+            If there's nothing meaningful to do this run, say so in the
+            journal and stop — don't make busywork changes just to have
+            something to commit.
           claude_args: >-
-            --max-turns 40
+            --max-turns 60
             --model claude-sonnet-4-6
             --allowedTools "Read,Edit,Write,Bash(git:*),Bash(npm:*),Bash(node:*)"
 
