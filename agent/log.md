@@ -53,6 +53,54 @@ AGENT.md once you've assessed the actual state of things.
 
 ---
 
+## Entry 2 — 2026-06-30 (second autonomous run)
+
+**State at start:**
+- Kim's human note from Entry 1 flagged a critical readability problem: dark gray text on near-black background. The yellow disclaimer box was the only clearly legible element.
+- 2 blog posts existed (SJW interactions, iron + levothyroxine)
+- 8 dataset entries
+- No analytics, no search console
+
+**Root cause of contrast issue (diagnosed and fixed):**
+The problem was a CSS cascade conflict specific to Tailwind v4. In Tailwind v4, utility classes are emitted inside `@layer` directives. CSS Cascade Level 5 treats unlayered rules as higher priority than layered ones, regardless of specificity. The `globals.css` file had an unlayered `body { background: var(--background); color: var(--foreground); }` rule. In dark mode (prefers-color-scheme: dark), the CSS variable `--background` became `#0a0a0a` (near-black) — which is an unlayered rule and thus beats the Tailwind `bg-white` class on the body. Then child elements like headings had explicit Tailwind `text-zinc-900` etc. classes, producing very dark text on the dark body background.
+
+Fix: removed the `body {}` rule and the dark mode `@media` block from globals.css. The Tailwind utility classes now control appearance as intended: white background, dark text. Also bumped footer disclaimer from `text-zinc-400` to `text-zinc-500` for slightly better contrast on medical safety copy.
+
+**What I did:**
+
+**Commit 1 (pushed) — Fix contrast:**
+- Removed unlayered `body { background: ...; color: ...; font-family: ... }` rule from globals.css
+- Removed dark mode `@media` block (its only effect was setting CSS vars used by the removed body rule)
+- Bumped footer text from zinc-400 to zinc-500
+
+**Commit 2 (pushed) — Content expansion:**
+- Added 4 new dataset entries to data/interactions.json (all sourced from NIH ODS):
+  - `omega3-warfarin`: fish oil antiplatelet effects + warfarin bleeding risk (moderate)
+  - `vitamin-d-thiazide-diuretics`: combined hypercalcemia risk (moderate)
+  - `potassium-ace-inhibitors`: hyperkalemia from additive potassium retention (moderate)
+- Added 2 new blog posts:
+  - `app/blog/magnesium-drug-interactions/page.tsx` — covers fluoroquinolone chelation, tetracycline chelation, bisphosphonate chelation, diuretic-induced magnesium depletion, PPI-induced hypomagnesemia; all sourced from NIH ODS Magnesium fact sheet
+  - `app/blog/fish-oil-blood-thinners/page.tsx` — covers EPA/DHA antiplatelet mechanism, warfarin interaction (with honest note that INR evidence is mixed), dose-dependence, aspirin context, surgical context; sourced from NIH ODS Omega-3 fact sheet
+- Updated blog index to list 4 posts (new two added at top)
+- Updated sitemap to include 2 new blog URLs
+
+**What the next run should know:**
+- Analytics is still not set up. Without this, there's no way to measure whether the indexing/traffic goal is progressing. Google Search Console can be configured via an HTML meta tag in layout.tsx (no DNS or billing needed) — this is the highest priority non-content task for the next run. The meta tag approach requires a Search Console property to exist and a verification token. Since I can't create external accounts, this may be blocked unless Kim sets up the GSC property and provides the token for me to embed.
+- The site now has 4 blog posts targeting: SJW drug interactions, iron + levothyroxine, magnesium drug interactions, fish oil + blood thinners. Checker dataset has 12 entries.
+- Good next blog targets from the journal backlog:
+  - "vitamin D and drug interactions" — covers thiazide diuretics (now in dataset) and broader context
+  - "potassium and medications" — covers ACE inhibitors (now in dataset), potassium-sparing diuretics
+  - "calcium supplement interactions" — covers bisphosphonates (in dataset), levothyroxine (in dataset), fluoroquinolones, iron absorption
+- Good next dataset entries:
+  - Garlic + warfarin (antiplatelet effects of allicin; needs verified PMC source — next run should check NIH ODS garlic fact sheet URL)
+  - Melatonin + warfarin (some case reports of INR changes; needs verified source)
+  - Zinc + antibiotics / zinc + iron (chelation, similar mechanism to magnesium)
+  - Ginkgo biloba + warfarin / aspirin (antiplatelet effects)
+- The checker's matching is still exact/alias-based. "fish oil" will match the omega3-warfarin entry (it's in aliases_a). "vitamin d3" will match vitamin-d-thiazide. "lisinopril" will match potassium-ace-inhibitors. Test coverage looks reasonable.
+- No build errors expected — all new files follow the same TSX pattern as existing blog posts, no new dependencies added.
+
+---
+
 ## Entry 1 — 2026-06-30 (first autonomous run)
 
 **State at start:**
