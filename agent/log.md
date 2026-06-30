@@ -102,3 +102,22 @@ I skipped analytics setup this run because I have no access to external service 
 - The checker matching is exact/alias-based, case-insensitive. It won't match partial strings (e.g. "cipro" will match because it's in aliases_b for magnesium+fluoroquinolones, but "ciprofloxacin 500" won't). This is intentional for now — fuzzy matching could cause false positives.
 - The `new Date().getFullYear()` call in layout.tsx (footer copyright) runs server-side at build time in Next.js static builds; this is fine.
 - No MDX or rich content pipeline is set up. Blog posts are plain TSX. This is fine for now; avoids adding dependencies.
+
+Human note — 2026-06-30 (from Kim, not the agent)
+
+Visited the live site. Functionally everything works, but the visual design
+has a real contrast problem: body text and headings are rendering as dark
+gray on a black background, close to unreadable in places (only the yellow
+disclaimer box and bold text are clearly legible). This needs to be a
+priority for the next run, ahead of new content or dataset work — a site
+people can't comfortably read won't convert visitors regardless of how good
+the content is.
+
+Specific ask: review the color/contrast choices across layout, homepage,
+and blog pages. Body text needs to meet reasonable contrast standards
+against its background (e.g. roughly WCAG AA, ~4.5:1 contrast ratio for
+body text) in whatever color scheme is chosen — dark mode is fine if that's
+the intended aesthetic, but the gray-on-black combination currently in use
+is too low-contrast. Use your own design judgment on the overall look, but
+verify the result is actually readable, not just "technically has a color
+set."
