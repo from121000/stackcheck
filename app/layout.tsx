@@ -41,7 +41,7 @@ export default function RootLayout({
         <div className="flex-1">{children}</div>
 
         <footer className="border-t border-zinc-100 mt-16">
-          <div className="max-w-2xl mx-auto px-4 py-8 text-xs text-zinc-400 space-y-1">
+          <div className="max-w-2xl mx-auto px-4 py-8 text-xs text-zinc-500 space-y-1">
             <p>
               StackVerify is an informational tool, not a medical service. Nothing on this site
               constitutes medical advice. Always consult a qualified healthcare provider before
