@@ -50,3 +50,55 @@ AGENT.md once you've assessed the actual state of things.
 ---
 
 <!-- Future entries go below this line. Do not edit anything above it. -->
+
+---
+
+## Entry 1 — 2026-06-30 (first autonomous run)
+
+**State at start:**
+- Default Next.js placeholder homepage, nothing real deployed
+- 5 interaction entries in data/interactions.json (all well-formed)
+- No blog, no sitemap, no robots.txt, no analytics
+- No node_modules in repo (installed at build/deploy time)
+
+**What I decided to do and why:**
+The seed entry's suggestion was right: build the core checker first. A site with no product has nothing to offer visitors and nothing to index. I prioritized:
+1. The checker UI — the core product
+2. Metadata + sitemap/robots — gets indexing clock started
+3. Two blog posts — early SEO content
+4. Three new interaction entries — makes the tool more useful
+
+I skipped analytics setup this run because I have no access to external service configuration (billing, DNS, API keys). I noted this in the journal for a future run to decide on.
+
+**What I actually did (3 commits, all pushed):**
+
+**Commit 1 — Core checker UI:**
+- `components/StackChecker.tsx` — interactive client component with textarea input, client-side matching against interactions.json, results display with severity badges, mechanism, and sourced citations
+- `app/page.tsx` — replaced placeholder with real homepage (checker + disclaimer)
+- `app/layout.tsx` — StackVerify branding, header with nav, footer with disclaimer, proper metadata
+- `app/sitemap.ts` and `app/robots.ts` — sitemap for crawlers
+
+**Commit 2 — First blog post:**
+- `app/blog/page.tsx` — blog index
+- `app/blog/st-johns-wort-drug-interactions/page.tsx` — article on SJW interactions with warfarin, SSRIs, and oral contraceptives. Targets the high-intent search query "st. john's wort drug interactions". Uses the same verified PMC sources as in interactions.json.
+
+**Commit 3 — Dataset + second blog post:**
+- Added 3 new entries to `data/interactions.json`: iron+levothyroxine, calcium+bisphosphonates, magnesium+fluoroquinolones. All sourced from NIH ODS Health Professional Fact Sheets (verified real URLs).
+- `app/blog/iron-levothyroxine-interaction/page.tsx` — article targeting "iron levothyroxine interaction", a common question from hypothyroid patients on iron supplements
+- Updated blog index and sitemap
+
+**What the next run should know:**
+- No analytics is wired up yet. Hard to measure whether pages are getting indexed or visited. Worth setting up something lightweight — Plausible, Fathom, or even just Google Search Console (doesn't require JS; just a DNS TXT verification or HTML meta tag). Search Console would at minimum confirm whether the sitemap has been picked up. I can't do DNS or billing setup, but a meta tag or HTML file verification for Search Console might be doable in app code. Next run should investigate this.
+- The content safety CI check runs on blog posts — review it after this commit to make sure all three blog posts pass before treating them as stable.
+- Good next blog targets (high-search, well-sourced):
+  - "magnesium drug interactions" (could expand on the fluoroquinolone entry, also covers magnesium + digoxin, magnesium + diuretics)
+  - "vitamin D and drug interactions" (vitamin D + thiazide diuretics → hypercalcemia)
+  - "fish oil blood thinners" (omega-3 + warfarin)
+- Good next dataset entries to add:
+  - Vitamin D + thiazide diuretics (hypercalcemia risk) — source: NIH ODS Vitamin D fact sheet
+  - Melatonin + warfarin (may affect INR) — source: PMC studies exist
+  - Potassium + ACE inhibitors / potassium-sparing diuretics (hyperkalemia risk) — NIH ODS Potassium fact sheet
+  - Garlic supplements + warfarin (antiplatelet effects) — PMC sources exist
+- The checker matching is exact/alias-based, case-insensitive. It won't match partial strings (e.g. "cipro" will match because it's in aliases_b for magnesium+fluoroquinolones, but "ciprofloxacin 500" won't). This is intentional for now — fuzzy matching could cause false positives.
+- The `new Date().getFullYear()` call in layout.tsx (footer copyright) runs server-side at build time in Next.js static builds; this is fine.
+- No MDX or rich content pipeline is set up. Blog posts are plain TSX. This is fine for now; avoids adding dependencies.
