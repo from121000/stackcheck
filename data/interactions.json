@@ -110,6 +110,63 @@
         }
       ],
       "last_reviewed": "2026-06-30"
+    },
+    {
+      "id": "iron-levothyroxine",
+      "a": "iron",
+      "b": "levothyroxine",
+      "aliases_a": ["ferrous sulfate", "ferrous gluconate", "ferric", "iron supplement"],
+      "aliases_b": ["synthroid", "thyroid medication", "thyroxine", "t4"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Iron forms insoluble complexes (chelates) with levothyroxine in the gastrointestinal tract, which reduces how much of the thyroid drug is absorbed into the bloodstream.",
+      "summary": "Iron supplements may reduce the absorption of levothyroxine, potentially decreasing its effectiveness in managing thyroid conditions. This interaction is noted in levothyroxine prescribing information.",
+      "sources": [
+        {
+          "title": "Iron — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-06-30"
+    },
+    {
+      "id": "calcium-bisphosphonates",
+      "a": "calcium",
+      "b": "bisphosphonates",
+      "aliases_a": ["calcium carbonate", "calcium citrate", "calcium supplement"],
+      "aliases_b": ["alendronate", "fosamax", "risedronate", "actonel", "ibandronate", "boniva"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Calcium binds to bisphosphonate molecules in the gastrointestinal tract, forming insoluble complexes that significantly reduce bisphosphonate absorption.",
+      "summary": "Calcium supplements may substantially reduce the absorption of bisphosphonate medications used for osteoporosis. This interaction is recognized in bisphosphonate prescribing guidelines.",
+      "sources": [
+        {
+          "title": "Calcium — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-06-30"
+    },
+    {
+      "id": "magnesium-fluoroquinolones",
+      "a": "magnesium",
+      "b": "fluoroquinolone antibiotics",
+      "aliases_a": ["magnesium oxide", "magnesium citrate", "magnesium glycinate", "magnesium supplement"],
+      "aliases_b": ["ciprofloxacin", "cipro", "levofloxacin", "levaquin", "moxifloxacin", "avelox", "ofloxacin"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Magnesium (along with other divalent cations like calcium, zinc, and iron) chelates fluoroquinolone antibiotics in the GI tract, forming poorly absorbed complexes and reducing the antibiotic's bioavailability.",
+      "summary": "Magnesium supplements may significantly reduce the absorption of fluoroquinolone antibiotics, potentially lowering their effectiveness. Antacids containing magnesium have similar effects and are explicitly noted in fluoroquinolone prescribing information.",
+      "sources": [
+        {
+          "title": "Magnesium — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-06-30"
     }
   ]
 }
