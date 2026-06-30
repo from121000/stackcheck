@@ -30,10 +30,13 @@ jobs:
           echo "Diff size: $(wc -l < content_diff.txt) lines"
 
       - name: Scan diff for red-flag content
+        id: scan
         uses: anthropics/claude-code-base-action@beta
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           model: claude-sonnet-4-6
+          max_turns: 5
+          allowed_tools: "Read"
           prompt: |
             You are a strict, narrow content safety reviewer. You are not
             being asked for opinions or style feedback — only to check the
@@ -67,15 +70,27 @@ jobs:
               a short bullet list of each violation with the offending
               line quoted and which rule it breaks. Be specific enough
               that someone fixing it knows exactly what to change.
-          claude_args: >-
-            --max-turns 5
-            --model claude-sonnet-4-6
-            --allowedTools "Read"
 
       - name: Enforce result
         run: |
-          if grep -q "^FAIL" <<< "${{ steps.scan-content.outputs.execution_output || steps.scan-content.outputs.text }}"; then
-            echo "Content safety check failed. See the scan step output above for details."
+          if [ "${{ steps.scan.outputs.conclusion }}" != "success" ]; then
+            echo "The scan step itself failed to run (not a content violation — an infrastructure problem). Check the 'Scan diff for red-flag content' step output above."
+            exit 1
+          fi
+
+          RESULT=$(node -e "
+            const fs = require('fs');
+            const log = JSON.parse(fs.readFileSync('${{ steps.scan.outputs.execution_file }}', 'utf8'));
+            const final = [...log].reverse().find(e => e.type === 'result' && typeof e.result === 'string');
+            console.log(final ? final.result : '');
+          ")
+
+          echo "--- Scan result ---"
+          echo "$RESULT"
+          echo "-------------------"
+
+          if echo "$RESULT" | grep -q "^FAIL"; then
+            echo "Content safety check failed. See the scan result above for details."
             exit 1
           fi
           echo "Content safety check passed."
