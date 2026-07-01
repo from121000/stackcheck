@@ -261,3 +261,44 @@ code side needs:
   inside the `<body>` in `app/layout.tsx`
 
 Both of these can be done in a single commit.
+
+---
+
+## Entry 4 — 2026-07-01 (fourth autonomous run)
+
+**State at start:**
+- Kim's 2026-07-01 human note provided GSC verification token and Vercel Analytics setup instructions
+- 9 blog posts (including 7 from prior runs), 17 dataset entries
+- Analytics still not wired up (now unblocked by Kim)
+
+**What I decided to do and why:**
+Two clear priority tasks from Kim's note: GSC verification + Vercel Analytics. Both are non-content, directly serve the 30-day goal by enabling measurement and indexing confirmation. After completing those, content work from the established backlog: melatonin drug interactions and garlic supplement interactions — both had solid sourcing identified in earlier journal entries.
+
+**What I actually did (2 commits, both pushed):**
+
+**Commit 1 — Analytics + GSC:**
+- `npm install @vercel/analytics` — added `@vercel/analytics@^2.0.1` to package.json; package-lock.json updated
+- Added `import { Analytics } from '@vercel/analytics/next'` to app/layout.tsx
+- Rendered `<Analytics />` inside `<body>` in RootLayout, after the footer
+- Added `verification: { google: 'A3XnPW9zk9QUje5RTixwDlMoiru3WAYiOn9uzf2rVXE' }` to the `metadata` export in app/layout.tsx
+
+**Commit 2 — 2 blog posts + 2 dataset entries:**
+- `app/blog/melatonin-drug-interactions/page.tsx`: covers CNS depressant additive sedation (benzodiazepines, z-drugs, alcohol), fluvoxamine CYP1A2 inhibition (17x melatonin levels — documented in NIH ODS fact sheet), warfarin case reports with appropriate hedging (evidence limited), nifedipine, immunosuppressants. Source: NIH ODS Melatonin fact sheet.
+- `app/blog/garlic-supplement-interactions/page.tsx`: covers warfarin/antiplatelet additive effects (allicin mechanism), saquinavir CYP3A4 induction (~51% level reduction, documented in pharmacokinetic studies cited by NCCIH), broader CYP3A4 substrate context, surgical context. Sources: NCCIH Garlic, NIH ODS Garlic fact sheet.
+- Dataset: added `melatonin-cns-depressants` (severity: moderate) and `garlic-antiretrovirals` (severity: high) entries with verified sources
+- Blog index updated (9 posts now listed); sitemap updated with 2 new URLs
+- Dataset now has 19 entries
+
+**What the next run should know:**
+- GSC verification is now deployed. Kim needs to complete verification in Search Console and submit the sitemap at https://stackverify.app/sitemap.xml. Once that's done, the indexing clock truly starts.
+- Vercel Analytics is now live — Kim should see data in the Vercel dashboard once the deployment goes live. This finally unlocks the ability to measure whether content is getting traffic.
+- "losartan" → matches potassium-ace-inhibitors. "spironolactone" → matches potassium-sparing-diuretics. "melatonin" + "zolpidem" → matches melatonin-cns-depressants. "garlic" + "saquinavir" → matches garlic-antiretrovirals.
+- 9 blog posts, 19 dataset entries.
+- Good next blog candidates:
+  - "ginkgo biloba drug interactions" — ginkgo-warfarin is in the dataset (ginkgolides + PAF inhibition); expand to cover ginkgo + antiplatelet drugs (aspirin, clopidogrel), ginkgo + seizure threshold drugs. Source: NCCIH Ginkgo.
+  - "melatonin and fluvoxamine" could be a standalone targeted post since the 17x melatonin level increase is a high-severity, high-search query — or leave it in the broader melatonin post for now.
+  - "supplement interactions with statins" — SJW + simvastatin (CYP3A4 induction), red yeast rice (contains lovastatin analogue — an unusual one), CoQ10 + statins context. Broader topic with good search volume.
+- Good next dataset entries:
+  - Melatonin + fluvoxamine (deserves its own entry — the CYP1A2 mechanism and 17x level increase is distinct from the general CNS-depressant interaction). Source: NIH ODS Melatonin.
+  - Ginkgo + antiplatelet drugs (aspirin, clopidogrel) — ginkgolide B is a PAF antagonist; additive antiplatelet risk. Source: NCCIH Ginkgo.
+  - St. John's Wort + simvastatin/lovastatin — CYP3A4 induction reduces statin levels. Source: NCCIH SJW / existing NLM literature.
