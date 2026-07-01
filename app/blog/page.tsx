@@ -9,6 +9,27 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'potassium-and-medications',
+    title: 'Potassium Supplements and Medications: Hyperkalemia Risk',
+    description:
+      'ACE inhibitors, ARBs, and potassium-sparing diuretics all raise blood potassium. Adding a potassium supplement on top can push levels into a dangerous range. What the mechanisms are and who is at risk.',
+    date: '2026-07-01',
+  },
+  {
+    slug: 'calcium-supplement-interactions',
+    title: 'Calcium Supplement Drug Interactions: What Gets Affected',
+    description:
+      'Calcium reduces the absorption of bisphosphonates, levothyroxine, fluoroquinolone and tetracycline antibiotics through chelation in the GI tract. What the evidence shows.',
+    date: '2026-07-01',
+  },
+  {
+    slug: 'vitamin-d-drug-interactions',
+    title: 'Vitamin D Drug Interactions: What the Evidence Shows',
+    description:
+      'Vitamin D supplements interact with thiazide diuretics (hypercalcemia risk), corticosteroids, and anti-seizure medications. What the mechanisms are and why they matter.',
+    date: '2026-07-01',
+  },
+  {
     slug: 'fish-oil-blood-thinners',
     title: 'Fish Oil and Blood Thinners: What the Evidence Shows',
     description:
