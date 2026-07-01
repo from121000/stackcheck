@@ -224,6 +224,82 @@
         }
       ],
       "last_reviewed": "2026-06-30"
+    },
+    {
+      "id": "garlic-warfarin",
+      "a": "garlic",
+      "b": "warfarin",
+      "aliases_a": ["garlic supplement", "allicin", "aged garlic extract", "garlic extract"],
+      "aliases_b": ["coumadin"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Garlic (allicin and related organosulfur compounds) inhibits platelet aggregation and may enhance fibrinolytic activity. Combined with warfarin's anticoagulant action, the additive effect on bleeding tendency may increase bleeding risk.",
+      "summary": "Garlic supplements may have additive effects with warfarin on bleeding risk through platelet inhibition. The NIH ODS garlic fact sheet notes this interaction and recommends that people on anticoagulants inform their provider about garlic supplement use.",
+      "sources": [
+        {
+          "title": "Garlic — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Garlic-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-01"
+    },
+    {
+      "id": "zinc-fluoroquinolones",
+      "a": "zinc",
+      "b": "fluoroquinolone antibiotics",
+      "aliases_a": ["zinc supplement", "zinc gluconate", "zinc citrate", "zinc sulfate", "zinc picolinate"],
+      "aliases_b": ["ciprofloxacin", "cipro", "levofloxacin", "levaquin", "moxifloxacin", "avelox", "ofloxacin"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Zinc, like magnesium and calcium, is a divalent cation (Zn²⁺) that chelates fluoroquinolone antibiotics in the gastrointestinal tract, forming poorly absorbed complexes. This reduces the antibiotic's bioavailability and may lower its effectiveness against infection.",
+      "summary": "Zinc supplements may significantly reduce the absorption of fluoroquinolone antibiotics through chelation in the GI tract. The NIH ODS zinc fact sheet documents this interaction; the effect is similar to calcium and magnesium interacting with the same antibiotic class.",
+      "sources": [
+        {
+          "title": "Zinc — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-01"
+    },
+    {
+      "id": "ginkgo-warfarin",
+      "a": "ginkgo biloba",
+      "b": "warfarin",
+      "aliases_a": ["ginkgo", "ginkgo extract", "EGb 761"],
+      "aliases_b": ["coumadin"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Ginkgo biloba contains ginkgolides that inhibit platelet activating factor (PAF), reducing platelet aggregation. This antiplatelet effect, combined with warfarin's anticoagulant action, may produce an additive increase in bleeding risk.",
+      "summary": "Ginkgo biloba may have additive effects with warfarin on bleeding risk due to its antiplatelet properties. The NCCIH notes this interaction and advises caution when combining ginkgo with anticoagulants or antiplatelet drugs.",
+      "sources": [
+        {
+          "title": "Ginkgo — Herbs at a Glance",
+          "url": "https://www.nccih.nih.gov/health/ginkgo-biloba",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-01"
+    },
+    {
+      "id": "calcium-levothyroxine",
+      "a": "calcium",
+      "b": "levothyroxine",
+      "aliases_a": ["calcium carbonate", "calcium citrate", "calcium supplement"],
+      "aliases_b": ["synthroid", "thyroid medication", "thyroxine", "t4"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Calcium ions bind to levothyroxine in the gastrointestinal tract, forming insoluble complexes that reduce how much of the thyroid hormone is absorbed into the bloodstream. This is the same chelation mechanism through which iron reduces levothyroxine absorption.",
+      "summary": "Calcium supplements may reduce the absorption of levothyroxine, potentially decreasing its effectiveness for thyroid conditions. The NIH ODS calcium fact sheet notes this interaction; the standard advice is to separate levothyroxine from calcium supplements.",
+      "sources": [
+        {
+          "title": "Calcium — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-01"
     }
   ]
 }
