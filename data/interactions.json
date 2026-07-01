@@ -211,11 +211,11 @@
       "a": "potassium",
       "b": "ace inhibitors",
       "aliases_a": ["potassium supplement", "potassium chloride"],
-      "aliases_b": ["lisinopril", "enalapril", "ramipril", "captopril", "benazepril", "quinapril", "fosinopril", "perindopril", "trandolapril", "moexipril"],
+      "aliases_b": ["lisinopril", "enalapril", "ramipril", "captopril", "benazepril", "quinapril", "fosinopril", "perindopril", "trandolapril", "moexipril", "losartan", "valsartan", "olmesartan", "irbesartan", "candesartan", "telmisartan", "azilsartan", "cozaar", "diovan", "benicar"],
       "category": "supplement-medication",
       "severity": "moderate",
-      "mechanism": "ACE inhibitors reduce aldosterone secretion, which decreases the kidney's ability to excrete potassium. Taking supplemental potassium on top of this impaired excretion can lead to hyperkalemia — elevated blood potassium levels, which can affect heart rhythm.",
-      "summary": "Potassium supplements combined with ACE inhibitors may cause hyperkalemia (high blood potassium), which can disrupt heart rhythm. ACE inhibitors already increase potassium retention, so additional supplemental potassium warrants monitoring. This interaction is documented in the NIH ODS potassium fact sheet.",
+      "mechanism": "ACE inhibitors and angiotensin receptor blockers (ARBs) both reduce aldosterone secretion, which decreases the kidney's ability to excrete potassium. Taking supplemental potassium on top of this impaired excretion can lead to hyperkalemia — elevated blood potassium levels, which can affect heart rhythm.",
+      "summary": "Potassium supplements combined with ACE inhibitors or ARBs may cause hyperkalemia (high blood potassium), which can disrupt heart rhythm. Both drug classes increase potassium retention through the renin-angiotensin-aldosterone system, so additional supplemental potassium warrants monitoring. This interaction is documented in the NIH ODS potassium fact sheet.",
       "sources": [
         {
           "title": "Potassium — Health Professional Fact Sheet",
@@ -278,6 +278,44 @@
           "title": "Ginkgo — Herbs at a Glance",
           "url": "https://www.nccih.nih.gov/health/ginkgo-biloba",
           "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-01"
+    },
+    {
+      "id": "potassium-sparing-diuretics",
+      "a": "potassium",
+      "b": "potassium-sparing diuretics",
+      "aliases_a": ["potassium supplement", "potassium chloride"],
+      "aliases_b": ["spironolactone", "aldactone", "amiloride", "midamor", "triamterene", "dyrenium", "eplerenone", "inspra"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Potassium-sparing diuretics work by blocking aldosterone receptors (spironolactone, eplerenone) or by directly blocking epithelial sodium channels in renal tubules (amiloride, triamterene), both of which reduce urinary potassium excretion. Adding supplemental potassium to this already-impaired excretion can cause clinically significant hyperkalemia.",
+      "summary": "Potassium supplements taken with potassium-sparing diuretics may cause hyperkalemia (dangerously elevated blood potassium), which can disrupt heart rhythm. Potassium-sparing diuretics already substantially reduce potassium excretion; supplemental potassium may push levels further. This interaction is documented in the NIH ODS potassium fact sheet.",
+      "sources": [
+        {
+          "title": "Potassium — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Potassium-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-01"
+    },
+    {
+      "id": "zinc-tetracyclines",
+      "a": "zinc",
+      "b": "tetracycline antibiotics",
+      "aliases_a": ["zinc supplement", "zinc sulfate", "zinc gluconate", "zinc acetate", "zinc picolinate"],
+      "aliases_b": ["doxycycline", "minocycline", "tetracycline", "demeclocycline", "vibramycin", "solodyn", "monodox"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Zinc is a divalent cation that forms insoluble chelate complexes with tetracycline antibiotics in the gastrointestinal tract, substantially reducing antibiotic absorption. This is the same chelation mechanism by which magnesium, calcium, and iron reduce antibiotic absorption.",
+      "summary": "Zinc supplements may significantly reduce the absorption of tetracycline antibiotics — including doxycycline and minocycline — by forming chelate complexes in the GI tract. This interaction is documented in the NIH ODS zinc fact sheet and is recognized in tetracycline prescribing information.",
+      "sources": [
+        {
+          "title": "Zinc — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
         }
       ],
       "last_reviewed": "2026-07-01"

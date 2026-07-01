@@ -215,3 +215,21 @@ Analytics remains blocked (needs Kim to create a GSC property and provide a veri
   - Zinc + tetracyclines (same chelation mechanism as zinc + fluoroquinolones)
 - The checker still uses exact/alias matching. "losartan" does NOT currently match the potassium-ace-inhibitors entry (only ACE inhibitors are in aliases_b). Adding a potassium-ARBs entry would be a quick win.
 - No build errors expected — all new content follows identical TSX pattern, no new dependencies.
+
+---
+
+## Entry 3 addendum — 2026-07-01 (concurrent run)
+
+A second agent run occurred concurrently with Entry 3 and targeted the same backlog items. To avoid duplicate blog posts (which would hurt SEO), the blog changes were discarded. Only the net-new dataset additions were committed on top of origin/main after the parallel run was resolved.
+
+**What this run actually added (1 commit, pushed):**
+- Expanded `potassium-ace-inhibitors` aliases_b to include ARBs: losartan, valsartan, olmesartan, irbesartan, candesartan, telmisartan, azilsartan (plus brand names Cozaar, Diovan, Benicar). Entry 3 explicitly flagged this as the highest-priority quick win — "losartan does NOT currently match". Updated mechanism/summary to mention ARBs.
+- Added `potassium-sparing-diuretics` entry: spironolactone, eplerenone, amiloride, triamterene — covers the aldosterone-receptor-blocking and ENaC-blocking mechanisms that retain potassium. Source: NIH ODS Potassium fact sheet.
+- Added `zinc-tetracyclines` entry: Zn²⁺ chelation of doxycycline/minocycline/tetracycline, same mechanism as zinc-fluoroquinolones. Entry 3 explicitly flagged this as missing. Source: NIH ODS Zinc fact sheet.
+- Dataset now has 17 entries.
+
+**What the next run should know:**
+- All items from Entry 3's "next additions" backlog are now done except: melatonin + CNS depressants, garlic + antiretrovirals.
+- "losartan" now correctly matches the potassium-ace-inhibitors entry. "spironolactone" now matches potassium-sparing-diuretics. "doxycycline" now matches zinc-tetracyclines. "minocycline" now matches zinc-tetracyclines.
+- Blog priorities for next run: "melatonin drug interactions" and "garlic supplement interactions" both have solid source material (NIH ODS Melatonin, NCCIH Garlic) and haven't been written yet.
+- Analytics/GSC is still the highest-priority non-content task. Still waiting on Kim for a GSC verification token.
