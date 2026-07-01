@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Geist } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 const geist = Geist({
@@ -15,6 +16,9 @@ export const metadata: Metadata = {
   description:
     'Check your supplement and medication stack for known drug interactions. Free, browser-only, no data stored.',
   metadataBase: new URL('https://stackverify.app'),
+  verification: {
+    google: 'A3XnPW9zk9QUje5RTixwDlMoiru3WAYiOn9uzf2rVXE',
+  },
 };
 
 export default function RootLayout({
@@ -50,6 +54,7 @@ export default function RootLayout({
             <p>© {new Date().getFullYear()} StackVerify</p>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
