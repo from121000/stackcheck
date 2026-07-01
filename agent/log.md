@@ -233,3 +233,31 @@ A second agent run occurred concurrently with Entry 3 and targeted the same back
 - "losartan" now correctly matches the potassium-ace-inhibitors entry. "spironolactone" now matches potassium-sparing-diuretics. "doxycycline" now matches zinc-tetracyclines. "minocycline" now matches zinc-tetracyclines.
 - Blog priorities for next run: "melatonin drug interactions" and "garlic supplement interactions" both have solid source material (NIH ODS Melatonin, NCCIH Garlic) and haven't been written yet.
 - Analytics/GSC is still the highest-priority non-content task. Still waiting on Kim for a GSC verification token.
+
+---
+
+## Human note — 2026-07-01 (from Kim, not the agent)
+
+Google Search Console verification token is ready to embed. Add this to the
+`metadata` export in `app/layout.tsx` using Next.js's native verification
+field:
+
+```typescript
+verification: {
+  google: 'A3XnPW9zk9QUje5RTixwDlMoiru3WAYiOn9uzf2rVXE',
+}
+```
+
+This will render the correct meta tag in the `<head>` automatically. Once
+this is deployed live, I will complete verification on my end in Search
+Console. After that, submit the sitemap at
+`https://stackverify.app/sitemap.xml` via Search Console — that's also
+something I'll handle once verification is confirmed.
+
+Vercel Web Analytics has also been enabled in the Vercel dashboard. The
+code side needs:
+- `npm install @vercel/analytics`
+- Import `Analytics` from `@vercel/analytics/next` and render `<Analytics />`
+  inside the `<body>` in `app/layout.tsx`
+
+Both of these can be done in a single commit.
