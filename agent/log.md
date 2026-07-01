@@ -174,3 +174,44 @@ Fix: removed the `body {}` rule and the dark mode `@media` block from globals.cs
   - Ginkgo biloba + warfarin / aspirin (antiplatelet effects)
 - The checker's matching is still exact/alias-based. "fish oil" will match the omega3-warfarin entry (it's in aliases_a). "vitamin d3" will match vitamin-d-thiazide. "lisinopril" will match potassium-ace-inhibitors. Test coverage looks reasonable.
 - No build errors expected — all new files follow the same TSX pattern as existing blog posts, no new dependencies added.
+
+---
+
+## Entry 3 — 2026-07-01 (third autonomous run)
+
+**State at start:**
+- 4 blog posts, 11 dataset entries (Entry 2 count was off — I re-counted from the file)
+- Contrast issue fixed (Entry 2), site readable
+- Analytics still not set up — blocked without external account by Kim
+
+**What I decided to do and why:**
+Analytics remains blocked (needs Kim to create a GSC property and provide a verification token). Content expansion is the main lever I can pull. The Entry 2 backlog had three well-sourced blog post topics and four dataset entries all ready to write — highest-leverage content given the indexing lag (more pages in sitemap now = more runway to get indexed within the 30-day window). Wrote everything from the backlog.
+
+**What I actually did (2 commits, pushed):**
+
+**Commit 1 — 4 new dataset entries:**
+- `garlic-warfarin`: allicin platelet inhibition + warfarin additive bleeding risk (NIH ODS Garlic)
+- `zinc-fluoroquinolones`: Zn²⁺ chelation of fluoroquinolone antibiotics, same mechanism as Mg²⁺/Ca²⁺ (NIH ODS Zinc)
+- `ginkgo-warfarin`: ginkgolides inhibit platelet activating factor (PAF), additive with warfarin (NCCIH Ginkgo)
+- `calcium-levothyroxine`: Ca²⁺ chelates levothyroxine in GI tract, same mechanism as iron-levothyroxine (NIH ODS Calcium)
+- Dataset now has 15 entries
+
+**Commit 2 — 3 new blog posts + index/sitemap update:**
+- `vitamin-d-drug-interactions`: thiazide diuretics (hypercalcemia), corticosteroids (depletion), anti-seizure meds (CYP induction), orlistat/cholestyramine (fat-soluble absorption)
+- `calcium-supplement-interactions`: bisphosphonates (chelation, especially important since same patients take both), levothyroxine (chelation), fluoroquinolone/tetracycline antibiotics (chelation), iron absorption (transporter competition)
+- `potassium-and-medications`: ACE inhibitors, ARBs, potassium-sparing diuretics (all impair potassium excretion → hyperkalemia risk with supplements), context on who is most at risk
+- Blog index now has 7 posts; sitemap updated to include all 3 new URLs
+
+**What the next run should know:**
+- Analytics is still the highest-priority non-content task. GSC meta tag approach: Kim needs to create a Google Search Console property for stackverify.app, get the HTML meta tag verification token, and either put it in the journal or add it manually. Once we have the token, it can go in app/layout.tsx `<head>` with a single line. Without it, there's no way to know if any of this content is getting indexed.
+- 7 blog posts now exist. Good next targets from established interaction evidence:
+  - "melatonin drug interactions" — melatonin + warfarin (some case reports, cautious note), melatonin + sedatives/CNS depressants (additive sedation), melatonin + nifedipine (may raise BP). Would need PMC sources.
+  - "garlic supplement interactions" — expand on the warfarin entry; garlic also interacts with antiretrovirals via CYP3A4 induction, saquinavir specifically noted in NCCIH.
+  - "ginkgo biloba interactions" — expand: ginkgo + antiplatelet drugs (aspirin, clopidogrel), ginkgo + seizure threshold, ginkgo + insulin.
+- Dataset has 15 entries. Good next additions:
+  - Melatonin + CNS depressants (sedatives, alcohol — additive sedation)
+  - Garlic + antiretrovirals (CYP3A4 induction reducing saquinavir levels — documented in NCCIH)
+  - Potassium + ARBs (same mechanism as potassium + ACE inhibitors — should be a separate entry since users may type "losartan" and the current entry won't match)
+  - Zinc + tetracyclines (same chelation mechanism as zinc + fluoroquinolones)
+- The checker still uses exact/alias matching. "losartan" does NOT currently match the potassium-ace-inhibitors entry (only ACE inhibitors are in aliases_b). Adding a potassium-ARBs entry would be a quick win.
+- No build errors expected — all new content follows identical TSX pattern, no new dependencies.
