@@ -9,6 +9,20 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'garlic-supplement-interactions',
+    title: 'Garlic Supplement Drug Interactions: Warfarin, HIV Medications, and More',
+    description:
+      'Garlic inhibits platelet aggregation and can induce CYP3A4, affecting warfarin, saquinavir, and other medications. What NCCIH and NIH ODS document.',
+    date: '2026-07-01',
+  },
+  {
+    slug: 'melatonin-drug-interactions',
+    title: 'Melatonin Drug Interactions: Sedatives, Warfarin, and More',
+    description:
+      'Melatonin interacts with CNS depressants through additive sedation and with fluvoxamine through CYP1A2 inhibition — which can increase melatonin levels 17-fold. What the evidence shows.',
+    date: '2026-07-01',
+  },
+  {
     slug: 'potassium-and-medications',
     title: 'Potassium Supplements and Medications: Hyperkalemia Risk',
     description:

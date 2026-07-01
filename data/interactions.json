@@ -338,6 +338,49 @@
         }
       ],
       "last_reviewed": "2026-07-01"
+    },
+    {
+      "id": "melatonin-cns-depressants",
+      "a": "melatonin",
+      "b": "CNS depressants",
+      "aliases_a": ["melatonin supplement"],
+      "aliases_b": ["benzodiazepine", "lorazepam", "ativan", "diazepam", "valium", "clonazepam", "klonopin", "alprazolam", "xanax", "zolpidem", "ambien", "eszopiclone", "lunesta", "alcohol", "sedative", "sleep aid", "antihistamine sedating"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Melatonin promotes sleep by acting on MT1 and MT2 receptors in the suprachiasmatic nucleus, suppressing the brain's alerting signal and lowering core body temperature. This CNS-depressant effect is additive with other sedating substances — benzodiazepines, non-benzodiazepine sleep aids, sedating antihistamines, opioids, and alcohol — all of which independently suppress CNS function through different mechanisms.",
+      "summary": "Melatonin combined with CNS depressants such as benzodiazepines, sedative-hypnotics, or alcohol may produce additive sedation, impaired coordination, or cognitive blunting. This is a pharmacodynamic interaction: both substances suppress CNS function independently, and the effects add. The NIH ODS melatonin fact sheet documents this interaction category.",
+      "sources": [
+        {
+          "title": "Melatonin — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Melatonin-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-01"
+    },
+    {
+      "id": "garlic-antiretrovirals",
+      "a": "garlic",
+      "b": "HIV protease inhibitors",
+      "aliases_a": ["garlic supplement", "garlic extract", "allicin", "aged garlic", "garlic oil"],
+      "aliases_b": ["saquinavir", "invirase", "ritonavir", "norvir", "lopinavir", "kaletra", "atazanavir", "reyataz", "darunavir", "prezista", "antiretroviral", "HIV medication", "protease inhibitor"],
+      "category": "supplement-medication",
+      "severity": "high",
+      "mechanism": "Garlic supplements can induce CYP3A4, the major hepatic enzyme responsible for metabolizing many drugs including HIV protease inhibitors. CYP3A4 induction increases the rate of drug metabolism, reducing plasma concentrations of the affected medication. Pharmacokinetic studies have shown garlic supplements reduce saquinavir plasma concentrations by approximately 51% — a clinically significant reduction for an antiretroviral where maintaining plasma levels is essential for viral suppression.",
+      "summary": "Garlic supplements may substantially reduce plasma concentrations of HIV protease inhibitors (especially saquinavir) by inducing CYP3A4-mediated metabolism. A roughly 50% reduction in saquinavir levels has been documented in pharmacokinetic studies. NCCIH and NIH ODS both flag this interaction. People on antiretroviral regimens including protease inhibitors should avoid garlic supplements.",
+      "sources": [
+        {
+          "title": "Garlic",
+          "url": "https://www.nccih.nih.gov/health/garlic",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        },
+        {
+          "title": "Garlic — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Garlic-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-01"
     }
   ]
 }
