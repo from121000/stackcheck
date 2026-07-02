@@ -302,3 +302,40 @@ Two clear priority tasks from Kim's note: GSC verification + Vercel Analytics. B
   - Melatonin + fluvoxamine (deserves its own entry — the CYP1A2 mechanism and 17x level increase is distinct from the general CNS-depressant interaction). Source: NIH ODS Melatonin.
   - Ginkgo + antiplatelet drugs (aspirin, clopidogrel) — ginkgolide B is a PAF antagonist; additive antiplatelet risk. Source: NCCIH Ginkgo.
   - St. John's Wort + simvastatin/lovastatin — CYP3A4 induction reduces statin levels. Source: NCCIH SJW / existing NLM literature.
+
+---
+
+## Entry 5 — 2026-07-02 (fifth autonomous run)
+
+**State at start:**
+- 9 blog posts, 19 dataset entries (from Entry 4)
+- GSC verification deployed; Vercel Analytics live (Kim to confirm sitemap submission once GSC verified)
+- Entry 4 left a clear backlog: 3 dataset entries + 2 blog posts all with sourcing identified
+
+**What I decided to do and why:**
+All 3 dataset entries and both blog posts from the Entry 4 backlog had well-sourced mechanisms already identified — straightforward to execute without new research. Content volume matters for indexing runway: every page added now has more time to rank before the 30-day window closes. Completed everything from the backlog.
+
+**What I actually did (2 commits, both pushed):**
+
+**Commit 1 — 3 new dataset entries (22 total):**
+- `melatonin-fluvoxamine`: CYP1A2 inhibition by fluvoxamine → ~17x melatonin level increase. Source: NIH ODS Melatonin fact sheet. Severity: high.
+- `ginkgo-antiplatelets`: ginkgolide B PAF antagonism + aspirin/clopidogrel additive antiplatelet inhibition across multiple pathways. Source: NCCIH Ginkgo. Severity: moderate.
+- `sjw-statins`: CYP3A4 induction by SJW reduces simvastatin/lovastatin plasma levels; pravastatin/rosuvastatin not affected (not CYP3A4-dependent). Source: NCCIH SJW. Severity: moderate.
+
+**Commit 2 — 2 new blog posts + blog index + sitemap (11 posts total):**
+- `ginkgo-biloba-drug-interactions`: warfarin (PAF + anticoagulation additive), aspirin/clopidogrel (multi-pathway antiplatelet synergy), seizure threshold context, surgical context. Source: NCCIH Ginkgo.
+- `supplement-interactions-with-statins`: SJW CYP3A4 induction (simvastatin/lovastatin most affected; pravastatin/rosuvastatin not affected), red yeast rice contains monacolin K = lovastatin (double-dosing risk, high severity), CoQ10 depletion context (not dangerous, just background). Sources: NCCIH SJW, NCCIH Red Yeast Rice.
+
+**What the next run should know:**
+- 11 blog posts, 22 dataset entries now.
+- Matcher coverage improvements: "fluvoxamine" + "melatonin" now matches `melatonin-fluvoxamine`. "aspirin" or "clopidogrel" + "ginkgo" now matches `ginkgo-antiplatelets`. "simvastatin" or "lovastatin" + "st. john's wort" now matches `sjw-statins`.
+- Good next blog candidates:
+  - "melatonin and fluvoxamine" standalone post — the 17x melatonin level increase is a very specific, high-severity, high-search query that warrants its own URL targeting "fluvoxamine melatonin interaction". Currently the fluvoxamine CYP1A2 interaction appears in the melatonin-drug-interactions post but not as its own targeted page.
+  - "CoQ10 and statins" standalone — some search volume around this; could be a short focused post distinguishing the statin-CoQ10 depletion relationship from the red yeast rice / SJW actual interactions.
+  - "omega-3 and warfarin" vs "fish oil and blood thinners" — already have the fish oil post; could add a targeted "omega-3 warfarin interaction" page for the more specific search query.
+- Good next dataset entries:
+  - Red yeast rice + statins deserves its own dedicated entry (currently only covered in the blog post). Would allow the checker to flag "red yeast rice" + "simvastatin" as high severity. Source: NCCIH Red Yeast Rice.
+  - Ginkgo + seizure medications (valproate, phenytoin) — seizure threshold concern noted in blog post but no dataset entry exists. Source: NCCIH Ginkgo.
+  - Vitamin E + warfarin — vitamin E in high doses has antiplatelet effects; often listed alongside fish oil / garlic in anticoagulation literature. Source: NIH ODS Vitamin E.
+- Analytics/GSC: still waiting on Kim to confirm GSC verification is complete and sitemap submitted. No traffic data available yet to inform content prioritization.
+- Build should pass: all new content follows identical TSX pattern, no new dependencies, JSON is valid.
