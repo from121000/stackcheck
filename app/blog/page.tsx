@@ -9,6 +9,20 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'supplement-interactions-with-statins',
+    title: "Supplement Interactions with Statins: St. John's Wort, Red Yeast Rice, and More",
+    description:
+      "St. John's Wort reduces simvastatin and lovastatin levels via CYP3A4 induction. Red yeast rice contains monacolin K — pharmacologically identical to lovastatin — and should not be combined with prescription statins.",
+    date: '2026-07-02',
+  },
+  {
+    slug: 'ginkgo-biloba-drug-interactions',
+    title: 'Ginkgo Biloba Drug Interactions: Warfarin, Antiplatelet Drugs, and More',
+    description:
+      'Ginkgo biloba contains ginkgolides that inhibit platelet activating factor, creating additive bleeding risk when combined with warfarin, aspirin, or clopidogrel. What NCCIH documents.',
+    date: '2026-07-02',
+  },
+  {
     slug: 'garlic-supplement-interactions',
     title: 'Garlic Supplement Drug Interactions: Warfarin, HIV Medications, and More',
     description:
