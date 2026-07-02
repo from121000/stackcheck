@@ -381,6 +381,63 @@
         }
       ],
       "last_reviewed": "2026-07-01"
+    },
+    {
+      "id": "melatonin-fluvoxamine",
+      "a": "melatonin",
+      "b": "fluvoxamine",
+      "aliases_a": ["melatonin supplement"],
+      "aliases_b": ["luvox", "fluvoxamine maleate"],
+      "category": "supplement-medication",
+      "severity": "high",
+      "mechanism": "Fluvoxamine is a potent inhibitor of CYP1A2, the primary liver enzyme responsible for metabolizing melatonin. When CYP1A2 is inhibited, melatonin clearance slows dramatically, and plasma melatonin levels can increase approximately 17-fold compared to taking melatonin alone.",
+      "summary": "Fluvoxamine substantially increases melatonin blood levels by blocking CYP1A2, the enzyme that normally clears melatonin. The NIH ODS melatonin fact sheet documents approximately a 17-fold rise in plasma melatonin with this combination. This can substantially amplify melatonin's sedating effects.",
+      "sources": [
+        {
+          "title": "Melatonin — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Melatonin-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-02"
+    },
+    {
+      "id": "ginkgo-antiplatelets",
+      "a": "ginkgo biloba",
+      "b": "antiplatelet drugs",
+      "aliases_a": ["ginkgo", "ginkgo extract", "EGb 761"],
+      "aliases_b": ["aspirin", "clopidogrel", "plavix", "prasugrel", "effient", "ticagrelor", "brilinta", "dipyridamole", "persantine", "ticlopidine", "ticlid"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Ginkgo biloba contains ginkgolide B, a potent platelet-activating factor (PAF) antagonist that inhibits platelet aggregation. Antiplatelet drugs such as aspirin (COX-1 inhibitor) and clopidogrel (P2Y12 receptor antagonist) block platelet activation through different pathways. Combining ginkgo with these drugs produces additive antiplatelet inhibition across multiple mechanisms simultaneously.",
+      "summary": "Ginkgo biloba may have additive antiplatelet effects when combined with aspirin, clopidogrel, or similar antiplatelet drugs, potentially increasing bleeding risk. NCCIH notes this interaction and recommends caution when combining ginkgo with any anticoagulant or antiplatelet medication.",
+      "sources": [
+        {
+          "title": "Ginkgo — Herbs at a Glance",
+          "url": "https://www.nccih.nih.gov/health/ginkgo-biloba",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-02"
+    },
+    {
+      "id": "sjw-statins",
+      "a": "st. john's wort",
+      "b": "statins",
+      "aliases_a": ["st johns wort", "saint john's wort", "hypericum perforatum", "sjw"],
+      "aliases_b": ["simvastatin", "zocor", "lovastatin", "mevacor", "altoprev", "atorvastatin", "lipitor", "statin", "hmg-coa reductase inhibitor"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "St. John's Wort strongly induces CYP3A4, a major hepatic enzyme involved in metabolizing several statins — particularly simvastatin and lovastatin, which are almost entirely dependent on CYP3A4. Induction increases the rate of statin metabolism, lowering plasma statin concentrations and reducing their cholesterol-lowering effect.",
+      "summary": "St. John's Wort may reduce the effectiveness of simvastatin and lovastatin by inducing CYP3A4, the enzyme responsible for metabolizing these statins. NCCIH flags this interaction. Atorvastatin is also partially CYP3A4-dependent and may be affected to a lesser degree. Pravastatin and rosuvastatin are not CYP3A4-dependent and are less likely to be affected.",
+      "sources": [
+        {
+          "title": "St. John's Wort",
+          "url": "https://www.nccih.nih.gov/health/st-johns-wort",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-02"
     }
   ]
 }
