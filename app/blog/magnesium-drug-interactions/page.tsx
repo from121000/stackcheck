@@ -37,191 +37,90 @@ export default function MagnesiumDrugInteractions() {
       <div className="mt-8 space-y-6 text-zinc-700 leading-relaxed">
         <p>
           Magnesium supplements are taken widely — for sleep, muscle cramps, migraines, and general
-          nutritional support. They are also among the more pharmacologically active minerals when
-          it comes to drug interactions, for a simple chemical reason: magnesium is a divalent
-          cation (Mg²⁺) that binds tightly to certain drug molecules in the gastrointestinal tract,
-          reducing how much of the drug gets absorbed.
+          nutritional support. They are also among the more pharmacologically active minerals when it
+          comes to drug interactions, for a simple chemical reason: magnesium is a divalent cation
+          (Mg²⁺, meaning it carries a 2+ electrical charge) that binds tightly to certain drug
+          molecules in the gastrointestinal tract, reducing how much of the drug gets absorbed. The
+          same mechanism runs through calcium, iron, and zinc interactions — they share this binding
+          chemistry.
         </p>
 
         <section>
           <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            The primary mechanism: chelation
+            Absorption interactions: chelation
           </h2>
           <p>
-            When magnesium ions are present in the gut alongside certain medications, they can form
-            insoluble complexes — a process called chelation. The resulting compound is poorly
-            absorbed through the intestinal wall, so less of the drug reaches the bloodstream.
-            This is the same mechanism that makes calcium, iron, and zinc interact with similar
-            medications — they are all divalent or trivalent cations with the same binding tendency.
+            When magnesium ions are present in the gut alongside certain medications, they form
+            insoluble complexes — a process called chelation — and the resulting compound is poorly
+            absorbed through the intestinal wall. Less of the drug reaches the bloodstream. The
+            practical consequence is reduced drug bioavailability: the drug is there, but cannot be
+            absorbed properly.
           </p>
           <p className="mt-3">
-            The practical consequence is reduced drug bioavailability: the drug is present in the
-            gut but can not be absorbed properly.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Fluoroquinolone antibiotics
-          </h2>
-          <div className="inline-block bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-1 rounded-full mb-3">
-            Moderate severity
-          </div>
-          <p>
-            The best-documented magnesium drug interaction is with fluoroquinolone antibiotics —
-            ciprofloxacin (Cipro), levofloxacin (Levaquin), moxifloxacin (Avelox), and related
-            drugs. Magnesium chelates these antibiotics in the GI tract, substantially reducing
+            The best-documented example is with fluoroquinolone antibiotics — ciprofloxacin and
+            related drugs. Magnesium chelates these antibiotics in the gut, substantially reducing
             their absorption. This is clinically significant because fluoroquinolones are often
-            prescribed for serious infections where achieving adequate blood levels matters.
+            prescribed for serious infections where adequate blood levels matter. Antacids containing
+            magnesium have the same effect, and patients are typically advised to separate them from
+            the antibiotic by several hours. Tetracyclines (doxycycline, minocycline) interact
+            through the same mechanism, as the NIH ODS magnesium fact sheet notes.
           </p>
           <p className="mt-3">
-            This interaction is explicitly noted in fluoroquinolone prescribing information.
-            Antacids containing magnesium have the same effect, and patients are typically advised
-            to separate them from the antibiotic by several hours.
-          </p>
-          <p className="mt-3 text-sm text-zinc-500">
-            Source:{' '}
-            <a
-              href="https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-zinc-700"
-            >
-              Magnesium — Health Professional Fact Sheet
-            </a>{' '}
-            (NIH Office of Dietary Supplements)
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Tetracycline antibiotics
-          </h2>
-          <div className="inline-block bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-1 rounded-full mb-3">
-            Moderate severity
-          </div>
-          <p>
-            Tetracyclines (doxycycline, minocycline, tetracycline itself) interact with magnesium
-            through the same chelation mechanism as fluoroquinolones. Magnesium ions bind to the
-            antibiotic in the gut, reducing absorption. The NIH ODS fact sheet specifically notes
-            that magnesium-containing products can decrease tetracycline absorption.
-          </p>
-          <p className="mt-3 text-sm text-zinc-500">
-            Source:{' '}
-            <a
-              href="https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-zinc-700"
-            >
-              Magnesium — Health Professional Fact Sheet
-            </a>{' '}
-            (NIH Office of Dietary Supplements)
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Bisphosphonates
-          </h2>
-          <div className="inline-block bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-1 rounded-full mb-3">
-            Moderate severity
-          </div>
-          <p>
-            Bisphosphonates — medications used for osteoporosis, including alendronate (Fosamax),
-            risedronate (Actonel), and ibandronate (Boniva) — are already poorly absorbed under
-            ideal conditions (typically less than 1% oral bioavailability). Magnesium, like calcium,
-            chelates bisphosphonate molecules in the gut and can further reduce what little
-            absorption occurs. Bisphosphonate prescribing guidelines call for taking the medication
-            with plain water and separating it from minerals, food, and other supplements.
-          </p>
-          <p className="mt-3 text-sm text-zinc-500">
-            Source:{' '}
-            <a
-              href="https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-zinc-700"
-            >
-              Magnesium — Health Professional Fact Sheet
-            </a>{' '}
-            (NIH Office of Dietary Supplements)
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Diuretics and magnesium depletion
-          </h2>
-          <p>
-            Loop diuretics (furosemide/Lasix, bumetanide) and thiazide diuretics (hydrochlorothiazide,
-            chlorthalidone) increase magnesium excretion in the urine, which can cause magnesium
-            deficiency over time — the interaction here is the diuretic depleting the supplement,
-            not the supplement reducing the drug.
+            Bisphosphonates — medications used for osteoporosis, including alendronate (Fosamax) and
+            risedronate (Actonel) — face a compounded problem: they are already poorly absorbed
+            under ideal conditions (typically less than 1% oral bioavailability). Magnesium, like
+            calcium, chelates bisphosphonate molecules in the gut and can reduce even that small
+            fraction further. Bisphosphonate prescribing guidelines call for taking the medication
+            with plain water, separated from minerals, food, and supplements — precisely because of
+            this sensitivity.
           </p>
           <p className="mt-3">
-            The NIH ODS fact sheet notes that long-term use of these diuretics is associated with
-            significant urinary magnesium losses, and that magnesium supplementation may be needed
-            in some patients on chronic loop or thiazide diuretic therapy.
-          </p>
-          <p className="mt-3 text-sm text-zinc-500">
-            Source:{' '}
-            <a
-              href="https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-zinc-700"
-            >
-              Magnesium — Health Professional Fact Sheet
-            </a>{' '}
-            (NIH Office of Dietary Supplements)
+            For all of these chelation-based interactions, timing is the key variable. The
+            interaction requires both substances to be in the gut simultaneously. Separating the
+            affected medication from magnesium by several hours is the standard clinical approach,
+            though the specific timing guidance should come from the prescribing information for the
+            medication in question.
           </p>
         </section>
 
         <section>
           <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Proton pump inhibitors
+            Interactions that deplete magnesium
           </h2>
           <p>
-            Long-term use of proton pump inhibitors (PPIs) — omeprazole (Prilosec), pantoprazole
-            (Protonix), esomeprazole (Nexium), and others — has been associated with hypomagnesemia
-            (low blood magnesium) in some patients, particularly after a year or more of use. The
-            mechanism is not fully understood but may involve impaired intestinal magnesium
-            transport. The FDA issued a safety communication about this in 2011, and it is noted
-            in PPI prescribing information.
-          </p>
-          <p className="mt-3 text-sm text-zinc-500">
-            Source:{' '}
-            <a
-              href="https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-zinc-700"
-            >
-              Magnesium — Health Professional Fact Sheet
-            </a>{' '}
-            (NIH Office of Dietary Supplements)
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            The practical pattern
-          </h2>
-          <p>
-            For the chelation-based interactions (antibiotics, bisphosphonates), the main variable
-            is timing. These interactions are concentration-dependent: both substances need to be
-            in the gut at the same time to bind. Separating the antibiotic or bisphosphonate from
-            magnesium-containing products by several hours is the standard clinical approach to
-            managing them, but the specific timing guidance should come from the prescribing
-            information for the medication in question.
+            Some medications reduce magnesium levels rather than the other way around. Loop
+            diuretics (furosemide, bumetanide) and thiazide diuretics (hydrochlorothiazide,
+            chlorthalidone) increase magnesium excretion in the urine, which can cause deficiency
+            over time. The NIH ODS fact sheet notes that long-term use of these diuretics is
+            associated with significant urinary magnesium losses, and that supplementation may be
+            appropriate in some patients on chronic diuretic therapy.
           </p>
           <p className="mt-3">
-            For the depletion interactions (diuretics, PPIs reducing magnesium), monitoring blood
-            magnesium levels and discussing whether supplementation is appropriate is a conversation
-            for the prescribing provider.
+            Long-term use of proton pump inhibitors (PPIs) — omeprazole, pantoprazole, esomeprazole,
+            and others — has been associated with hypomagnesemia (low blood magnesium) in some
+            patients, particularly after a year or more of continuous use. The mechanism is not fully
+            understood but may involve impaired intestinal magnesium transport. The FDA issued a
+            safety communication about this in 2011, and it is noted in PPI prescribing information.
+          </p>
+          <p className="mt-3">
+            Unlike the chelation interactions, these depletion effects are not about timing — they
+            develop gradually over months of use. Monitoring blood magnesium levels and discussing
+            whether supplementation is appropriate is a conversation for the prescribing provider.
           </p>
         </section>
+
+        <p className="text-sm text-zinc-500 mt-2">
+          Source:{' '}
+          <a
+            href="https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-zinc-700"
+          >
+            Magnesium — Health Professional Fact Sheet
+          </a>{' '}
+          (NIH Office of Dietary Supplements)
+        </p>
 
         <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
           <strong className="text-zinc-800">Check your stack:</strong> Enter magnesium alongside

@@ -37,117 +37,54 @@ export default function GinkgoBilobaDrugInteractions() {
       <div className="mt-8 space-y-6 text-zinc-700 leading-relaxed">
         <p>
           Ginkgo biloba is one of the most widely used herbal supplements globally, marketed
-          primarily for cognitive support and circulation. It is not pharmacologically inert.
-          Ginkgo contains two classes of active compounds — flavonoids and terpenoids — and the
-          terpenoid fraction, specifically the ginkgolides, has well-documented effects on platelet
-          function. These effects create real drug interactions.
+          primarily for cognitive support and circulation. It is not pharmacologically inert. Ginkgo
+          contains two classes of active compounds — flavonoids and terpenoids — and the terpenoid
+          fraction, specifically the ginkgolides, has well-documented effects on platelet function
+          that create real drug interactions for people on blood thinners.
         </p>
 
         <section>
           <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            The core mechanism: PAF antagonism and platelet inhibition
+            Bleeding risk with anticoagulants and antiplatelet drugs
           </h2>
           <p>
             Ginkgolide B is a potent antagonist of platelet-activating factor (PAF), a phospholipid
             mediator that triggers platelet aggregation at sites of vascular injury. By blocking PAF
             receptors on platelets, ginkgo reduces the tendency of platelets to clump together.
-            This antiplatelet effect is separate from the mechanisms targeted by common antiplatelet
-            drugs — aspirin inhibits COX-1, clopidogrel blocks the P2Y12 receptor — which means
-            combining ginkgo with these drugs inhibits platelet aggregation through multiple
-            independent pathways simultaneously.
+          </p>
+          <p className="mt-3">
+            The most clinically significant consequence is the additive effect when ginkgo is
+            combined with antiplatelet or anticoagulant drugs. Warfarin works by blocking vitamin
+            K-dependent clotting factor synthesis — a different mechanism from platelet aggregation.
+            Layering ginkgo&apos;s antiplatelet effect on top of warfarin&apos;s anticoagulation
+            impairs hemostasis through two independent pathways simultaneously, potentially
+            increasing bleeding risk beyond what either agent causes alone. NCCIH specifically flags
+            this interaction and recommends caution.
+          </p>
+          <p className="mt-3">
+            With aspirin and clopidogrel, the combination is antiplatelet on top of antiplatelet —
+            but through distinct mechanisms. Aspirin inhibits COX-1 in platelets, reducing
+            thromboxane A2 production. Clopidogrel blocks the P2Y12 ADP receptor. Ginkgo adds PAF
+            inhibition as a third pathway. Combining ginkgo with either of these drugs suppresses
+            platelet activation across more pathways than any one agent alone, with a corresponding
+            increase in bleeding risk — particularly relevant around surgical procedures, injuries,
+            or GI events. NCCIH notes this class of interaction specifically.
           </p>
         </section>
 
         <section>
           <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Warfarin and other anticoagulants
-          </h2>
-          <div className="inline-block bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-1 rounded-full mb-3">
-            Moderate severity
-          </div>
-          <p>
-            Warfarin prevents clot formation by blocking vitamin K-dependent clotting factor
-            synthesis — a different mechanism from platelet aggregation. When ginkgo&apos;s
-            antiplatelet effect is layered on top of warfarin&apos;s anticoagulation, the overall
-            hemostatic capacity is reduced through two separate pathways: impaired platelet function
-            and reduced clotting factor activity. The combined effect may increase bleeding risk
-            beyond what either agent produces alone.
-          </p>
-          <p className="mt-3">
-            NCCIH specifically flags ginkgo&apos;s interaction with anticoagulants and recommends
-            caution. People on warfarin or other anticoagulants (apixaban, rivaroxaban, dabigatran)
-            who use ginkgo should ensure their prescriber is aware of both.
-          </p>
-          <p className="mt-3 text-sm text-zinc-500">
-            Source:{' '}
-            <a
-              href="https://www.nccih.nih.gov/health/ginkgo-biloba"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-zinc-700"
-            >
-              Ginkgo — Herbs at a Glance
-            </a>{' '}
-            (NCCIH)
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Aspirin and clopidogrel: additive antiplatelet effects
-          </h2>
-          <div className="inline-block bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-1 rounded-full mb-3">
-            Moderate severity
-          </div>
-          <p>
-            Aspirin irreversibly inhibits COX-1 in platelets, reducing thromboxane A2 production
-            (a platelet activator). Clopidogrel and related drugs (prasugrel, ticagrelor)
-            irreversibly or reversibly block the P2Y12 ADP receptor. Both are already strong
-            antiplatelet agents individually.
-          </p>
-          <p className="mt-3">
-            Ginkgo inhibits a third pathway — PAF-mediated activation. Combining ginkgo with
-            aspirin or clopidogrel adds PAF inhibition on top of COX-1 or P2Y12 inhibition,
-            broadening platelet suppression across more activation pathways. The clinical
-            consequence is an increased risk of bleeding, particularly in contexts where platelet
-            function already matters: surgical procedures, injuries, or GI events.
-          </p>
-          <p className="mt-3">
-            NCCIH notes this class of interaction specifically, recommending caution when ginkgo
-            is used alongside any antiplatelet or anticoagulant drug.
-          </p>
-          <p className="mt-3 text-sm text-zinc-500">
-            Source:{' '}
-            <a
-              href="https://www.nccih.nih.gov/health/ginkgo-biloba"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-zinc-700"
-            >
-              Ginkgo — Herbs at a Glance
-            </a>{' '}
-            (NCCIH)
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Seizure threshold and antiepileptic drugs
+            Seizure risk and antiepileptic drugs
           </h2>
           <p>
-            Ginkgo seeds contain ginkgotoxin (4-O-methylpyridoxine), a compound that is a
-            functional vitamin B6 antagonist and can lower seizure threshold. Ginkgo extracts
-            standardized for flavonoid/terpenoid content generally do not contain meaningful
-            amounts of ginkgotoxin — it is concentrated in the seeds, not the leaf extract used
-            in most supplements.
-          </p>
-          <p className="mt-3">
-            However, NCCIH notes that seizures have been reported with ginkgo use, particularly
-            in people with pre-existing seizure disorders. People taking antiepileptic drugs
-            (valproate, lamotrigine, levetiracetam, phenytoin) may be at elevated risk if ginkgo
-            use destabilizes seizure control. This interaction is less certain than the
-            antiplatelet effects, but the risk is notable enough to warrant disclosure to a
-            neurologist for anyone on antiepileptics.
+            Ginkgo seeds contain ginkgotoxin (4-O-methylpyridoxine), a compound that functions as
+            a vitamin B6 antagonist and can lower seizure threshold. Most commercial ginkgo leaf
+            extracts contain minimal ginkgotoxin — it concentrates in the seeds, not the leaf —
+            but NCCIH notes that seizures have been reported with ginkgo use, particularly in people
+            with pre-existing seizure disorders. Anyone taking antiepileptic medications (valproate,
+            lamotrigine, levetiracetam, phenytoin) who also uses ginkgo should disclose this to
+            their neurologist, since even a modest reduction in seizure threshold can destabilize
+            otherwise-controlled epilepsy.
           </p>
         </section>
 
@@ -157,12 +94,25 @@ export default function GinkgoBilobaDrugInteractions() {
           </h2>
           <p>
             Ginkgo&apos;s antiplatelet effects are directly relevant to surgery. Like aspirin, fish
-            oil, and garlic, ginkgo is commonly listed among supplements to stop before elective
-            procedures. The American Society of Anesthesiologists includes ginkgo in its standard
-            preoperative supplement review list, though specific timelines for stopping vary by
-            clinical context.
+            oil, and garlic, ginkgo is commonly included in the list of supplements to review before
+            elective procedures. The American Society of Anesthesiologists includes ginkgo in its
+            standard preoperative supplement review list, though specific timelines for stopping
+            vary by clinical context and should be confirmed with the surgical team.
           </p>
         </section>
+
+        <p className="text-sm text-zinc-500 mt-2">
+          Source:{' '}
+          <a
+            href="https://www.nccih.nih.gov/health/ginkgo-biloba"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-zinc-700"
+          >
+            Ginkgo — Herbs at a Glance
+          </a>{' '}
+          (NCCIH)
+        </p>
 
         <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
           <strong className="text-zinc-800">Check your stack:</strong> Enter ginkgo biloba

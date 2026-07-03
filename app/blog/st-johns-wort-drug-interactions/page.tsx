@@ -37,14 +37,10 @@ export default function SJWInteractions() {
       <div className="mt-8 space-y-6 text-zinc-700 leading-relaxed">
         <p>
           St. John&apos;s Wort (<em>Hypericum perforatum</em>) is one of the most widely used
-          herbal supplements. It also has one of the most extensively documented interaction
-          profiles of any supplement — a combination that makes it worth understanding in detail if
-          you&apos;re taking any medications.
-        </p>
-
-        <p>
-          Three interactions show up repeatedly in the clinical literature and are well-supported by
-          mechanistic evidence. All three are worth knowing about.
+          herbal supplements, and it has one of the most extensively documented interaction profiles
+          of any supplement — a combination that makes it worth understanding in detail if
+          you&apos;re taking any medications. Three interactions show up consistently in the clinical
+          literature and are well-supported by mechanistic evidence.
         </p>
 
         <section>
@@ -53,132 +49,73 @@ export default function SJWInteractions() {
           </h2>
           <p>
             Most St. John&apos;s Wort interactions trace to a single mechanism: it strongly induces
-            the CYP3A4 enzyme system, part of the liver&apos;s drug-metabolizing machinery.
-            Elevated CYP3A4 activity speeds up the breakdown of a wide range of medications,
-            lowering their circulating blood levels and potentially reducing their effectiveness.
-            CYP3A4 is involved in metabolizing roughly 50% of currently prescribed drugs, which is
-            why St. John&apos;s Wort&apos;s interaction profile is so broad.
+            CYP3A4, a liver enzyme central to metabolizing a large fraction of prescription drugs.
+            Elevated CYP3A4 activity speeds up the breakdown of affected medications, lowering their
+            blood levels and potentially reducing their effectiveness.
           </p>
           <p className="mt-3">
-            A second mechanism — serotonin reuptake inhibition — explains its interactions with
-            psychiatric medications specifically.
+            The most clinically significant application of this mechanism is with warfarin. CYP3A4
+            induction accelerates warfarin metabolism, lowering drug levels and reducing
+            anticoagulant effect. Documented cases of unstable INR in people using both concurrently
+            appear consistently across the interaction literature — this is among the most
+            reproducible herb-drug interactions known. INR instability with warfarin carries real
+            clinical risk; anyone on warfarin and considering St. John&apos;s Wort should discuss
+            it with their prescriber.
+          </p>
+          <p className="mt-3">
+            The same CYP3A4 mechanism applies to oral contraceptives. St. John&apos;s Wort may
+            reduce circulating hormone levels, potentially affecting contraceptive effectiveness.
+            Case reports have documented breakthrough bleeding and unintended pregnancies in people
+            using both. Because CYP3A4 is involved in metabolizing roughly half of currently
+            prescribed drugs, the potential list extends further — cyclosporine, HIV antiretrovirals,
+            and certain chemotherapy agents have all been reported. A pharmacist can check a specific
+            medication list against the known CYP3A4 substrate list.
           </p>
         </section>
 
         <section>
           <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Warfarin (Coumadin)
+            SSRIs and serotonin syndrome
           </h2>
-          <div className="inline-block bg-red-100 text-red-800 text-xs font-medium px-2.5 py-1 rounded-full mb-3">
-            High severity
-          </div>
           <p>
-            St. John&apos;s Wort has been associated with decreased anticoagulation effect in
-            people taking warfarin, with documented cases of unstable INR values. The CYP3A4
-            induction accelerates warfarin metabolism, lowering drug levels in the blood. This is
-            among the most consistently reported herb-drug interactions in the pharmacokinetics
-            literature.
+            St. John&apos;s Wort also inhibits the reuptake of serotonin, dopamine, and
+            norepinephrine — overlapping with how SSRI antidepressants work. Combining it with an
+            SSRI may push serotonin activity beyond the intended therapeutic range. Serotonin
+            syndrome, the clinical consequence, ranges from mild (shivering, restlessness, diarrhea)
+            to severe (fever, rapid heart rate, muscle rigidity, seizures).
           </p>
           <p className="mt-3">
-            INR instability with warfarin carries real clinical risk. People taking warfarin and
-            using St. John&apos;s Wort concurrently should discuss this with the prescribing
-            provider or pharmacist.
-          </p>
-          <p className="mt-3 text-sm text-zinc-500">
-            Source:{' '}
-            <a
-              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2483264/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-zinc-700"
-            >
-              Clinically relevant safety issues associated with St. John&apos;s wort product labels
-            </a>{' '}
-            (PMC / peer-reviewed)
+            Unlike the warfarin interaction, where the concern is reduced drug efficacy, the risk
+            here is excess pharmacological effect. The combination is generally considered one to
+            avoid rather than monitor, and is not recommended in clinical guidelines.
           </p>
         </section>
 
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            SSRIs (selective serotonin reuptake inhibitors)
-          </h2>
-          <div className="inline-block bg-red-100 text-red-800 text-xs font-medium px-2.5 py-1 rounded-full mb-3">
-            High severity
-          </div>
-          <p>
-            St. John&apos;s Wort inhibits the reuptake of serotonin, dopamine, and norepinephrine
-            — the same mechanism as SSRI antidepressants. Combining it with an SSRI may push
-            serotonin levels beyond the intended therapeutic range, with a risk of serotonin
-            syndrome. Serotonin syndrome ranges from mild (shivering, diarrhea, restlessness) to
-            severe (fever, rapid heart rate, muscle rigidity, seizures).
-          </p>
-          <p className="mt-3">
-            This interaction is considered one to actively avoid rather than simply monitor. The
-            combination is generally not recommended.
-          </p>
-          <p className="mt-3 text-sm text-zinc-500">
-            Source:{' '}
-            <a
-              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12420457/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-zinc-700"
-            >
-              The Effects of St. John&apos;s Wort and its Interactions with SSRI&apos;s
-            </a>{' '}
-            (European Psychiatry / peer-reviewed)
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Oral contraceptives
-          </h2>
-          <div className="inline-block bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-1 rounded-full mb-3">
-            Moderate severity
-          </div>
-          <p>
-            The CYP3A4 induction mechanism also applies to the hormones in oral contraceptives.
-            St. John&apos;s Wort may reduce their circulating levels, potentially affecting
-            effectiveness. Case reports have documented breakthrough bleeding and unintended
-            pregnancies in people using both concurrently.
-          </p>
-          <p className="mt-3 text-sm text-zinc-500">
-            Source:{' '}
-            <a
-              href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2483264/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-zinc-700"
-            >
-              Clinically relevant safety issues associated with St. John&apos;s wort product labels
-            </a>{' '}
-            (PMC / peer-reviewed)
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Beyond these three
-          </h2>
-          <p>
-            Because CYP3A4 is involved in metabolizing a large fraction of prescription drugs,
-            St. John&apos;s Wort&apos;s potential interaction list extends well beyond these three
-            examples. Cyclosporine (an immunosuppressant), HIV antiretrovirals, and certain
-            chemotherapy agents have all been reported in interaction literature. The three above
-            are the ones with the most consistent documentation and clearest mechanistic
-            explanation.
-          </p>
-          <p className="mt-3">
-            If you&apos;re taking any prescription medication and considering St. John&apos;s Wort,
-            a pharmacist can check your specific medication list against the known CYP3A4 substrate
-            list.
-          </p>
-        </section>
+        <div className="mt-8 text-sm text-zinc-500">
+          Sources:{' '}
+          <a
+            href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2483264/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-zinc-700"
+          >
+            Clinically relevant safety issues associated with St. John&apos;s wort product labels
+          </a>{' '}
+          (PMC / peer-reviewed);{' '}
+          <a
+            href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12420457/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-zinc-700"
+          >
+            The Effects of St. John&apos;s Wort and its Interactions with SSRIs
+          </a>{' '}
+          (European Psychiatry / peer-reviewed)
+        </div>
 
         <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
-          <strong className="text-zinc-800">Check your stack:</strong> You can enter St. John&apos;s
-          Wort along with your other supplements and medications in the{' '}
+          <strong className="text-zinc-800">Check your stack:</strong> Enter St. John&apos;s Wort
+          along with your other supplements and medications in the{' '}
           <Link href="/" className="underline hover:text-zinc-800">
             StackVerify checker
           </Link>{' '}
