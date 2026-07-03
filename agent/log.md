@@ -339,3 +339,77 @@ All 3 dataset entries and both blog posts from the Entry 4 backlog had well-sour
   - Vitamin E + warfarin — vitamin E in high doses has antiplatelet effects; often listed alongside fish oil / garlic in anticoagulation literature. Source: NIH ODS Vitamin E.
 - Analytics/GSC: still waiting on Kim to confirm GSC verification is complete and sitemap submitted. No traffic data available yet to inform content prioritization.
 - Build should pass: all new content follows identical TSX pattern, no new dependencies, JSON is valid.
+
+---
+
+## Human note — 2026-07-01 (from Kim, not the agent)
+
+**Analytics and Search Console status (unblocking previous journal items):**
+- Vercel Web Analytics is now live and tracking. The `<Analytics />`
+  component is deployed and data is flowing to the Vercel dashboard.
+- Google Search Console is verified (HTML tag method, confirmed). Sitemap
+  at `https://stackverify.app/sitemap.xml` has been submitted and Google
+  confirmed 11 pages discovered. Indexing is underway — no further action
+  needed on this front. Do not add this to the "blocked" list in future
+  journal entries; it is resolved.
+
+**Blog writing style — apply to all new posts and retroactively fix existing ones:**
+
+The blog posts need a writing style overhaul. The content and sourcing are
+solid, but the format makes them hard to read. Apply these rules to all new
+posts going forward, and retroactively fix existing posts when you have
+spare turns after content work.
+
+The core problem: structure is doing the work that prose should do. Every
+interaction gets its own bold header + severity label + source line, which
+makes the reader stop and re-orient constantly. It reads like a database
+with narrative bolted on. Write actual articles instead.
+
+Specific rules:
+
+1. No headed section per interaction. Headers are for genuinely distinct
+   topics within a post (e.g. "Absorption interactions" vs "Depletion
+   interactions"). Not for each individual drug or substance. Discuss
+   specific substances as named examples within flowing paragraphs.
+
+2. Explain jargon immediately or don't use it. "Divalent cation" is fine
+   if the next clause explains what that means in plain terms. Don't
+   introduce a technical term and then use it freely two paragraphs later
+   as if the reader now knows it. Pick a level of technicality and stay
+   there throughout the post.
+
+3. No severity badges inline. If severity matters, work it into the
+   sentence: "The most clinically significant of these is the interaction
+   with fluoroquinolone antibiotics..." not a standalone "Moderate severity"
+   line under a header.
+
+4. Avoid these specific patterns:
+   - "can not" → always "cannot"
+   - Sentences starting with "This is" or "This means"
+   - "It is worth noting that..." / "It is important to note that..."
+   - Passive where active is natural: "magnesium chelates the drug" not
+     "the drug is chelated by magnesium"
+   - Long parenthetical lists of brand names mid-sentence — pick the most
+     common one: "ciprofloxacin (and other fluoroquinolones)" not
+     "(ciprofloxacin, levofloxacin, moxifloxacin, Avelox, Levaquin...)"
+
+5. Write a real introduction. One paragraph that tells the reader why this
+   topic matters and what they'll understand by the end. Something a person
+   might actually want to read.
+
+6. Handle sources cleanly. Either fold the citation into a sentence
+   ("...as documented in the NIH ODS magnesium fact sheet") or collect
+   sources in a brief section at the end. Don't repeat "Source: NIH ODS..."
+   after every interaction.
+
+7. Target reader: smart and curious, not a pharmacist. Don't over-explain
+   basics, but don't assume clinical knowledge either.
+
+The magnesium post is the clearest example of what to fix — correct
+information, wrong structure. A rewritten version would have 2-3 headers
+instead of 6, sources folded into prose, and would read as a coherent
+article rather than a formatted reference sheet.
+
+---
+
+

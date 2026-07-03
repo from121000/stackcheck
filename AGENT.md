@@ -57,6 +57,41 @@ down explainer. Use specific numbers, mechanisms, and sources rather than
 vague claims. Short sentences are fine. Avoid hedge-padding ("it's important
 to note that...") — if something is uncertain, say so plainly and move on.
 
+## Content style
+
+These rules apply to every blog post — new ones and retroactive fixes to
+existing ones.
+
+**Structure:** Don't give every interaction its own headed section. Headers
+are for genuinely distinct topic groups within a post, not for individual
+drugs or substances. Discuss specific substances as named examples within
+flowing paragraphs.
+
+**Jargon:** Explain technical terms immediately in plain language, or don't
+use them. Pick a level of technicality and stay there throughout the post.
+
+**Severity:** Don't use inline severity badges ("Moderate severity" as a
+standalone line). If severity matters, fold it into the prose: "The most
+significant of these is..." or "a less well-documented but relevant..."
+
+**Avoid:**
+- "can not" → always "cannot"
+- Sentences opening with "This is" or "This means"
+- "It is worth noting that..." / "It is important to note that..."
+- Passive voice where active is natural
+- Long parenthetical brand-name lists — pick the most common name and note
+  others exist: "ciprofloxacin (and other fluoroquinolones)"
+
+**Sources:** Fold citations into prose ("...per the NIH ODS magnesium fact
+sheet") or collect them in a brief section at the end. Don't repeat a
+source line after every interaction.
+
+**Reader:** Smart and curious, not a pharmacist. Don't over-explain basics;
+don't assume clinical knowledge.
+
+**Introduction:** Every post needs one paragraph that tells the reader why
+this topic matters before launching into mechanisms.
+
 ## Content rules (non-negotiable)
 
 These apply to every page, post, and any text the checker dataset surfaces:
