@@ -442,3 +442,50 @@ What this means for your priorities:
   a signal to change anything.
 
 ---
+
+## Entry 6 — 2026-07-03 (sixth autonomous run)
+
+**State at start:**
+- 11 blog posts, 23 dataset entries (from Entry 5)
+- Kim's 2026-07-03 human note: confirmed real organic traffic within 48 hours — 23 unique visitors, 45 page views, Google and Bing referrers. Strategy working. Keep going.
+- Kim's 2026-07-01 style note (now in AGENT.md) flagged retroactive post rewrites as a priority
+- GSC and analytics fully resolved — not blocked on anything
+- Entry 5 backlog: 3 dataset entries (red yeast rice + statins, ginkgo + seizures, vitamin E + warfarin) and 2 blog posts (melatonin/fluvoxamine standalone, vitamin E interactions)
+
+**What I decided to do and why:**
+Two parallel priorities this run:
+1. Content volume — the early traffic confirms the blog post strategy is working; every indexed page now has more runway within the 30-day window. Completed the Entry 5 dataset and blog backlog.
+2. Retroactive style fixes — Kim's post-Entry 5 note and AGENT.md both call for fixing existing posts (per-interaction headers, severity badges, repeated sources). The 4 most-visited pages were all in the old style and getting real traffic. Fixed those.
+
+**What I actually did (2 commits, both pushed):**
+
+**Commit 1 — Dataset + new blog posts:**
+- 3 new dataset entries (26 total):
+  - `red-yeast-rice-statins`: monacolin K = lovastatin pharmacologically; HIGH severity double-dosing risk. Source: NCCIH Red Yeast Rice.
+  - `ginkgo-seizure-medications`: ginkgotoxin seizure threshold concern with antiepileptics. Source: NCCIH Ginkgo.
+  - `vitamin-e-warfarin`: high-dose antiplatelet effects potentiate warfarin. Source: NIH ODS Vitamin E.
+- 2 new blog posts (13 total), both written in correct style (no per-interaction headers, no severity badges, sources in prose or single end section):
+  - `melatonin-fluvoxamine-interaction`: standalone post for the specific "fluvoxamine melatonin" query; covers CYP1A2 mechanism, ~17x level increase, why other SSRIs don't have this effect.
+  - `vitamin-e-blood-thinners`: covers dose-dependent antiplatelet effects, warfarin potentiation, absorption interactions (cholestyramine, orlistat).
+
+**Commit 2 — Retroactive style fixes (4 posts):**
+- `magnesium-drug-interactions`: collapsed 6 H2 headers into 2 ("Absorption interactions: chelation" + "Interactions that deplete magnesium"). Removed 5 repeated source lines, consolidated to one. Removed 3 severity badges. Fixed "can not" → "cannot".
+- `ginkgo-biloba-drug-interactions`: collapsed 5 H2 headers into 3 ("Bleeding risk..." + "Seizure risk..." + "Surgical context"). Removed 2 severity badges. Single source at end.
+- `fish-oil-blood-thinners`: collapsed 5 H2 headers into 3. Removed 1 severity badge. Removed inline source, moved to end. Fixed "It is worth knowing" construction.
+- `st-johns-wort-drug-interactions`: collapsed 5 H2 headers into 2 ("The primary mechanism" + "SSRIs and serotonin syndrome"). Removed 3 severity badges. Consolidated 2 sources into a single end section.
+
+**What the next run should know:**
+- 13 blog posts, 26 dataset entries.
+- All 4 highest-traffic posts are now in the correct style. Remaining posts still in old style: vitamin-d-drug-interactions, calcium-supplement-interactions, potassium-and-medications, melatonin-drug-interactions, garlic-supplement-interactions, supplement-interactions-with-statins, iron-levothyroxine-interaction. Next run should continue retrofitting these when there are spare turns.
+- "red yeast rice" + "simvastatin" (or any statin) now matches `red-yeast-rice-statins` (HIGH severity). "valproate" or "phenytoin" + "ginkgo" now matches `ginkgo-seizure-medications`. "vitamin e" + "warfarin" now matches `vitamin-e-warfarin`.
+- Good next blog candidates:
+  - "red yeast rice and statins" standalone — the HIGH severity monacolin K = lovastatin story is compelling and warrants its own URL beyond the existing statin post
+  - "coq10 and statins" — modest interaction (depletion), some search volume, easy to write accurately
+  - "garlic supplement interactions" needs style fix too — it's in the old format
+- Good next dataset entries:
+  - Vitamin E + antiplatelet drugs (aspirin, clopidogrel) — the existing entry covers warfarin; could add a separate entry for the broader antiplatelet category
+  - Berberine + medications (CYP3A4 inhibition, blood sugar interactions with diabetes meds) — growing supplement search volume
+- Kim noted the checker (/) is getting the most traffic (19/23 visitors). If there are spare turns and no high-value content work, reviewing checker UX improvements would be worthwhile.
+- Analytics/GSC: fully resolved. No blockers.
+
+---
