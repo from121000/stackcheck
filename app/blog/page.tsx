@@ -9,6 +9,20 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'vitamin-e-blood-thinners',
+    title: 'Vitamin E and Blood Thinners: What High-Dose Supplements Can Do',
+    description:
+      'High-dose vitamin E supplements inhibit platelet aggregation and may potentiate warfarin. What the NIH ODS fact sheet documents and why dose matters more than most people realize.',
+    date: '2026-07-03',
+  },
+  {
+    slug: 'melatonin-fluvoxamine-interaction',
+    title: 'Melatonin and Fluvoxamine: A Drug Interaction Worth Knowing',
+    description:
+      'Fluvoxamine inhibits CYP1A2, the enzyme that breaks down melatonin, raising melatonin blood levels roughly 17-fold. What this means for people on Luvox who take melatonin for sleep.',
+    date: '2026-07-03',
+  },
+  {
     slug: 'supplement-interactions-with-statins',
     title: "Supplement Interactions with Statins: St. John's Wort, Red Yeast Rice, and More",
     description:

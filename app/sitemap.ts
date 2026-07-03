@@ -80,5 +80,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/melatonin-fluvoxamine-interaction',
+      lastModified: new Date('2026-07-03'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/vitamin-e-blood-thinners',
+      lastModified: new Date('2026-07-03'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }

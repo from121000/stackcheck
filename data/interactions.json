@@ -438,6 +438,63 @@
         }
       ],
       "last_reviewed": "2026-07-02"
+    },
+    {
+      "id": "red-yeast-rice-statins",
+      "a": "red yeast rice",
+      "b": "statins",
+      "aliases_a": ["red rice yeast", "monascus purpureus", "cholestin"],
+      "aliases_b": ["simvastatin", "zocor", "lovastatin", "mevacor", "atorvastatin", "lipitor", "rosuvastatin", "crestor", "pitavastatin", "pravastatin", "statin"],
+      "category": "supplement-medication",
+      "severity": "high",
+      "mechanism": "Red yeast rice contains monacolin K, a compound chemically identical to lovastatin — a prescription statin. Taking red yeast rice alongside a prescription statin is pharmacologically equivalent to taking two statins simultaneously, multiplying the effective dose and the associated risk of myopathy and rhabdomyolysis.",
+      "summary": "Red yeast rice contains monacolin K, which is chemically identical to the prescription statin lovastatin. Combining it with any statin medication results in an unintended additive statin dose, substantially increasing the risk of muscle damage (myopathy or rhabdomyolysis). NCCIH flags this as a serious interaction.",
+      "sources": [
+        {
+          "title": "Red Yeast Rice",
+          "url": "https://www.nccih.nih.gov/health/red-yeast-rice",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-03"
+    },
+    {
+      "id": "ginkgo-seizure-medications",
+      "a": "ginkgo biloba",
+      "b": "antiepileptic drugs",
+      "aliases_a": ["ginkgo", "ginkgo extract", "EGb 761"],
+      "aliases_b": ["valproate", "valproic acid", "depakote", "phenytoin", "dilantin", "lamotrigine", "lamictal", "levetiracetam", "keppra", "carbamazepine", "tegretol", "antiepileptic", "anticonvulsant", "seizure medication"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Ginkgo seeds contain ginkgotoxin (4-O-methylpyridoxine), a vitamin B6 antagonist that can lower seizure threshold. Although most commercial ginkgo leaf extracts contain minimal ginkgotoxin, case reports of seizures in people with pre-existing seizure disorders suggest ginkgo may destabilize seizure control.",
+      "summary": "Ginkgo biloba use has been associated with seizures, particularly in people with pre-existing seizure disorders. NCCIH recommends that people taking antiepileptic medications use caution with ginkgo and disclose its use to their prescriber.",
+      "sources": [
+        {
+          "title": "Ginkgo — Herbs at a Glance",
+          "url": "https://www.nccih.nih.gov/health/ginkgo-biloba",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-03"
+    },
+    {
+      "id": "vitamin-e-warfarin",
+      "a": "vitamin e",
+      "b": "warfarin",
+      "aliases_a": ["tocopherol", "alpha-tocopherol", "vitamin e supplement", "mixed tocopherols"],
+      "aliases_b": ["coumadin"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "High doses of vitamin E (above approximately 400 IU/day) inhibit platelet aggregation and may interfere with vitamin K-dependent clotting factor activity, creating additive bleeding risk when combined with warfarin's anticoagulant effect.",
+      "summary": "High-dose vitamin E supplements may increase bleeding risk when combined with warfarin. The NIH ODS Vitamin E fact sheet notes that large supplemental doses can inhibit platelet aggregation and may potentiate the anticoagulant effect of warfarin. Dietary amounts of vitamin E are unlikely to be clinically significant.",
+      "sources": [
+        {
+          "title": "Vitamin E — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-03"
     }
   ]
 }
