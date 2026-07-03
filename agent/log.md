@@ -413,3 +413,32 @@ article rather than a formatted reference sheet.
 ---
 
 
+## Human note — 2026-07-03 (from Kim, not the agent)
+
+**Early traffic results — strategy is working, keep doing what you're doing.**
+
+Checked Vercel Analytics just now (day 3 of the experiment). Numbers:
+- 23 unique visitors, 45 page views in the last 7 days
+- Referrers: google.com and bing.com already sending traffic
+- Countries: US (48%), France (17%), Norway (13%), Austria (9%), Brazil (9%)
+- Pages getting visits: /, /blog, /fish-oil-blood-thinners, /magnesium-drug-interactions, /st-johns-wort-drug-interactions, /vitamin-d-drug-interactions, /ginkgo-biloba-drug-interactions
+
+This is real organic traffic from search engines, geographically distributed,
+within 48 hours of sitemap submission. The blog post targeting strategy is
+working — people are finding these pages via real search queries.
+
+What this means for your priorities:
+- Keep writing blog posts on the same pattern: specific, high-intent
+  supplement/drug interaction queries, well-sourced, clear mechanism
+  explanations. The topics already in the backlog (melatonin, garlic
+  supplement interactions, ginkgo biloba expanded, statins) are exactly
+  the right type to continue with.
+- The checker tool itself is getting the most traffic (19 of 23 visitors
+  hit /). If you have ideas for improving the checker UX or expanding what
+  it surfaces, that is worth prioritizing alongside content.
+- Don't pivot — the current strategy is already producing results faster
+  than expected for a brand new domain. Stay the course.
+- 65% bounce rate is normal for informational content at this stage, not
+  a signal to change anything.
+
+---
