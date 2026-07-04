@@ -38,176 +38,96 @@ export default function CalciumSupplementInteractions() {
         <p>
           Calcium is among the most commonly taken supplements — bone health, osteoporosis
           prevention, dietary gaps. It is also one of the minerals most likely to interfere with
-          medication absorption, and it does so through a simple, predictable mechanism: calcium
-          ions bind to certain drug molecules in the gastrointestinal tract before they can be
-          absorbed, forming insoluble complexes that pass through without entering the bloodstream.
-          This is called chelation.
-        </p>
-        <p>
-          The practical consequence: the drug is present but not bioavailable. A medication that
-          is chelated may act as though a smaller dose was taken.
+          medication absorption. The mechanism is straightforward: calcium ions bind to certain drug
+          molecules in the gastrointestinal tract before they can be absorbed, forming insoluble
+          complexes that pass through without entering the bloodstream. This is called chelation.
+          The practical consequence is that the drug is present but not bioavailable — a medication
+          that is chelated may act as though a smaller dose was taken.
         </p>
 
         <section>
           <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Bisphosphonates — osteoporosis medications
+            Chelation: when calcium prevents drug absorption
           </h2>
-          <div className="inline-block bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-1 rounded-full mb-3">
-            Moderate severity
-          </div>
           <p>
-            Bisphosphonates — alendronate (Fosamax), risedronate (Actonel), ibandronate (Boniva),
-            and zoledronic acid (oral form) — are first-line medications for osteoporosis. They
-            are already poorly absorbed under ideal conditions: oral bioavailability is typically
-            under 1% when taken correctly (fasting, with plain water, upright for 30 minutes).
+            The most clinically important calcium chelation interaction is with bisphosphonates —
+            alendronate (Fosamax), risedronate (Actonel), ibandronate (Boniva) — which are
+            first-line medications for osteoporosis. Bisphosphonates are already poorly absorbed
+            under ideal conditions: oral bioavailability is typically under 1% when taken correctly
+            (fasting, with plain water, upright for 30 minutes). Calcium chelates bisphosphonate
+            molecules in the gut and can further reduce this already-low absorption. Bisphosphonate
+            prescribing guidelines explicitly state the medication should not be taken within
+            30–120 minutes of calcium supplements, depending on the specific drug. Since the target
+            population for bisphosphonates is the same population most likely to take calcium
+            supplements, this is a clinically important timing conflict.
           </p>
           <p className="mt-3">
-            Calcium chelates bisphosphonate molecules in the gut and can further reduce this
-            already-low absorption. Bisphosphonate prescribing guidelines explicitly state that
-            the medication should not be taken within 30–120 minutes of calcium supplements
-            (depending on the specific drug). Since the target population for bisphosphonates
-            — people with osteoporosis or low bone density — is the same population most likely
-            to take calcium supplements, this is a clinically important timing conflict.
-          </p>
-          <p className="mt-3 text-sm text-zinc-500">
-            Source:{' '}
-            <a
-              href="https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-zinc-700"
-            >
-              Calcium — Health Professional Fact Sheet
-            </a>{' '}
-            (NIH Office of Dietary Supplements)
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Levothyroxine — thyroid medication
-          </h2>
-          <div className="inline-block bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-1 rounded-full mb-3">
-            Moderate severity
-          </div>
-          <p>
-            Levothyroxine (Synthroid, generic) is the standard treatment for hypothyroidism.
-            Its absorption from the gut is sensitive to interference: it should be taken on an
-            empty stomach, and several substances are known to reduce how much of it reaches
-            the bloodstream.
+            Levothyroxine (Synthroid, generic) is similarly affected. Calcium ions bind
+            levothyroxine in the GI tract, reducing how much of it reaches the bloodstream —
+            the same mechanism as iron reducing levothyroxine absorption. Both are common in
+            hypothyroid patients. The NIH ODS calcium fact sheet notes this interaction.
           </p>
           <p className="mt-3">
-            Calcium is one of them. Calcium ions bind levothyroxine in the GI tract, reducing
-            absorption and potentially lowering the effective dose. This is the same mechanism
-            as iron reducing levothyroxine absorption — both are common in hypothyroid patients
-            (iron deficiency is more prevalent in hypothyroidism, and calcium supplements are
-            common in the demographic that develops hypothyroidism). The NIH ODS calcium fact
-            sheet notes this interaction.
-          </p>
-          <p className="mt-3">
-            The standard clinical approach is to take levothyroxine separately from calcium
-            supplements by several hours — but the specific guidance should come from the
-            prescribing provider, since it depends on the individual&apos;s TSH stability and
-            current dose.
-          </p>
-          <p className="mt-3 text-sm text-zinc-500">
-            Source:{' '}
-            <a
-              href="https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-zinc-700"
-            >
-              Calcium — Health Professional Fact Sheet
-            </a>{' '}
-            (NIH Office of Dietary Supplements)
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Fluoroquinolone and tetracycline antibiotics
-          </h2>
-          <div className="inline-block bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-1 rounded-full mb-3">
-            Moderate severity
-          </div>
-          <p>
-            Calcium chelates fluoroquinolone antibiotics (ciprofloxacin, levofloxacin, moxifloxacin)
-            and tetracyclines (doxycycline, minocycline) in the GI tract, reducing their
-            bioavailability. This is the same mechanism seen with magnesium, zinc, and iron and
-            the same drug classes — all divalent or trivalent cations bind these antibiotics.
-          </p>
-          <p className="mt-3">
-            The concern here is acute rather than chronic: it applies during a course of antibiotics,
-            where missing doses or reducing bioavailability could affect whether an infection is
-            adequately treated. The prescribing information for both fluoroquinolones and
-            tetracyclines includes warnings about concurrent use with calcium-containing products
+            Calcium also chelates fluoroquinolone antibiotics (ciprofloxacin and other
+            fluoroquinolones) and tetracyclines (doxycycline, minocycline), reducing their
+            bioavailability. The same mechanism applies with magnesium, zinc, and iron — all
+            divalent or trivalent cations bind these antibiotics. The concern here is acute: it
+            applies during a course of antibiotics, where reduced bioavailability could affect
+            whether an infection is adequately treated. Prescribing information for both drug
+            classes includes warnings about concurrent use with calcium-containing products
             including antacids and dairy.
           </p>
-          <p className="mt-3 text-sm text-zinc-500">
-            Source:{' '}
-            <a
-              href="https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-zinc-700"
-            >
-              Calcium — Health Professional Fact Sheet
-            </a>{' '}
-            (NIH Office of Dietary Supplements)
+          <p className="mt-3">
+            For all chelation-based interactions, the main lever is timing. These interactions
+            require both substances to be in the gut simultaneously. Separating the medication from
+            the calcium supplement by two or more hours typically avoids most of the interaction —
+            which is why bisphosphonate and levothyroxine prescribing instructions emphasize morning
+            dosing on an empty stomach, before supplements are taken.
           </p>
         </section>
 
         <section>
           <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Iron absorption — supplement–supplement interaction
+            Iron absorption: a supplement–supplement interaction
           </h2>
           <p>
             Calcium reduces non-heme iron absorption from both food and supplements when taken
             together. The mechanism is not purely chelation — it appears to involve competition
             at the intestinal transporter level — but the practical effect is similar: less iron
-            absorbed per dose when calcium is present. This matters for people trying to correct
-            iron deficiency while also taking calcium.
+            is absorbed per dose when calcium is present. This matters for people trying to correct
+            iron deficiency while also taking calcium. The NIH ODS iron fact sheet notes that
+            taking calcium supplements with iron supplements at the same time may reduce iron
+            absorption.
           </p>
           <p className="mt-3">
-            The NIH ODS iron fact sheet notes that taking calcium supplements with iron supplements
-            at the same time may reduce iron absorption. Separating them by a few hours is the
-            standard recommendation.
-          </p>
-          <p className="mt-3 text-sm text-zinc-500">
-            Source:{' '}
-            <a
-              href="https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-zinc-700"
-            >
-              Calcium — Health Professional Fact Sheet
-            </a>{' '}
-            (NIH Office of Dietary Supplements)
+            The practical challenge across all these interactions is that calcium is perceived as
+            benign — &quot;just a supplement.&quot; Its effects on drug absorption are real enough
+            to appear in medication prescribing information, and they can affect the clinical
+            management of osteoporosis, thyroid disease, and acute infections.
           </p>
         </section>
 
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            The timing principle
-          </h2>
-          <p>
-            For all the chelation-based interactions, the main lever is time. These interactions
-            require both substances to be in the gut simultaneously. Separating the medication
-            from the calcium supplement by two or more hours (before or after, depending on
-            specific guidance) typically avoids most of the interaction. This is why bisphosphonate
-            and levothyroxine prescribing instructions emphasize morning dosing on an empty stomach
-            — before supplements are taken.
-          </p>
-          <p className="mt-3">
-            The practical challenge is that people often don&apos;t know this applies to calcium.
-            Calcium is perceived as benign and &quot;just a supplement.&quot; Its effects on drug
-            absorption are real enough to be noted in medication prescribing information, and they
-            can affect the clinical management of osteoporosis, thyroid disease, and acute
-            infections.
-          </p>
-        </section>
+        <p className="text-sm text-zinc-500">
+          Sources:{' '}
+          <a
+            href="https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-zinc-700"
+          >
+            Calcium — Health Professional Fact Sheet
+          </a>{' '}
+          (NIH ODS);{' '}
+          <a
+            href="https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-zinc-700"
+          >
+            Iron — Health Professional Fact Sheet
+          </a>{' '}
+          (NIH ODS)
+        </p>
 
         <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
           <strong className="text-zinc-800">Check your stack:</strong> Enter calcium alongside

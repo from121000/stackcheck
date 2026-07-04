@@ -37,47 +37,37 @@ export default function IronLevothyroxine() {
       <div className="mt-8 space-y-6 text-zinc-700 leading-relaxed">
         <p>
           Levothyroxine (sold as Synthroid, Tirosint, and generics) is one of the most commonly
-          prescribed medications in the United States — it&apos;s the standard treatment for
-          hypothyroidism. Iron supplements are also extremely common, particularly among people
-          with anemia, pregnancy, or heavy menstrual periods. The overlap is frequent enough that
-          their interaction is well worth understanding.
+          prescribed medications in the United States — the standard treatment for hypothyroidism.
+          Iron supplements are also extremely common, particularly among people with anemia,
+          pregnancy, or heavy menstrual periods. The overlap is frequent enough that their
+          interaction is well worth understanding.
+        </p>
+
+        <p>
+          Iron forms insoluble complexes — chelates — with levothyroxine molecules when both are
+          present in the gastrointestinal tract at the same time. The resulting complex is poorly
+          absorbed, so less of the thyroid medication reaches the bloodstream. Studies have measured
+          reductions in levothyroxine bioavailability when taken with ferrous sulfate, with some
+          reporting decreases in the range of 30–40%. The practical consequence is that thyroid
+          hormone levels may fall below the intended therapeutic range. This interaction is
+          recognized in levothyroxine prescribing information and noted in the NIH ODS iron fact
+          sheet. It applies to ferrous sulfate (the most common supplement form), ferrous gluconate,
+          and ferric salts. Dietary iron from food is unlikely to cause the same degree of
+          interference because it arrives in the gut differently than a supplement bolus.
+        </p>
+
+        <p>
+          The interaction is rated moderate rather than high because it is generally manageable —
+          it does not create an acute dangerous situation. The concern is chronic under-medication
+          of thyroid disease, which has its own health consequences, particularly for people where
+          TSH control matters. Timing is the practical solution: levothyroxine is typically taken on
+          an empty stomach in the morning, with iron and other supplements taken separately by
+          several hours.
         </p>
 
         <section>
           <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            What happens
-          </h2>
-          <p>
-            Iron forms insoluble complexes — chelates — with levothyroxine molecules when both are
-            present in the gastrointestinal tract at the same time. The resulting complex is poorly
-            absorbed, so less of the thyroid medication reaches the bloodstream. Studies have
-            measured reductions in levothyroxine bioavailability when taken with ferrous sulfate,
-            with some reporting decreases in the range of 30–40%. The practical consequence is
-            that thyroid hormone levels may fall below the intended therapeutic range, potentially
-            worsening hypothyroidism symptoms.
-          </p>
-          <p className="mt-3">
-            The interaction is recognized in levothyroxine prescribing information. The NIH Office
-            of Dietary Supplements iron fact sheet also notes that iron supplements can interfere
-            with thyroid medications.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Other forms of iron
-          </h2>
-          <p>
-            This interaction applies to ferrous sulfate, the most common iron supplement form, and
-            is also documented for ferrous gluconate and ferric salts. Dietary iron from food
-            sources is unlikely to cause the same degree of interference because iron from food is
-            less concentrated and arrives in the gut differently than a supplement bolus.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            Calcium and other minerals
+            Other minerals with similar effects
           </h2>
           <p>
             Levothyroxine absorption is affected by a broader class of divalent cations, not just
@@ -87,34 +77,18 @@ export default function IronLevothyroxine() {
           </p>
         </section>
 
-        <section>
-          <h2 className="text-lg font-semibold text-zinc-900 mt-8 mb-3">
-            The severity
-          </h2>
-          <div className="inline-block bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-1 rounded-full mb-3">
-            Moderate severity
-          </div>
-          <p>
-            This interaction is rated moderate rather than high because it&apos;s generally
-            manageable — it doesn&apos;t create an acute dangerous situation in the way that
-            combining St. John&apos;s Wort with an SSRI might. The concern is chronic
-            under-medication of thyroid disease, which has its own health consequences, particularly
-            for people where TSH control matters.
-          </p>
-        </section>
-
-        <div className="mt-4 p-3 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
-          <p className="text-xs text-zinc-400 mb-1">Source</p>
+        <p className="text-sm text-zinc-500">
+          Source:{' '}
           <a
             href="https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-zinc-800 text-zinc-700"
+            className="underline hover:text-zinc-700"
           >
             Iron — Health Professional Fact Sheet
           </a>{' '}
-          <span className="text-zinc-400">(NIH Office of Dietary Supplements)</span>
-        </div>
+          (NIH Office of Dietary Supplements)
+        </p>
 
         <div className="mt-6 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
           <strong className="text-zinc-800">Check your stack:</strong> Enter your supplements and
