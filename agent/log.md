@@ -489,3 +489,50 @@ Two parallel priorities this run:
 - Analytics/GSC: fully resolved. No blockers.
 
 ---
+
+## Entry 7 — 2026-07-04 (seventh autonomous run)
+
+**State at start:**
+- 13 blog posts, 26 dataset entries (from Entry 6)
+- Organic traffic confirmed working (Entry 6 / Kim's 2026-07-03 note): 23 unique visitors, Google and Bing referrers, multiple blog pages getting visits
+- Entry 6 left 7 remaining blog posts in old style (per-interaction headers, severity badges, repeated sources): vitamin-d, calcium, iron-levothyroxine, melatonin, garlic, potassium, statins
+- Entry 6 backlog for new content: red-yeast-rice-and-statins standalone post, vitamin-e-antiplatelets dataset entry, berberine (deferred — no well-sourced NIH ODS entry)
+
+**What I decided to do and why:**
+Two priorities, in order:
+1. Complete all 7 remaining retroactive style fixes — these are live pages getting real traffic in the wrong format. The 4 fixed in Entry 6 were the highest-traffic ones; the remaining 7 still needed work. Completing this clears the backlog entirely.
+2. New content from Entry 6 backlog — red yeast rice standalone post (the monacolin K = lovastatin story is high-severity and warrants its own URL), vitamin-e-antiplatelets dataset entry.
+
+Skipped berberine — no standalone NIH ODS fact sheet exists as of this run; NCCIH coverage is limited and sourcing would be thin. Not worth adding without a strong source.
+
+**What I actually did (2 commits, pushed):**
+
+**Commit 1 — Retroactive style fixes (7 posts):**
+- `vitamin-d-drug-interactions`: collapsed 5 headers to 2 ("Thiazide diuretics and hypercalcemia" + "Drugs that deplete vitamin D"). Removed 1 severity badge, removed 4 repeated source lines (NIH ODS URL was repeated once per section). The calcium amplifier discussion was merged into the thiazide section.
+- `calcium-supplement-interactions`: collapsed 5 headers to 2 ("Chelation: when calcium prevents drug absorption" + "Iron absorption: a supplement–supplement interaction"). Removed 3 severity badges, removed 5 repeated source lines. All chelation examples (bisphosphonates, levothyroxine, antibiotics) discussed as named examples within the first section.
+- `iron-levothyroxine-interaction`: collapsed 4 headers to 1 ("Other minerals with similar effects"). Removed 1 severity badge (the "The severity" section converted to prose). Merged the 30–40% bioavailability reduction data and the different iron forms into flowing paragraphs.
+- `melatonin-drug-interactions`: collapsed 5 headers to 2 ("Additive sedation with CNS depressants" + "Metabolic interactions via CYP enzymes"). Removed 3 severity badges. Fluvoxamine, warfarin, nifedipine, and immunosuppressants all discussed within the metabolic section as a coherent narrative. Removed 4 repeated source lines.
+- `garlic-supplement-interactions`: collapsed 4 headers to 2 ("Antiplatelet and anticoagulant interactions" + "CYP3A4 induction: antiretrovirals and other medications"). Removed 2 severity badges. Surgical context merged into the antiplatelet section. Sources consolidated at end.
+- `potassium-and-medications`: collapsed 6 headers to 2 ("Medications that impair potassium excretion" + "Risk factors and secondary interactions"). Removed 3 severity badges. ACE inhibitors, ARBs, and potassium-sparing diuretics discussed together as examples of the same mechanism (impaired renal potassium excretion). Removed 3 repeated source lines.
+- `supplement-interactions-with-statins`: collapsed 4 headers to 2 ("When supplements reduce statin effectiveness" + "Red yeast rice: combining two statins"). Removed 2 severity badges. CoQ10 demoted from its own H2 to a paragraph between the two main sections. Which-statins-are-CYP3A4-dependent info folded into prose of the SJW section. Sources consolidated at end.
+
+All 13 existing blog posts are now in the correct style. No more retroactive fixes needed.
+
+**Commit 2 — Dataset entry + new blog post + blog index + sitemap:**
+- Added `vitamin-e-antiplatelets` dataset entry: additive antiplatelet effects with aspirin/clopidogrel via thromboxane A2 pathway inhibition. Source: NIH ODS Vitamin E. "aspirin" + "vitamin e" or "clopidogrel" + "vitamin e" now match this entry. Dataset: 27 entries.
+- New blog post `red-yeast-rice-and-statins`: standalone URL targeting "red yeast rice statin" queries. Covers what monacolin K is (chemically identical to lovastatin), why combining with prescription statins amounts to double-dosing, the rhabdomyolysis risk, dose variability problem (100x variation across brands), and FDA position. Written in correct style. Source: NCCIH Red Yeast Rice. Blog: 14 posts.
+- Updated blog index (new post at top) and sitemap.
+
+**What the next run should know:**
+- 14 blog posts, 27 dataset entries. All posts are now in the correct style — no retroactive fixes needed.
+- Checker is getting the most traffic (19/23 visitors to /). Worth reviewing checker UX for improvements: current input is a textarea where users type multiple substances; could add clearer placeholder text, example queries, or a "try an example" button that pre-fills the checker with a common stack.
+- Good next blog candidates:
+  - "coq10 and statins" — modest depletion relationship (not a dangerous interaction), some search volume, short post. Could also clarify what CoQ10 does and does not do in the context of statin use.
+  - "berberine drug interactions" — growing supplement market; interacts with CYP3A4 (inhibitor, unlike SJW which induces) and has blood glucose effects that compound with diabetes medications. Would need NIH ODS or NCCIH source; check if NCCIH has a berberine fact sheet before committing.
+  - "vitamin B12 and medications" — metformin depletes B12 over time; proton pump inhibitors reduce B12 absorption. Both well-sourced in NIH ODS B12 fact sheet.
+- Good next dataset entries:
+  - Metformin + vitamin B12 (metformin depletes B12 via calcium-dependent ileal receptor impairment). Source: NIH ODS Vitamin B12 fact sheet.
+  - Berberine + CYP3A4 substrates (if NCCIH has a fact sheet confirming this; check before adding).
+- Analytics/GSC: fully resolved. No blockers.
+
+---
