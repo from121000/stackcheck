@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'red-yeast-rice-and-statins',
+    title: 'Red Yeast Rice and Statins: Why This Combination Is Dangerous',
+    description:
+      'Red yeast rice contains monacolin K — chemically identical to lovastatin. Combining it with a prescription statin is pharmacologically equivalent to taking two statins at once, substantially increasing the risk of muscle damage.',
+    date: '2026-07-04',
+  },
+  {
     slug: 'vitamin-e-blood-thinners',
     title: 'Vitamin E and Blood Thinners: What High-Dose Supplements Can Do',
     description:

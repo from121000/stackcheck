@@ -495,6 +495,25 @@
         }
       ],
       "last_reviewed": "2026-07-03"
+    },
+    {
+      "id": "vitamin-e-antiplatelets",
+      "a": "vitamin e",
+      "b": "antiplatelet drugs",
+      "aliases_a": ["tocopherol", "alpha-tocopherol", "vitamin e supplement", "mixed tocopherols"],
+      "aliases_b": ["aspirin", "clopidogrel", "plavix", "prasugrel", "effient", "ticagrelor", "brilinta", "dipyridamole", "persantine"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "High doses of vitamin E inhibit platelet aggregation — partly by interfering with thromboxane A2 synthesis — through a mechanism that is additive with, but distinct from, that of antiplatelet drugs such as aspirin (COX-1 inhibitor) and clopidogrel (P2Y12 antagonist). The combined effect is broader inhibition of platelet function across multiple pathways.",
+      "summary": "High-dose vitamin E supplements may have additive antiplatelet effects when combined with aspirin, clopidogrel, or similar antiplatelet drugs, potentially increasing bleeding risk. The NIH ODS Vitamin E fact sheet notes that large supplemental doses can inhibit platelet aggregation. This interaction is most relevant at supplement doses well above typical dietary intake.",
+      "sources": [
+        {
+          "title": "Vitamin E — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-04"
     }
   ]
 }

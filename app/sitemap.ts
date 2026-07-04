@@ -92,5 +92,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/red-yeast-rice-and-statins',
+      lastModified: new Date('2026-07-04'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }
