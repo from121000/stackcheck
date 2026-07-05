@@ -98,5 +98,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/vitamin-b12-and-medications',
+      lastModified: new Date('2026-07-05'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/coq10-and-statins',
+      lastModified: new Date('2026-07-05'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }

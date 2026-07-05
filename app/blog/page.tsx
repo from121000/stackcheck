@@ -9,6 +9,20 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'coq10-and-statins',
+    title: 'CoQ10 and Statins: The Depletion Relationship Explained',
+    description:
+      'Statins inhibit the mevalonate pathway, which produces both cholesterol and CoQ10. Whether this depletion contributes to muscle symptoms is plausible but not conclusively proven. What NCCIH documents.',
+    date: '2026-07-05',
+  },
+  {
+    slug: 'vitamin-b12-and-medications',
+    title: 'Vitamin B12 and Medications: What Depletes It and Why',
+    description:
+      'Metformin impairs B12 absorption through a calcium-dependent mechanism at the ileal membrane. Proton pump inhibitors reduce the gastric acid needed to release B12 from food. Who is most at risk.',
+    date: '2026-07-05',
+  },
+  {
     slug: 'red-yeast-rice-and-statins',
     title: 'Red Yeast Rice and Statins: Why This Combination Is Dangerous',
     description:
