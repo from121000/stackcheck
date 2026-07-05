@@ -46,6 +46,13 @@ const severityClasses = {
   low: 'bg-green-100 text-green-800',
 };
 
+const EXAMPLES = [
+  { label: "St. John's Wort + Warfarin", stack: "St. John's Wort\nWarfarin" },
+  { label: 'Fish Oil + Warfarin', stack: 'Fish Oil\nWarfarin' },
+  { label: 'Magnesium + Ciprofloxacin', stack: 'Magnesium\nCiprofloxacin' },
+  { label: 'Red Yeast Rice + Atorvastatin', stack: 'Red Yeast Rice\nAtorvastatin' },
+];
+
 export default function StackChecker() {
   const [input, setInput] = useState('');
   const [results, setResults] = useState<Entry[] | null>(null);
@@ -58,6 +65,12 @@ export default function StackChecker() {
       .filter(Boolean);
     setParsedStack(parsed);
     setResults(findInteractions(parsed));
+  }
+
+  function loadExample(stack: string) {
+    setInput(stack);
+    setResults(null);
+    setParsedStack([]);
   }
 
   return (
@@ -77,6 +90,18 @@ export default function StackChecker() {
           rows={5}
           className="w-full rounded-lg border border-zinc-300 bg-white p-3 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:border-transparent"
         />
+        <div className="flex items-center gap-2 flex-wrap">
+          <span className="text-xs text-zinc-400">Try an example:</span>
+          {EXAMPLES.map(ex => (
+            <button
+              key={ex.label}
+              onClick={() => loadExample(ex.stack)}
+              className="text-xs px-2.5 py-1 rounded-full border border-zinc-200 text-zinc-600 hover:border-zinc-400 hover:text-zinc-800 transition-colors"
+            >
+              {ex.label}
+            </button>
+          ))}
+        </div>
         <p className="text-xs text-zinc-400">Ctrl+Enter to check</p>
       </div>
 

@@ -514,6 +514,44 @@
         }
       ],
       "last_reviewed": "2026-07-04"
+    },
+    {
+      "id": "metformin-b12",
+      "a": "metformin",
+      "b": "vitamin b12",
+      "aliases_a": ["glucophage", "glucophage xr", "fortamet", "glumetza", "riomet", "metformin hydrochloride"],
+      "aliases_b": ["vitamin b-12", "cobalamin", "cyanocobalamin", "methylcobalamin", "b12", "b-12"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Metformin impairs vitamin B12 absorption by interfering with calcium-dependent uptake of the intrinsic factor–B12 complex at the ileal membrane. This is a pharmacodynamic depletion: metformin does not interact with B12 directly, but reduces how much is absorbed from food over time. The effect is dose-dependent and accumulates over months to years of treatment.",
+      "summary": "Long-term metformin use is associated with reduced vitamin B12 absorption and may lead to B12 deficiency over time. The NIH ODS Vitamin B12 fact sheet notes this interaction and that B12 blood levels should be monitored in people on long-term metformin. Supplementing with B12 during metformin therapy may be warranted, particularly in people with other B12 risk factors.",
+      "sources": [
+        {
+          "title": "Vitamin B12 — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-05"
+    },
+    {
+      "id": "coq10-statins",
+      "a": "coq10",
+      "b": "statins",
+      "aliases_a": ["coenzyme q10", "ubiquinol", "ubiquinone", "coenzyme q-10"],
+      "aliases_b": ["simvastatin", "zocor", "atorvastatin", "lipitor", "rosuvastatin", "crestor", "pravastatin", "pravachol", "lovastatin", "mevacor", "pitavastatin", "livalo", "fluvastatin", "lescol", "statin", "hmg-coa reductase inhibitor"],
+      "category": "supplement-medication",
+      "severity": "low",
+      "mechanism": "Statins inhibit HMG-CoA reductase, the enzyme that controls the mevalonate pathway. This pathway produces not only cholesterol but also ubiquinone (CoQ10), a molecule central to mitochondrial energy production. By blocking the pathway, statins reduce the body's endogenous CoQ10 synthesis and may lower circulating CoQ10 levels.",
+      "summary": "Statins may reduce circulating CoQ10 levels by inhibiting the mevalonate pathway, which the body uses to produce both cholesterol and CoQ10. NCCIH notes this relationship. Whether this reduction contributes to statin-associated muscle symptoms is debated; clinical trial evidence on CoQ10 supplementation for muscle symptoms has been mixed. Taking CoQ10 alongside statins is not contraindicated.",
+      "sources": [
+        {
+          "title": "Coenzyme Q10",
+          "url": "https://www.nccih.nih.gov/health/coenzyme-q10",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-05"
     }
   ]
 }
