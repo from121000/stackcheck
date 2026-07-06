@@ -552,6 +552,82 @@
         }
       ],
       "last_reviewed": "2026-07-05"
+    },
+    {
+      "id": "zinc-iron",
+      "a": "zinc",
+      "b": "iron",
+      "aliases_a": ["zinc supplement", "zinc sulfate", "zinc gluconate", "zinc acetate", "zinc picolinate"],
+      "aliases_b": ["iron supplement", "ferrous sulfate", "ferrous gluconate", "ferrous fumarate", "iron bisglycinate", "elemental iron"],
+      "category": "supplement-supplement",
+      "severity": "moderate",
+      "mechanism": "Zinc and iron are both divalent cations that share the same intestinal transporter (DMT1, also called SLC11A2). When taken together in large amounts, they compete for absorption at this transporter, so high doses of one can meaningfully reduce absorption of the other. This is most significant when both are taken simultaneously at supplemental (not dietary) doses.",
+      "summary": "High-dose zinc and iron supplements may reduce each other's absorption when taken at the same time, due to competition at the DMT1 intestinal transporter. The NIH ODS zinc fact sheet documents this competition. Separating them by at least two hours minimizes the interaction.",
+      "sources": [
+        {
+          "title": "Zinc — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-06"
+    },
+    {
+      "id": "zinc-copper",
+      "a": "zinc",
+      "b": "copper",
+      "aliases_a": ["zinc supplement", "zinc sulfate", "zinc gluconate", "zinc acetate", "zinc picolinate"],
+      "aliases_b": ["copper supplement", "copper bisglycinate", "cupric oxide", "copper gluconate"],
+      "category": "supplement-supplement",
+      "severity": "moderate",
+      "mechanism": "High-dose zinc intake induces the production of metallothionein in intestinal epithelial cells. Metallothionein binds copper with higher affinity than zinc, trapping copper inside the enterocyte and preventing its absorption into systemic circulation. Over weeks to months at high supplemental zinc doses (typically 50 mg/day or more), this can progressively deplete copper stores.",
+      "summary": "Sustained high-dose zinc supplementation can cause copper deficiency by inducing metallothionein, which sequesters copper in intestinal cells and prevents its absorption. The NIH ODS zinc fact sheet documents this interaction. This effect typically requires prolonged high-dose zinc intake rather than short-term use.",
+      "sources": [
+        {
+          "title": "Zinc — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-06"
+    },
+    {
+      "id": "berberine-blood-glucose",
+      "a": "berberine",
+      "b": "diabetes medications",
+      "aliases_a": ["berberine hcl", "berberine hydrochloride", "berberine supplement"],
+      "aliases_b": ["metformin", "glucophage", "insulin", "sulfonylurea", "glipizide", "glucotrol", "glyburide", "diabeta", "micronase", "glimepiride", "amaryl", "sitagliptin", "januvia", "diabetes medication", "hypoglycemic agent", "antidiabetic"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Berberine activates AMP-activated protein kinase (AMPK), a cellular energy-sensing enzyme that increases glucose uptake in muscle and liver cells and suppresses hepatic glucose production — a mechanism similar to metformin. This blood glucose-lowering effect is additive with diabetes medications that lower glucose through the same or different pathways, including metformin, sulfonylureas, and insulin.",
+      "summary": "Berberine may have additive blood glucose-lowering effects when combined with diabetes medications such as metformin, sulfonylureas, or insulin, potentially increasing the risk of hypoglycemia. NCCIH notes that berberine can lower blood sugar and flags interaction risk with antidiabetic drugs.",
+      "sources": [
+        {
+          "title": "Berberine",
+          "url": "https://www.nccih.nih.gov/health/berberine",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-06"
+    },
+    {
+      "id": "berberine-cyp3a4",
+      "a": "berberine",
+      "b": "CYP3A4-sensitive medications",
+      "aliases_a": ["berberine hcl", "berberine hydrochloride", "berberine supplement"],
+      "aliases_b": ["cyclosporine", "sandimmune", "neoral", "grestimmune", "tacrolimus", "prograf", "simvastatin", "zocor", "lovastatin", "mevacor", "immunosuppressant", "cyclosporin"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Berberine inhibits CYP3A4, a major hepatic enzyme responsible for metabolizing a wide range of drugs. As a CYP3A4 inhibitor, berberine slows the breakdown of drugs that depend on this enzyme, raising their plasma concentrations and prolonging their effects. This is the opposite of St. John's Wort's CYP3A4 induction. Cyclosporine, an immunosuppressant with a narrow therapeutic window, is among the best-documented cases of this interaction.",
+      "summary": "Berberine inhibits CYP3A4, which can increase plasma concentrations of medications metabolized by that enzyme, including cyclosporine and some statins. NCCIH notes this interaction risk, particularly with immunosuppressants and other drugs with narrow therapeutic windows. People taking CYP3A4-sensitive medications should consult their prescriber before using berberine.",
+      "sources": [
+        {
+          "title": "Berberine",
+          "url": "https://www.nccih.nih.gov/health/berberine",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-06"
     }
   ]
 }
