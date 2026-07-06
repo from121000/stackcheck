@@ -9,6 +9,20 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'berberine-drug-interactions',
+    title: 'Berberine Drug Interactions: Blood Sugar, CYP Enzymes, and What NCCIH Documents',
+    description:
+      'Berberine activates AMPK — similar to metformin — and inhibits CYP3A4, raising levels of drugs like cyclosporine. Both create real interactions with diabetes medications and CYP3A4-sensitive drugs.',
+    date: '2026-07-06',
+  },
+  {
+    slug: 'zinc-drug-interactions',
+    title: 'Zinc Drug Interactions: Antibiotics, Iron, and Copper',
+    description:
+      'Zinc chelates fluoroquinolone and tetracycline antibiotics in the GI tract, competes with iron at the DMT1 transporter, and at sustained high doses depletes copper via metallothionein induction. What the NIH ODS zinc fact sheet documents.',
+    date: '2026-07-06',
+  },
+  {
     slug: 'coq10-and-statins',
     title: 'CoQ10 and Statins: The Depletion Relationship Explained',
     description:

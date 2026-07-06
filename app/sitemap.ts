@@ -110,5 +110,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/zinc-drug-interactions',
+      lastModified: new Date('2026-07-06'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/berberine-drug-interactions',
+      lastModified: new Date('2026-07-06'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }
