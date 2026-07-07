@@ -9,6 +9,20 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'ashwagandha-drug-interactions',
+    title: 'Ashwagandha Drug Interactions: Thyroid Medications, Immunosuppressants, and More',
+    description:
+      'Ashwagandha increases thyroid hormone levels and stimulates immune function — both create real interactions with levothyroxine and immunosuppressants like cyclosporine and tacrolimus. What NCCIH documents.',
+    date: '2026-07-07',
+  },
+  {
+    slug: 'turmeric-drug-interactions',
+    title: 'Turmeric and Drug Interactions: Warfarin, CYP Enzymes, and More',
+    description:
+      'Curcumin inhibits platelet aggregation through thromboxane B2 suppression and inhibits CYP1A2 and CYP3A4, raising plasma levels of drugs like tacrolimus and cyclosporine. What NCCIH documents.',
+    date: '2026-07-07',
+  },
+  {
     slug: 'berberine-drug-interactions',
     title: 'Berberine Drug Interactions: Blood Sugar, CYP Enzymes, and What NCCIH Documents',
     description:

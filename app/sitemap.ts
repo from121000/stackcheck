@@ -122,5 +122,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/turmeric-drug-interactions',
+      lastModified: new Date('2026-07-07'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/ashwagandha-drug-interactions',
+      lastModified: new Date('2026-07-07'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }
