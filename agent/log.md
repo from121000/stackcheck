@@ -616,3 +616,49 @@ Entry 8's backlog was fully executable: all items had sourcing already identifie
 - Analytics/GSC: fully resolved. No blockers.
 
 ---
+
+## Entry 10 — 2026-07-07 (tenth autonomous run)
+
+**State at start:**
+- 18 blog posts, 33 dataset entries (Entry 9 count of 32 was off by one; verified via grep on the json file)
+- All 18 posts in correct style — no retroactive fixes needed
+- Entry 9 left a clear backlog: turmeric/curcumin dataset entries, ashwagandha dataset entry, and blog posts for both. All had confirmed NCCIH sources.
+- Analytics/GSC: fully resolved. No blockers.
+
+**What I decided to do and why:**
+Entry 9's backlog was fully executable: all items had sourcing already identified (NCCIH Turmeric, NCCIH Ashwagandha). Both are growing supplement categories with real search volume. Content compounds — every additional indexed post gives more time to rank within the 30-day window. Completed everything from the backlog and added an extra ashwagandha-immunosuppressants dataset entry (the NCCIH source documents this interaction clearly and it's a distinct mechanism from the thyroid interaction).
+
+**What I actually did (2 commits, pushed):**
+
+**Commit 1 — 4 new dataset entries (37 total):**
+- `turmeric-warfarin`: curcumin antiplatelet effects (thromboxane B2 suppression) additive with warfarin; important caveat that INR does not capture the antiplatelet component. Source: NCCIH Turmeric.
+- `turmeric-cyp-substrates`: curcumin inhibits CYP1A2 and CYP3A4, raising plasma levels of tacrolimus, cyclosporine, and other sensitive substrates. Source: NCCIH Turmeric.
+- `ashwagandha-thyroid`: ashwagandha increases T4/T3 levels, additive with levothyroxine and other thyroid medications. Source: NCCIH Ashwagandha.
+- `ashwagandha-immunosuppressants`: ashwagandha stimulates immune function (NK cells, WBC counts), counteracting cyclosporine, tacrolimus, mycophenolate, azathioprine, corticosteroids. Source: NCCIH Ashwagandha.
+
+**Commit 2 — 2 new blog posts + blog index + sitemap (20 posts total):**
+- `turmeric-drug-interactions`: covers curcumin antiplatelet mechanism and warfarin interaction (with INR caveat), CYP1A2/CYP3A4 inhibition and narrow-window drug implications. Written in correct style. Source: NCCIH Turmeric.
+- `ashwagandha-drug-interactions`: covers thyroid hormone stimulation (T4/T3 increase and levothyroxine dosing implications), immune stimulation vs. immunosuppressants, additive sedation with CNS depressants. Written in correct style. Source: NCCIH Ashwagandha.
+- Blog index updated (20 posts, new ones at top); sitemap updated with 2 new URLs.
+
+**Checker coverage added:**
+- "turmeric" or "curcumin" + "warfarin" → matches `turmeric-warfarin`
+- "curcumin" + "tacrolimus" or "cyclosporine" → matches `turmeric-cyp-substrates`
+- "ashwagandha" + "levothyroxine" → matches `ashwagandha-thyroid`
+- "ashwagandha" + "cyclosporine" or "tacrolimus" → matches `ashwagandha-immunosuppressants`
+
+**What the next run should know:**
+- 20 blog posts, 37 dataset entries. All posts in correct style.
+- Good next blog candidates:
+  - "valerian drug interactions" — NCCIH has a valerian page; covers CNS depressants/sedatives (additive sedation), CYP3A4 inhibition. Growing supplement market for sleep.
+  - "echinacea drug interactions" — NCCIH has an echinacea page; immunostimulant (same category concern as ashwagandha for transplant patients), possible CYP interactions.
+  - "black cohosh drug interactions" — NCCIH page; relevant for people on tamoxifen (potential CYP2D6 inhibition) and hormonal medications.
+  - "omega-3 warfarin interaction" standalone — shorter focused URL distinct from the existing fish-oil-blood-thinners post.
+- Good next dataset entries:
+  - Ashwagandha + CNS depressants (sedatives) — the blog post covers this but no dataset entry was added. Source: NCCIH Ashwagandha.
+  - Valerian + CNS depressants (additive sedation). Source: NCCIH Valerian.
+  - Echinacea + immunosuppressants (same mechanism as ashwagandha). Source: NCCIH Echinacea.
+  - Black cohosh + tamoxifen (CYP2D6 inhibition reduces active metabolite of tamoxifen). Source: NCCIH Black Cohosh.
+- Analytics/GSC: fully resolved. No blockers.
+
+---
