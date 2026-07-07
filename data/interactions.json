@@ -628,6 +628,82 @@
         }
       ],
       "last_reviewed": "2026-07-06"
+    },
+    {
+      "id": "turmeric-warfarin",
+      "a": "turmeric",
+      "b": "warfarin",
+      "aliases_a": ["curcumin", "turmeric root", "curcuma longa", "curcumin supplement", "curcuminoids"],
+      "aliases_b": ["coumadin", "anticoagulant", "blood thinner"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Curcumin, the primary bioactive constituent of turmeric, inhibits platelet aggregation by suppressing thromboxane B2 synthesis and reducing collagen-induced platelet activation. These antiplatelet effects are additive with warfarin's anticoagulant action, potentially increasing bleeding risk beyond what INR monitoring would reflect, since antiplatelet activity is not captured by INR.",
+      "summary": "Turmeric supplements may increase bleeding risk when combined with warfarin or other anticoagulants due to curcumin's antiplatelet properties. NCCIH notes the interaction and flags caution for people on anticoagulant or antiplatelet therapy. The antiplatelet component operates through a different mechanism than warfarin, so INR alone may not fully reflect the combined effect.",
+      "sources": [
+        {
+          "title": "Turmeric",
+          "url": "https://www.nccih.nih.gov/health/turmeric",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-07"
+    },
+    {
+      "id": "turmeric-cyp-substrates",
+      "a": "turmeric",
+      "b": "CYP-sensitive medications",
+      "aliases_a": ["curcumin", "turmeric root", "curcuma longa", "curcumin supplement", "curcuminoids"],
+      "aliases_b": ["tacrolimus", "prograf", "cyclosporine", "sandimmune", "warfarin", "coumadin", "midazolam", "tamoxifen", "clarithromycin", "biaxin", "CYP1A2 substrate", "CYP3A4 substrate"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Curcumin inhibits CYP1A2 and CYP3A4 enzymes in the liver. These cytochrome P450 enzymes are responsible for metabolizing a broad range of medications. As an inhibitor, curcumin slows drug breakdown, raising plasma concentrations and prolonging the effective presence of the affected drug — which can amplify both therapeutic effects and side effects.",
+      "summary": "Curcumin may inhibit CYP1A2 and CYP3A4 enzymes, raising plasma levels of medications that depend on these pathways for clearance. NCCIH notes that turmeric supplements may interact with drugs metabolized by the cytochrome P450 system. People taking medications with narrow therapeutic windows — such as tacrolimus, cyclosporine, or certain anticoagulants — should consult their prescriber.",
+      "sources": [
+        {
+          "title": "Turmeric",
+          "url": "https://www.nccih.nih.gov/health/turmeric",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-07"
+    },
+    {
+      "id": "ashwagandha-thyroid",
+      "a": "ashwagandha",
+      "b": "thyroid medications",
+      "aliases_a": ["withania somnifera", "ashwagandha root", "ashwagandha extract", "indian ginseng", "winter cherry"],
+      "aliases_b": ["levothyroxine", "synthroid", "armour thyroid", "liothyronine", "cytomel", "thyroid hormone", "thyroid medication"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Ashwagandha has been shown in some clinical studies to increase levels of thyroid hormones, particularly T4 (thyroxine) and T3 (triiodothyronine), and to alter TSH (thyroid-stimulating hormone) secretion. People on thyroid replacement therapy are already managing a narrow target range; any additional stimulation of thyroid hormone levels can shift them outside that range, requiring dose adjustment.",
+      "summary": "Ashwagandha may increase thyroid hormone levels (T4 and T3), which could amplify the effect of thyroid medications and push hormone levels outside the therapeutic range. NCCIH notes that ashwagandha may interact with thyroid hormone medications. People on levothyroxine or other thyroid treatments should monitor thyroid function if using ashwagandha.",
+      "sources": [
+        {
+          "title": "Ashwagandha",
+          "url": "https://www.nccih.nih.gov/health/ashwagandha",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-07"
+    },
+    {
+      "id": "ashwagandha-immunosuppressants",
+      "a": "ashwagandha",
+      "b": "immunosuppressants",
+      "aliases_a": ["withania somnifera", "ashwagandha root", "ashwagandha extract", "indian ginseng", "winter cherry"],
+      "aliases_b": ["cyclosporine", "sandimmune", "tacrolimus", "prograf", "mycophenolate", "cellcept", "azathioprine", "imuran", "corticosteroids", "prednisone", "immunosuppressant"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Ashwagandha has immunomodulatory effects — it can stimulate both innate and adaptive immune activity, including increasing natural killer cell activity and white blood cell counts. In people taking immunosuppressant medications (e.g., after an organ transplant or for autoimmune conditions), this immune stimulation may work directly against the drug's intended effect of keeping immune activity suppressed.",
+      "summary": "Ashwagandha may stimulate immune system activity in ways that counteract immunosuppressant medications used after organ transplantation or for autoimmune conditions. NCCIH notes this interaction risk. People on immunosuppressants should avoid ashwagandha without guidance from their transplant team or prescriber.",
+      "sources": [
+        {
+          "title": "Ashwagandha",
+          "url": "https://www.nccih.nih.gov/health/ashwagandha",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-07"
     }
   ]
 }
