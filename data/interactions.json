@@ -704,6 +704,82 @@
         }
       ],
       "last_reviewed": "2026-07-07"
+    },
+    {
+      "id": "ashwagandha-cns-depressants",
+      "a": "ashwagandha",
+      "b": "CNS depressants",
+      "aliases_a": ["withania somnifera", "ashwagandha root", "ashwagandha extract", "indian ginseng", "winter cherry"],
+      "aliases_b": ["benzodiazepine", "lorazepam", "ativan", "diazepam", "valium", "clonazepam", "klonopin", "alprazolam", "xanax", "zolpidem", "ambien", "eszopiclone", "lunesta", "alcohol", "sedative", "sleep aid", "antihistamine sedating", "gabapentin", "neurontin", "pregabalin", "lyrica"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Ashwagandha has anxiolytic and sedative properties, likely involving modulation of GABA-A receptor activity by withanolide constituents. This CNS-depressant effect is pharmacodynamically additive with other sedating substances — benzodiazepines, non-benzodiazepine sleep aids, alcohol, and gabapentinoids — each of which independently suppresses CNS function through overlapping or complementary pathways.",
+      "summary": "Ashwagandha may have additive sedating effects when combined with CNS depressants such as benzodiazepines, sedative-hypnotics, or alcohol. NCCIH notes that ashwagandha may interact with medications that cause sleepiness and recommends caution with CNS depressants.",
+      "sources": [
+        {
+          "title": "Ashwagandha",
+          "url": "https://www.nccih.nih.gov/health/ashwagandha",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-08"
+    },
+    {
+      "id": "valerian-cns-depressants",
+      "a": "valerian",
+      "b": "CNS depressants",
+      "aliases_a": ["valerian root", "valeriana officinalis", "valerian extract", "valerian supplement"],
+      "aliases_b": ["benzodiazepine", "lorazepam", "ativan", "diazepam", "valium", "clonazepam", "klonopin", "alprazolam", "xanax", "zolpidem", "ambien", "eszopiclone", "lunesta", "alcohol", "sedative", "sleep aid", "barbiturate", "phenobarbital"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Valerenic acid, the primary bioactive constituent of valerian root, inhibits GABA transaminase and modulates GABA-A receptors, producing anxiolytic and sedative effects through GABAergic mechanisms. This is pharmacodynamically additive with CNS depressants — benzodiazepines, barbiturates, non-benzodiazepine hypnotics, and alcohol — all of which enhance GABAergic inhibition or suppress CNS function through related pathways.",
+      "summary": "Valerian root may have additive sedating effects when combined with CNS depressants such as benzodiazepines, sedative-hypnotics, or alcohol due to overlapping GABAergic mechanisms. NCCIH notes that valerian may interact with sedatives and other CNS depressants, and recommends disclosing its use to healthcare providers.",
+      "sources": [
+        {
+          "title": "Valerian",
+          "url": "https://www.nccih.nih.gov/health/valerian",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-08"
+    },
+    {
+      "id": "echinacea-immunosuppressants",
+      "a": "echinacea",
+      "b": "immunosuppressants",
+      "aliases_a": ["echinacea purpurea", "echinacea angustifolia", "echinacea pallida", "coneflower", "echinacea supplement", "echinacea extract"],
+      "aliases_b": ["cyclosporine", "sandimmune", "neoral", "tacrolimus", "prograf", "mycophenolate", "cellcept", "azathioprine", "imuran", "corticosteroids", "prednisone", "methylprednisolone", "methotrexate", "immunosuppressant"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Echinacea preparations stimulate innate immune function — increasing phagocytic activity, natural killer cell activity, and cytokine production (including TNF-alpha and interleukins). In people taking immunosuppressant medications to prevent transplant rejection or manage autoimmune disease, this immune stimulation directly opposes the drug's intended effect of suppressing immune activity.",
+      "summary": "Echinacea may stimulate immune system activity in ways that counteract immunosuppressant medications used after organ transplantation or for autoimmune conditions. NCCIH notes that people taking immunosuppressants should avoid echinacea. The immune stimulation could theoretically precipitate rejection or disease flare.",
+      "sources": [
+        {
+          "title": "Echinacea",
+          "url": "https://www.nccih.nih.gov/health/echinacea",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-08"
+    },
+    {
+      "id": "black-cohosh-tamoxifen",
+      "a": "black cohosh",
+      "b": "tamoxifen",
+      "aliases_a": ["actaea racemosa", "cimicifuga racemosa", "black cohosh root", "black cohosh extract", "remifemin"],
+      "aliases_b": ["nolvadex", "soltamox", "tamoxifen citrate", "aromatase inhibitor", "letrozole", "femara", "anastrozole", "arimidex", "exemestane", "aromasin"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Black cohosh inhibits CYP2D6, the liver enzyme responsible for converting tamoxifen to endoxifen — its primary active metabolite that actually exerts the anti-estrogenic effect in breast cancer treatment. Reduced CYP2D6 activity from black cohosh may lower endoxifen plasma concentrations and potentially reduce tamoxifen's therapeutic efficacy.",
+      "summary": "Black cohosh may inhibit CYP2D6, reducing the conversion of tamoxifen to its active metabolite endoxifen and potentially diminishing tamoxifen's effectiveness in breast cancer treatment. NCCIH notes that black cohosh may interact with hormone-sensitive conditions and treatments. People taking tamoxifen or other hormone-modulating cancer therapies should discuss black cohosh use with their oncologist.",
+      "sources": [
+        {
+          "title": "Black Cohosh",
+          "url": "https://www.nccih.nih.gov/health/black-cohosh",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-08"
     }
   ]
 }
