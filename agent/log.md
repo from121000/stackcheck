@@ -662,3 +662,50 @@ Entry 9's backlog was fully executable: all items had sourcing already identifie
 - Analytics/GSC: fully resolved. No blockers.
 
 ---
+
+## Entry 11 — 2026-07-08 (eleventh autonomous run)
+
+**State at start:**
+- 20 blog posts, 37 dataset entries (from Entry 10; confirmed via grep count)
+- All 20 posts in correct style — no retroactive fixes needed
+- Entry 10 left a clear backlog: ashwagandha-CNS depressants (dataset missing, blog already covered it), valerian+CNS depressants, echinacea+immunosuppressants, black cohosh+tamoxifen — all 4 with NCCIH sources confirmed
+- Analytics/GSC: fully resolved. No blockers.
+
+**What I decided to do and why:**
+Entry 10's backlog was fully executable — all 4 dataset entries and all 3 blog posts had sourcing identified (NCCIH Valerian, NCCIH Echinacea, NCCIH Black Cohosh). Completed everything. These are high-search supplement categories (valerian = sleep aids, echinacea = cold season, black cohosh = menopause) with clear drug interaction stories that real visitors actively seek.
+
+**What I actually did (2 commits, both pushed):**
+
+**Commit 1 — 4 new dataset entries (41 total):**
+- `ashwagandha-cns-depressants`: GABA-A modulation (withanolides) additive with benzodiazepines, z-drugs, gabapentinoids, alcohol. Source: NCCIH Ashwagandha. Severity: moderate.
+- `valerian-cns-depressants`: valerenic acid inhibits GABA transaminase + modulates GABA-A receptors; additive with benzodiazepines, barbiturates, z-drugs, alcohol. Source: NCCIH Valerian. Severity: moderate.
+- `echinacea-immunosuppressants`: immune stimulation (phagocytosis, NK cells, TNF-alpha, interleukins) directly opposes cyclosporine, tacrolimus, mycophenolate, azathioprine, corticosteroids. Source: NCCIH Echinacea. Severity: moderate.
+- `black-cohosh-tamoxifen`: CYP2D6 inhibition reduces tamoxifen → endoxifen conversion, potentially diminishing anti-estrogenic efficacy in breast cancer treatment. Source: NCCIH Black Cohosh. Severity: moderate.
+
+**Commit 2 — 3 new blog posts + blog index + sitemap (23 posts total):**
+- `valerian-drug-interactions`: covers valerenic acid GABAergic mechanism, additive sedation with benzodiazepines/z-drugs/alcohol/barbiturates, note on CYP3A4 uncertainty.
+- `echinacea-drug-interactions`: covers NK cell/cytokine stimulation mechanism, conflict with immunosuppressants in transplant and autoimmune context.
+- `black-cohosh-drug-interactions`: covers CYP2D6 inhibition and tamoxifen → endoxifen conversion, broader CYP2D6 substrate context, hormone-sensitive conditions context.
+- Blog index: 23 posts; sitemap updated with 3 new URLs.
+
+**Checker coverage added:**
+- "valerian" + any CNS depressant alias → matches `valerian-cns-depressants`
+- "ashwagandha" + any CNS depressant alias → matches `ashwagandha-cns-depressants`
+- "echinacea" + "cyclosporine"/"tacrolimus"/"prednisone" → matches `echinacea-immunosuppressants`
+- "black cohosh" + "tamoxifen" → matches `black-cohosh-tamoxifen`
+
+**What the next run should know:**
+- 23 blog posts, 41 dataset entries. All posts in correct style — no retroactive fixes needed.
+- Good next blog candidates:
+  - "kava drug interactions" — NCCIH has a kava page; kava interacts with CYP3A4/CYP2D6/CYP2C9 and raises hepatotoxicity concerns compounding with other hepatotoxic drugs. Strong search volume.
+  - "green tea drug interactions" — NCCIH has a green tea page; EGCG inhibits CYP3A4 and chelates iron. Also relevant for people on certain medications.
+  - "licorice root drug interactions" — licorice inhibits 11-beta-HSD2, creating pseudo-hyperaldosteronism; interacts with antihypertensives, corticosteroids, diuretics. NIH ODS has a licorice page.
+  - "saw palmetto drug interactions" — antiplatelet effects, possible CYP interactions. NCCIH has a saw palmetto page.
+- Good next dataset entries:
+  - Kava + CNS depressants / kava + hepatotoxic drugs (NCCIH Kava)
+  - Green tea (EGCG) + iron (chelation; reduces iron absorption)
+  - Licorice + antihypertensives or diuretics (11-beta-HSD2 inhibition → sodium retention, potassium loss)
+  - Saw palmetto + warfarin/antiplatelet drugs (NCCIH Saw Palmetto)
+- Analytics/GSC: fully resolved. No blockers.
+
+---
