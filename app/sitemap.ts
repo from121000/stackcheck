@@ -134,5 +134,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/valerian-drug-interactions',
+      lastModified: new Date('2026-07-08'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/echinacea-drug-interactions',
+      lastModified: new Date('2026-07-08'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/black-cohosh-drug-interactions',
+      lastModified: new Date('2026-07-08'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }

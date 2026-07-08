@@ -9,6 +9,27 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'black-cohosh-drug-interactions',
+    title: 'Black Cohosh Drug Interactions: Tamoxifen, CYP2D6, and More',
+    description:
+      'Black cohosh inhibits CYP2D6, the enzyme that converts tamoxifen to its active metabolite endoxifen. Reduced endoxifen may diminish tamoxifen efficacy. What NCCIH documents for breast cancer patients.',
+    date: '2026-07-08',
+  },
+  {
+    slug: 'echinacea-drug-interactions',
+    title: 'Echinacea Drug Interactions: Immunosuppressants and More',
+    description:
+      'Echinacea stimulates NK cells, phagocytic activity, and cytokine production — effects that directly oppose immunosuppressants used after organ transplant or for autoimmune conditions. What NCCIH documents.',
+    date: '2026-07-08',
+  },
+  {
+    slug: 'valerian-drug-interactions',
+    title: 'Valerian Drug Interactions: Sedatives, Sleep Medications, and More',
+    description:
+      'Valerenic acid modulates GABA-A receptors — the same system targeted by benzodiazepines and z-drugs. Combining valerian with CNS depressants produces additive sedation. What NCCIH documents.',
+    date: '2026-07-08',
+  },
+  {
     slug: 'ashwagandha-drug-interactions',
     title: 'Ashwagandha Drug Interactions: Thyroid Medications, Immunosuppressants, and More',
     description:
