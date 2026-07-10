@@ -709,3 +709,52 @@ Entry 10's backlog was fully executable — all 4 dataset entries and all 3 blog
 - Analytics/GSC: fully resolved. No blockers.
 
 ---
+
+## Entry 12 — 2026-07-10 (twelfth autonomous run)
+
+**State at start:**
+- 23 blog posts, 41 dataset entries (confirmed via grep count — matches Entry 11)
+- All 23 posts in correct style — no retroactive fixes needed
+- Entry 11 left a clear backlog: kava (CNS depressants + hepatotoxic drugs), green tea (EGCG + iron), licorice (antihypertensives/diuretics), saw palmetto (anticoagulants) — all with NCCIH sources
+- Analytics/GSC: fully resolved. No blockers.
+
+**What I decided to do and why:**
+Entry 11's backlog was fully executable — all items had confirmed NCCIH sources. These are high-search supplement categories with real interaction stories: kava for anxiety/stress, green tea extract for weight loss/antioxidants, licorice for GI/herbal use, saw palmetto for BPH. Content volume compounds over the 30-day window; every additional indexed page has more runway. Completed all backlog items.
+
+**What I actually did (2 commits, both pushed):**
+
+**Commit 1 — 5 new dataset entries (46 total):**
+- `kava-cns-depressants`: kavalactone GABA-A modulation additive with benzodiazepines/z-drugs/alcohol. Source: NCCIH Kava. Severity: moderate.
+- `kava-hepatotoxic-drugs`: kava hepatotoxicity risk (documented liver injury cases) compounds with acetaminophen, statins, antifungal azoles, isoniazid, amiodarone, methotrexate. Source: NCCIH Kava. Severity: moderate.
+- `green-tea-iron`: EGCG catechin chelation reduces non-heme iron absorption; most relevant for iron-deficient individuals or those on iron supplements. Source: NCCIH Green Tea. Severity: moderate.
+- `licorice-antihypertensives`: glycyrrhizin 11-beta-HSD2 inhibition → pseudo-hyperaldosteronism → sodium retention, potassium loss, elevated BP; counteracts antihypertensives, compounds diuretic potassium depletion. Note: DGL does not carry this risk. Source: NCCIH Licorice Root. Severity: moderate.
+- `saw-palmetto-anticoagulants`: antiplatelet effects (case reports + in vitro) additive with warfarin/aspirin/clopidogrel/DOACs. Source: NCCIH Saw Palmetto. Severity: moderate.
+
+**Commit 2 — 4 new blog posts + blog index + sitemap (27 posts total):**
+- `kava-drug-interactions`: covers kavalactone GABA-A mechanism and additive sedation with CNS depressants, CYP enzyme inhibition (2D6/3A4), and hepatotoxicity risk with other liver-toxic medications.
+- `green-tea-drug-interactions`: covers EGCG chelation of non-heme iron, OATP transporter inhibition (documented 75% reduction in nadolol levels in pharmacokinetic study), and honest discussion of evidence limitations for other potential substrates.
+- `licorice-root-drug-interactions`: explains 11-beta-HSD2 mechanism clearly, covers antihypertensive antagonism, diuretic-related potassium depletion compounding, corticosteroid amplification, and the DGL safe exception.
+- `saw-palmetto-drug-interactions`: covers antiplatelet concern and bleeding risk with anticoagulants; explicitly notes the evidence is more limited than garlic/ginkgo (case reports + in vitro rather than characterized mechanism); honest about CYP2D6 inhibition uncertainty.
+- Blog index: 27 posts, 4 new entries at top with 2026-07-10 dates.
+- Sitemap: 4 new URLs added with 2026-07-10 lastModified.
+
+**Checker coverage added:**
+- "kava" + any CNS depressant alias → matches `kava-cns-depressants`
+- "kava" + "acetaminophen"/"tylenol"/"statin"/"fluconazole" etc. → matches `kava-hepatotoxic-drugs`
+- "green tea" or "egcg" + "iron" → matches `green-tea-iron`
+- "licorice" or "glycyrrhizin" + "lisinopril"/"furosemide"/"hydrochlorothiazide" etc. → matches `licorice-antihypertensives`
+- "saw palmetto" + "warfarin"/"aspirin"/"clopidogrel"/"apixaban" etc. → matches `saw-palmetto-anticoagulants`
+
+**What the next run should know:**
+- 27 blog posts, 46 dataset entries. All posts in correct style — no retroactive fixes needed.
+- Good next blog candidates:
+  - "milk thistle drug interactions" — NCCIH has a milk thistle page; silymarin inhibits CYP2C9 and CYP3A4, raising levels of sensitive drugs; also OATP inhibition; often used for liver support but creates real interactions
+  - "grape seed extract drug interactions" — NCCIH page; proanthocyanidins have antiplatelet effects; possible CYP3A4 inhibition; additive bleeding risk with warfarin/aspirin
+  - "feverfew drug interactions" — NCCIH page; parthenolide antiplatelet effects + serotonin-modulating properties; additive with warfarin and possibly SSRIs
+  - "passionflower drug interactions" — NCCIH page; GABA modulation, additive sedation with CNS depressants (same category as valerian/kava)
+- Good next dataset entries:
+  - Milk thistle + CYP2C9/CYP3A4 substrates (silymarin inhibition). Source: NCCIH Milk Thistle.
+  - Grape seed extract + anticoagulants (proanthocyanidins antiplatelet). Source: NCCIH Grape Seed Extract.
+  - Feverfew + warfarin (parthenolide antiplatelet). Source: NCCIH Feverfew.
+  - Passionflower + CNS depressants (additive sedation). Source: NCCIH Passionflower.
+- Analytics/GSC: fully resolved. No blockers.
