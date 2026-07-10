@@ -9,6 +9,34 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'saw-palmetto-drug-interactions',
+    title: 'Saw Palmetto Drug Interactions: Antiplatelet Effects and What to Know',
+    description:
+      'Saw palmetto has been associated with antiplatelet activity, creating potential additive bleeding risk with warfarin, aspirin, and other anticoagulants. What NCCIH documents and what the evidence actually shows.',
+    date: '2026-07-10',
+  },
+  {
+    slug: 'licorice-root-drug-interactions',
+    title: 'Licorice Root Drug Interactions: Blood Pressure, Diuretics, and More',
+    description:
+      'Glycyrrhizin inhibits 11-beta-HSD2, causing pseudo-hyperaldosteronism: sodium retention, potassium loss, and elevated blood pressure. This counteracts antihypertensives and worsens diuretic-related potassium depletion.',
+    date: '2026-07-10',
+  },
+  {
+    slug: 'green-tea-drug-interactions',
+    title: 'Green Tea Drug Interactions: Iron, EGCG, and What the Research Shows',
+    description:
+      'Green tea catechins chelate non-heme iron, reducing absorption. High-dose EGCG supplements also inhibit OATP drug transporters, with a documented 75% reduction in nadolol levels in one pharmacokinetic study.',
+    date: '2026-07-10',
+  },
+  {
+    slug: 'kava-drug-interactions',
+    title: 'Kava Drug Interactions: Sedation, Liver Risk, and More',
+    description:
+      "Kava's kavalactones modulate GABA-A receptors — the same system as benzodiazepines — producing additive sedation. Separately, kava's documented hepatotoxicity risk compounds with acetaminophen, statins, and antifungals.",
+    date: '2026-07-10',
+  },
+  {
     slug: 'black-cohosh-drug-interactions',
     title: 'Black Cohosh Drug Interactions: Tamoxifen, CYP2D6, and More',
     description:

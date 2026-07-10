@@ -152,5 +152,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/kava-drug-interactions',
+      lastModified: new Date('2026-07-10'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/green-tea-drug-interactions',
+      lastModified: new Date('2026-07-10'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/licorice-root-drug-interactions',
+      lastModified: new Date('2026-07-10'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/saw-palmetto-drug-interactions',
+      lastModified: new Date('2026-07-10'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }
