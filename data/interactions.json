@@ -780,6 +780,101 @@
         }
       ],
       "last_reviewed": "2026-07-08"
+    },
+    {
+      "id": "kava-cns-depressants",
+      "a": "kava",
+      "b": "CNS depressants",
+      "aliases_a": ["kava kava", "piper methysticum", "kava extract", "kava supplement", "kavalactones", "kava-kava"],
+      "aliases_b": ["benzodiazepine", "lorazepam", "ativan", "diazepam", "valium", "clonazepam", "klonopin", "alprazolam", "xanax", "zolpidem", "ambien", "eszopiclone", "lunesta", "alcohol", "sedative", "sleep aid", "barbiturate", "phenobarbital", "gabapentin", "pregabalin"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Kavalactones, the active compounds in kava, modulate GABA-A receptor activity and interact with serotonin and dopamine receptors, producing anxiolytic and sedative effects. These CNS-depressant properties are pharmacodynamically additive with benzodiazepines, barbiturates, non-benzodiazepine hypnotics, and alcohol — all of which enhance GABAergic inhibition or suppress CNS function through related pathways. Combined use can produce greater sedation, cognitive impairment, and in higher exposures, risk of respiratory depression.",
+      "summary": "Kava may have additive sedating effects when combined with benzodiazepines, sedative-hypnotics, alcohol, or other CNS depressants due to overlapping GABAergic mechanisms. NCCIH notes that kava has CNS depressant properties and can interact with substances that cause drowsiness. People taking sedating medications should avoid combining them with kava without medical guidance.",
+      "sources": [
+        {
+          "title": "Kava",
+          "url": "https://www.nccih.nih.gov/health/kava",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-10"
+    },
+    {
+      "id": "kava-hepatotoxic-drugs",
+      "a": "kava",
+      "b": "hepatotoxic drugs",
+      "aliases_a": ["kava kava", "piper methysticum", "kava extract", "kava supplement", "kavalactones", "kava-kava"],
+      "aliases_b": ["acetaminophen", "tylenol", "paracetamol", "statin", "atorvastatin", "simvastatin", "lovastatin", "rosuvastatin", "fluconazole", "diflucan", "ketoconazole", "itraconazole", "niacin", "niaspan", "methotrexate", "isoniazid", "amiodarone", "hepatotoxic medication"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Kava has been associated with hepatotoxicity — cases of serious liver injury, including fulminant hepatic failure, have been documented and prompted regulatory action in several countries. The mechanism is not fully established but may involve reactive metabolites from cytochrome P450-mediated kava metabolism and inhibition of multiple CYP enzymes. When kava is used alongside other medications that carry hepatotoxic risk, the combined burden on the liver may exceed that of either agent alone.",
+      "summary": "Kava has been associated with serious liver injury, including fulminant hepatic failure, in documented case reports. Combining kava with other potentially hepatotoxic medications — such as high-dose acetaminophen, statins, or antifungal azoles — may increase the risk of liver damage. NCCIH flags kava's hepatotoxicity risk prominently and notes that people with liver disease or taking hepatotoxic drugs should avoid kava.",
+      "sources": [
+        {
+          "title": "Kava",
+          "url": "https://www.nccih.nih.gov/health/kava",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-10"
+    },
+    {
+      "id": "green-tea-iron",
+      "a": "green tea extract",
+      "b": "iron",
+      "aliases_a": ["egcg", "epigallocatechin gallate", "green tea", "green tea supplement", "green tea extract supplement", "matcha extract", "camellia sinensis"],
+      "aliases_b": ["iron supplement", "ferrous sulfate", "ferrous gluconate", "ferrous fumarate", "iron bisglycinate", "elemental iron", "non-heme iron"],
+      "category": "supplement-supplement",
+      "severity": "moderate",
+      "mechanism": "Epigallocatechin gallate (EGCG) and other catechins in green tea form stable complexes with non-heme iron in the GI tract, rendering it less absorbable. This chelation is most significant when green tea or high-dose EGCG supplements are consumed simultaneously with iron-containing foods or iron supplements. The effect is primarily on non-heme (plant-derived) iron rather than heme iron from meat.",
+      "summary": "Green tea catechins, particularly EGCG, may reduce the absorption of non-heme iron by forming insoluble complexes with it in the GI tract. NCCIH notes that green tea may interact with iron. The interaction is most clinically relevant for people with iron deficiency or those taking iron supplements; separating intake by at least an hour reduces it.",
+      "sources": [
+        {
+          "title": "Green Tea",
+          "url": "https://www.nccih.nih.gov/health/green-tea",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-10"
+    },
+    {
+      "id": "licorice-antihypertensives",
+      "a": "licorice root",
+      "b": "antihypertensives",
+      "aliases_a": ["licorice", "glycyrrhiza glabra", "glycyrrhizin", "glycyrrhizinic acid", "licorice root extract", "licorice supplement"],
+      "aliases_b": ["amlodipine", "norvasc", "lisinopril", "enalapril", "losartan", "valsartan", "metoprolol", "atenolol", "hydrochlorothiazide", "furosemide", "lasix", "spironolactone", "antihypertensive", "blood pressure medication", "diuretic"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Glycyrrhizin, a triterpene compound in licorice root, inhibits 11-beta-hydroxysteroid dehydrogenase type 2 (11-beta-HSD2) — the enzyme that inactivates cortisol in the kidney tubule. With this enzyme inhibited, cortisol accumulates and activates mineralocorticoid receptors, producing effects resembling excess aldosterone: sodium and water retention, potassium excretion, and elevated blood pressure. This pseudo-hyperaldosteronism state directly counteracts antihypertensive medications and worsens potassium loss from loop and thiazide diuretics.",
+      "summary": "Licorice root containing glycyrrhizin may raise blood pressure by causing sodium retention and potassium loss through 11-beta-HSD2 inhibition, counteracting antihypertensive medications and worsening diuretic-related potassium depletion. NCCIH notes that licorice root may interact with antihypertensives, corticosteroids, and diuretics. Deglycyrrhizinated licorice (DGL) does not carry this risk, as glycyrrhizin has been removed.",
+      "sources": [
+        {
+          "title": "Licorice Root",
+          "url": "https://www.nccih.nih.gov/health/licorice-root",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-10"
+    },
+    {
+      "id": "saw-palmetto-anticoagulants",
+      "a": "saw palmetto",
+      "b": "anticoagulants",
+      "aliases_a": ["serenoa repens", "saw palmetto extract", "saw palmetto supplement", "sabal serrulata"],
+      "aliases_b": ["warfarin", "coumadin", "aspirin", "clopidogrel", "plavix", "apixaban", "eliquis", "rivaroxaban", "xarelto", "dabigatran", "pradaxa", "anticoagulant", "antiplatelet", "blood thinner"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Saw palmetto has been associated with antiplatelet activity in case reports and some in vitro evidence. Antiplatelet effects are additive with anticoagulant and antiplatelet medications — warfarin, aspirin, clopidogrel, and direct oral anticoagulants — potentially increasing bleeding risk. The clinical evidence base is more limited than for supplements with well-characterized antiplatelet activity such as garlic or ginkgo biloba, but the interaction is plausible and flagged by NCCIH.",
+      "summary": "Saw palmetto may have antiplatelet effects that could increase bleeding risk when combined with anticoagulants or antiplatelet medications such as warfarin, aspirin, or clopidogrel. NCCIH notes the potential interaction with blood-thinning medications. People taking anticoagulant or antiplatelet therapy should inform their prescriber about saw palmetto use, particularly before surgery.",
+      "sources": [
+        {
+          "title": "Saw Palmetto",
+          "url": "https://www.nccih.nih.gov/health/saw-palmetto",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-10"
     }
   ]
 }
