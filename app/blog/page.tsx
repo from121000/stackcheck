@@ -9,6 +9,34 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'passionflower-drug-interactions',
+    title: 'Passionflower Drug Interactions: Sedatives, Benzodiazepines, and More',
+    description:
+      'Passionflower flavonoids modulate GABA-A receptors — the same system as benzodiazepines and z-drugs — producing additive sedation with CNS depressants including prescription sleep medications and alcohol.',
+    date: '2026-07-11',
+  },
+  {
+    slug: 'feverfew-drug-interactions',
+    title: 'Feverfew Drug Interactions: Antiplatelet Effects, Warfarin, and NSAIDs',
+    description:
+      "Feverfew parthenolide inhibits platelet aggregation through collagen-induced activation and serotonin pathways, creating additive bleeding risk with warfarin, aspirin, and clopidogrel. What NCCIH documents.",
+    date: '2026-07-11',
+  },
+  {
+    slug: 'grape-seed-extract-drug-interactions',
+    title: 'Grape Seed Extract Drug Interactions: Antiplatelet Effects and More',
+    description:
+      'Grape seed extract proanthocyanidins inhibit platelet aggregation via thromboxane A2 suppression and collagen-induced activation, creating additive bleeding risk with anticoagulants and antiplatelet drugs.',
+    date: '2026-07-11',
+  },
+  {
+    slug: 'milk-thistle-drug-interactions',
+    title: 'Milk Thistle Drug Interactions: CYP Enzymes, Warfarin, and More',
+    description:
+      'Silymarin inhibits CYP2C9 and CYP3A4, raising plasma concentrations of warfarin, cyclosporine, tacrolimus, and many other medications. Narrow-therapeutic-index drugs carry the most clinical concern.',
+    date: '2026-07-11',
+  },
+  {
     slug: 'saw-palmetto-drug-interactions',
     title: 'Saw Palmetto Drug Interactions: Antiplatelet Effects and What to Know',
     description:

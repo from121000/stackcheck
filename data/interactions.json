@@ -875,6 +875,82 @@
         }
       ],
       "last_reviewed": "2026-07-10"
+    },
+    {
+      "id": "milk-thistle-cyp-substrates",
+      "a": "milk thistle",
+      "b": "cyp substrates",
+      "aliases_a": ["silymarin", "silybum marianum", "milk thistle extract", "milk thistle supplement", "silibinin", "silybin"],
+      "aliases_b": ["warfarin", "coumadin", "cyclosporine", "neoral", "sandimmune", "tacrolimus", "prograf", "simvastatin", "lovastatin", "atorvastatin", "tamoxifen", "midazolam", "diazepam", "alprazolam", "nifedipine", "amlodipine", "carbamazepine", "phenytoin", "dilantin", "losartan", "irbesartan", "celecoxib", "celebrex", "fluoxetine", "fluvastatin"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Silymarin, the active flavonolignan complex in milk thistle, inhibits cytochrome P450 enzymes CYP2C9 and CYP3A4, as well as P-glycoprotein and organic anion transporting polypeptides (OATPs). CYP2C9 metabolizes warfarin, many NSAIDs, and certain antidiabetic drugs; CYP3A4 metabolizes a very large proportion of common medications including immunosuppressants, statins, benzodiazepines, and many others. Inhibiting these enzymes slows drug metabolism, raising plasma levels of affected medications.",
+      "summary": "Milk thistle (silymarin) may inhibit CYP2C9 and CYP3A4, raising plasma concentrations of medications metabolized through these pathways, including warfarin, cyclosporine, tacrolimus, and certain statins. NCCIH notes that milk thistle may interact with medications changed by the liver. The interaction is of greatest concern with narrow-therapeutic-index drugs.",
+      "sources": [
+        {
+          "title": "Milk Thistle",
+          "url": "https://www.nccih.nih.gov/health/milk-thistle",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-11"
+    },
+    {
+      "id": "grape-seed-anticoagulants",
+      "a": "grape seed extract",
+      "b": "anticoagulants",
+      "aliases_a": ["opc", "oligomeric proanthocyanidins", "grape seed", "grape seed supplement", "vitis vinifera", "proanthocyanidins", "grape seed extract supplement"],
+      "aliases_b": ["warfarin", "coumadin", "aspirin", "clopidogrel", "plavix", "apixaban", "eliquis", "rivaroxaban", "xarelto", "dabigatran", "pradaxa", "anticoagulant", "antiplatelet", "blood thinner", "nsaid", "ibuprofen", "naproxen"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Proanthocyanidins in grape seed extract inhibit platelet aggregation through multiple pathways including suppression of thromboxane A2 synthesis and inhibition of collagen-induced platelet activation. These antiplatelet effects are additive with anticoagulant and antiplatelet medications. Some evidence also suggests grape seed extract may inhibit CYP3A4 at high doses, potentially raising plasma levels of medications metabolized through that enzyme.",
+      "summary": "Grape seed extract has antiplatelet properties that may increase bleeding risk when combined with warfarin, aspirin, clopidogrel, or direct oral anticoagulants. NCCIH notes that grape seed extract may interact with blood-thinning medications. People on anticoagulant or antiplatelet therapy should disclose grape seed extract use to their healthcare provider.",
+      "sources": [
+        {
+          "title": "Grape Seed Extract",
+          "url": "https://www.nccih.nih.gov/health/grape-seed-extract",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-11"
+    },
+    {
+      "id": "feverfew-warfarin",
+      "a": "feverfew",
+      "b": "anticoagulants",
+      "aliases_a": ["tanacetum parthenium", "feverfew extract", "feverfew supplement", "parthenolide", "bachelor's button", "featherfew"],
+      "aliases_b": ["warfarin", "coumadin", "aspirin", "clopidogrel", "plavix", "apixaban", "eliquis", "rivaroxaban", "xarelto", "dabigatran", "pradaxa", "anticoagulant", "antiplatelet", "blood thinner", "nsaid", "ibuprofen", "naproxen"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Parthenolide and other sesquiterpene lactones in feverfew inhibit platelet aggregation by suppressing collagen-induced platelet activation and inhibiting arachidonic acid metabolism. These antiplatelet effects are additive with warfarin, aspirin, clopidogrel, and direct oral anticoagulants. Feverfew also modulates serotonin release from platelets and may affect prostaglandin synthesis.",
+      "summary": "Feverfew's parthenolide inhibits platelet aggregation, which may increase bleeding risk when combined with anticoagulants or antiplatelet medications such as warfarin, aspirin, or clopidogrel. NCCIH notes that feverfew may interact with blood-thinning medications. People taking anticoagulant therapy should inform their prescriber about feverfew use.",
+      "sources": [
+        {
+          "title": "Feverfew",
+          "url": "https://www.nccih.nih.gov/health/feverfew",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-11"
+    },
+    {
+      "id": "passionflower-cns-depressants",
+      "a": "passionflower",
+      "b": "cns depressants",
+      "aliases_a": ["passiflora incarnata", "passion flower", "passionflower extract", "passionflower supplement", "maypop", "passiflora"],
+      "aliases_b": ["benzodiazepine", "diazepam", "valium", "lorazepam", "ativan", "alprazolam", "xanax", "clonazepam", "klonopin", "zolpidem", "ambien", "eszopiclone", "lunesta", "temazepam", "midazolam", "gabapentin", "pregabalin", "phenobarbital", "alcohol", "ethanol", "sedative", "hypnotic", "sleeping pill", "sleep aid", "antihistamine", "diphenhydramine", "benadryl", "doxylamine", "morphine", "oxycodone", "hydrocodone", "tramadol", "opioid"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Passionflower contains flavonoids including chrysin that modulate GABA-A receptors — the same receptor system targeted by benzodiazepines, z-drugs (zolpidem, eszopiclone), and barbiturates. GABA-A modulation produces sedative and anxiolytic effects, and combining passionflower with other CNS depressants produces additive central nervous system depression, increasing sedation, cognitive impairment, and respiratory depression risk.",
+      "summary": "Passionflower may enhance the sedative effects of benzodiazepines, z-drugs, opioids, alcohol, and other CNS depressants through additive GABA-A modulation. NCCIH notes that passionflower may interact with sedative medications. People taking prescription sleep aids, anti-anxiety medications, or opioids should use caution with passionflower supplements.",
+      "sources": [
+        {
+          "title": "Passionflower",
+          "url": "https://www.nccih.nih.gov/health/passionflower",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-11"
     }
   ]
 }

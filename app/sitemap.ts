@@ -176,5 +176,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/milk-thistle-drug-interactions',
+      lastModified: new Date('2026-07-11'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/grape-seed-extract-drug-interactions',
+      lastModified: new Date('2026-07-11'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/feverfew-drug-interactions',
+      lastModified: new Date('2026-07-11'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/passionflower-drug-interactions',
+      lastModified: new Date('2026-07-11'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }
