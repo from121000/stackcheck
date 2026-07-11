@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: '5-htp-drug-interactions',
+    title: '5-HTP Drug Interactions: SSRIs, MAOIs, and Serotonin Syndrome Risk',
+    description:
+      '5-HTP directly increases serotonin production. Combined with SSRIs or MAOIs, it can produce serotonin syndrome — a serious and potentially dangerous reaction. What NCCIH documents and why this interaction is often missed.',
+    date: '2026-07-11',
+  },
+  {
     slug: 'passionflower-drug-interactions',
     title: 'Passionflower Drug Interactions: Sedatives, Benzodiazepines, and More',
     description:

@@ -951,6 +951,63 @@
         }
       ],
       "last_reviewed": "2026-07-11"
+    },
+    {
+      "id": "5htp-ssri",
+      "a": "5-htp",
+      "b": "ssri",
+      "aliases_a": ["5-hydroxytryptophan", "5 htp", "5htp", "l-5-htp", "oxitriptan", "griffonia simplicifolia"],
+      "aliases_b": ["selective serotonin reuptake inhibitor", "fluoxetine", "prozac", "sertraline", "zoloft", "escitalopram", "lexapro", "citalopram", "celexa", "paroxetine", "paxil", "fluvoxamine", "luvox", "vortioxetine", "antidepressant", "serotonin antidepressant"],
+      "category": "supplement-medication",
+      "severity": "high",
+      "mechanism": "5-HTP is the direct metabolic precursor to serotonin (5-hydroxytryptamine). It crosses the blood-brain barrier and is converted to serotonin by aromatic amino acid decarboxylase. SSRIs block the reuptake transporter that clears serotonin from the synapse, increasing serotonin availability. Combining 5-HTP with an SSRI elevates serotonin through two independent mechanisms simultaneously — increased synthesis plus reduced clearance — which can push serotonin activity to dangerous levels, producing serotonin syndrome.",
+      "summary": "Combining 5-HTP with SSRIs may cause serotonin syndrome — a potentially serious condition characterized by agitation, tremor, rapid heart rate, and in severe cases, hyperthermia and seizures. NCCIH notes this as a significant interaction. The combination elevates serotonin through both increased production (5-HTP) and reduced clearance (SSRI reuptake inhibition), and is generally contraindicated.",
+      "sources": [
+        {
+          "title": "5-Hydroxytryptophan (5-HTP)",
+          "url": "https://www.nccih.nih.gov/health/5-hydroxytryptophan-5-htp",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-11"
+    },
+    {
+      "id": "5htp-maoi",
+      "a": "5-htp",
+      "b": "maoi",
+      "aliases_a": ["5-hydroxytryptophan", "5 htp", "5htp", "l-5-htp", "oxitriptan", "griffonia simplicifolia"],
+      "aliases_b": ["monoamine oxidase inhibitor", "phenelzine", "nardil", "tranylcypromine", "parnate", "isocarboxazid", "marplan", "selegiline", "emsam", "rasagiline", "azilect", "linezolid", "zyvox", "methylene blue"],
+      "category": "supplement-medication",
+      "severity": "high",
+      "mechanism": "Monoamine oxidase inhibitors (MAOIs) block the enzyme that breaks down serotonin, dopamine, and norepinephrine. 5-HTP directly increases serotonin synthesis by providing its immediate precursor. The combination produces a severe excess of serotonin through simultaneous overproduction and blocked degradation — a high-risk scenario for serotonin syndrome, which can be fatal.",
+      "summary": "Combining 5-HTP with MAOIs is high-risk for serotonin syndrome due to simultaneous increased serotonin synthesis (5-HTP) and blocked serotonin breakdown (MAOI). This combination is generally contraindicated. NCCIH flags this interaction. The risk applies to irreversible MAOIs (phenelzine, tranylcypromine), selective MAO-B inhibitors (selegiline, rasagiline), and linezolid (an antibiotic with MAOI properties).",
+      "sources": [
+        {
+          "title": "5-Hydroxytryptophan (5-HTP)",
+          "url": "https://www.nccih.nih.gov/health/5-hydroxytryptophan-5-htp",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-11"
+    },
+    {
+      "id": "coq10-warfarin",
+      "a": "coq10",
+      "b": "warfarin",
+      "aliases_a": ["coenzyme q10", "coq-10", "ubiquinol", "ubiquinone", "coenzyme q", "q10"],
+      "aliases_b": ["coumadin", "warfarin sodium"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "CoQ10 (coenzyme Q10) has a structural similarity to vitamin K2 and may mildly support the vitamin K-dependent clotting pathway, potentially reducing warfarin's anticoagulant effect. Case reports and some clinical data document reduced INR (increased clotting tendency) in patients taking CoQ10 alongside warfarin. The mechanism is not fully established — the structural analogy to vitamin K is the leading hypothesis but alternative mechanisms have not been ruled out.",
+      "summary": "CoQ10 supplementation has been associated with reduced warfarin effectiveness in case reports and some clinical studies, potentially lowering INR and reducing anticoagulation. NCCIH notes that CoQ10 may interact with warfarin. People on warfarin who start or stop CoQ10 supplementation should monitor INR more frequently.",
+      "sources": [
+        {
+          "title": "Coenzyme Q10",
+          "url": "https://www.nccih.nih.gov/health/coenzyme-q10",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-11"
     }
   ]
 }
