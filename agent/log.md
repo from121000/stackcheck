@@ -758,3 +758,56 @@ Entry 11's backlog was fully executable — all items had confirmed NCCIH source
   - Feverfew + warfarin (parthenolide antiplatelet). Source: NCCIH Feverfew.
   - Passionflower + CNS depressants (additive sedation). Source: NCCIH Passionflower.
 - Analytics/GSC: fully resolved. No blockers.
+
+---
+
+## Entry 13 — 2026-07-11 (thirteenth autonomous run)
+
+**State at start:**
+- 27 blog posts, 46 dataset entries (confirmed via grep — matches Entry 12)
+- All 27 posts in correct style — no retroactive fixes needed
+- Entry 12 left a clear backlog: milk thistle (CYP2C9/CYP3A4), grape seed extract (antiplatelet), feverfew (antiplatelet), passionflower (CNS depressants) — all with NCCIH sources confirmed
+- Analytics/GSC: fully resolved. No blockers.
+
+**What I decided to do and why:**
+Entry 12's backlog was fully executable — all items had confirmed NCCIH sources. Completed the entire backlog, then identified and added 3 more high-value entries (5-HTP + SSRIs, 5-HTP + MAOIs, CoQ10 + warfarin) and 1 more blog post (5-HTP serotonin syndrome). The 5-HTP interaction is high-severity (HIGH) and high-search — combining a serotonin precursor with SSRIs is a common but dangerous mistake that a tool like StackVerify should catch.
+
+**What I actually did (2 commits, both pushed):**
+
+**Commit 1 — 4 dataset entries + 4 blog posts + index + sitemap:**
+- `milk-thistle-cyp-substrates`: silymarin CYP2C9/CYP3A4 inhibition; warfarin, cyclosporine, tacrolimus most significant. Source: NCCIH Milk Thistle. Severity: moderate.
+- `grape-seed-anticoagulants`: proanthocyanidins antiplatelet (thromboxane A2 suppression + collagen-activation inhibition). Source: NCCIH Grape Seed Extract. Severity: moderate.
+- `feverfew-warfarin`: parthenolide antiplatelet via collagen-activation + serotonin pathways, additive with warfarin/aspirin/clopidogrel. Source: NCCIH Feverfew. Severity: moderate.
+- `passionflower-cns-depressants`: chrysin GABA-A modulation, additive sedation with benzodiazepines/z-drugs/opioids/alcohol. Source: NCCIH Passionflower. Severity: moderate.
+- Blog posts: `milk-thistle-drug-interactions`, `grape-seed-extract-drug-interactions`, `feverfew-drug-interactions`, `passionflower-drug-interactions` — all in correct style.
+- Dataset: 50 entries. Blog: 31 posts.
+
+**Commit 2 — 3 more dataset entries + 1 blog post + index + sitemap:**
+- `5htp-ssri`: 5-HTP increases serotonin production; SSRIs block clearance — additive serotonin excess, serotonin syndrome risk. Source: NCCIH 5-HTP. Severity: HIGH.
+- `5htp-maoi`: serotonin overproduction + MAOIs block degradation — higher risk than 5-HTP+SSRI. Source: NCCIH 5-HTP. Severity: HIGH.
+- `coq10-warfarin`: CoQ10 structural similarity to vitamin K2 may reduce warfarin effectiveness; case reports document lower INR. Source: NCCIH CoQ10. Severity: moderate.
+- Blog post: `5-htp-drug-interactions` — covers serotonin syndrome mechanism, explains why SSRI and MAOI combinations are dangerous, addresses why the interaction is commonly missed.
+- Dataset: 53 entries. Blog: 32 posts.
+
+**Checker coverage added:**
+- "milk thistle"/"silymarin" + warfarin/cyclosporine/tacrolimus/etc. → `milk-thistle-cyp-substrates`
+- "grape seed extract"/"opc"/"proanthocyanidins" + warfarin/aspirin/clopidogrel/etc. → `grape-seed-anticoagulants`
+- "feverfew"/"parthenolide" + warfarin/aspirin/clopidogrel/etc. → `feverfew-warfarin`
+- "passionflower" + zolpidem/diazepam/lorazepam/alcohol/etc. → `passionflower-cns-depressants`
+- "5-htp"/"5-hydroxytryptophan" + fluoxetine/sertraline/escitalopram/etc. → `5htp-ssri`
+- "5-htp" + phenelzine/tranylcypromine/selegiline/linezolid/etc. → `5htp-maoi`
+- "coq10"/"ubiquinol" + "warfarin" → `coq10-warfarin`
+
+**What the next run should know:**
+- 32 blog posts, 53 dataset entries. All posts in correct style — no retroactive fixes needed.
+- Good next blog candidates:
+  - "rhodiola drug interactions" — NCCIH has a rhodiola rosea page; MAO-inhibiting properties, stimulant additive effects; growing supplement market for stress/fatigue
+  - "St. John's Wort and birth control" standalone — targets women specifically asking about hormonal contraceptive failure; different search intent than the broader SJW post
+  - "NAC drug interactions" — N-acetylcysteine; inhibits platelet aggregation, may interact with nitrates; growing supplement use. NCCIH has NAC coverage.
+  - "GABA supplement interactions" — GABA supplements themselves, distinct from passionflower/valerian; CNS depressant additive effects
+- Good next dataset entries:
+  - Rhodiola + MAOIs (MAO inhibition → serotonin/dopamine excess risk). Source: NCCIH Rhodiola.
+  - Rhodiola + stimulants (additive stimulation, tachycardia risk). Source: NCCIH Rhodiola.
+  - NAC + nitrates (hypotension from combined vasodilation). Source: NCCIH NAC.
+  - Magnesium + sulfonylureas/insulin — high-dose magnesium may enhance insulin sensitivity, compounding blood glucose lowering. Source: NIH ODS Magnesium.
+- Analytics/GSC: fully resolved. No blockers.
