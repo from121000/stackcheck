@@ -1008,6 +1008,63 @@
         }
       ],
       "last_reviewed": "2026-07-11"
+    },
+    {
+      "id": "rhodiola-maois",
+      "a": "rhodiola",
+      "b": "maoi",
+      "aliases_a": ["rhodiola rosea", "golden root", "arctic root", "hong jing tian", "rosavin", "salidroside", "rhodiola extract"],
+      "aliases_b": ["monoamine oxidase inhibitor", "phenelzine", "nardil", "tranylcypromine", "parnate", "isocarboxazid", "marplan", "selegiline", "emsam", "rasagiline", "azilect", "linezolid", "zyvox", "methylene blue"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Rhodiola rosea extracts, particularly salidroside and rosavins, have demonstrated mild monoamine oxidase (MAO) inhibitory activity in preclinical studies. Combining rhodiola with prescription MAOIs could amplify MAO inhibition, potentially producing excess serotonin, dopamine, and norepinephrine. NCCIH notes that rhodiola may interact with drugs affecting monoamine systems.",
+      "summary": "Rhodiola may have mild MAO-inhibiting properties that could be additive with prescription MAOIs, potentially contributing to excess monoamine neurotransmitter levels. The clinical significance of this interaction is not well-characterized, but the theoretical basis for additive MAO inhibition warrants caution. Anyone taking phenelzine, tranylcypromine, selegiline, rasagiline, or linezolid should discuss rhodiola use with a prescriber.",
+      "sources": [
+        {
+          "title": "Rhodiola",
+          "url": "https://www.nccih.nih.gov/health/rhodiola",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-12"
+    },
+    {
+      "id": "rhodiola-stimulants",
+      "a": "rhodiola",
+      "b": "stimulants",
+      "aliases_a": ["rhodiola rosea", "golden root", "arctic root", "hong jing tian", "rosavin", "salidroside", "rhodiola extract"],
+      "aliases_b": ["methylphenidate", "ritalin", "concerta", "amphetamine", "adderall", "dextroamphetamine", "lisdexamfetamine", "vyvanse", "modafinil", "provigil", "armodafinil", "phentermine", "ephedrine", "pseudoephedrine", "caffeine"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Rhodiola rosea acts as an adaptogen with stimulant-like properties. It appears to influence dopaminergic and noradrenergic neurotransmission, reducing fatigue and improving physical and cognitive performance. Combined with stimulant medications (methylphenidate, amphetamines, modafinil) or high-dose caffeine, the additive stimulation may increase cardiovascular effects including heart rate and blood pressure, and heighten anxiety or insomnia.",
+      "summary": "Rhodiola has stimulant-like properties that may be additive with prescription stimulants or high-dose caffeine, potentially increasing cardiovascular effects and anxiety. NCCIH notes caution with combining rhodiola with stimulant medications. The interaction is considered moderate rather than high-severity because rhodiola's stimulant mechanism is indirect and adaptogenic rather than a direct CNS stimulant like amphetamines.",
+      "sources": [
+        {
+          "title": "Rhodiola",
+          "url": "https://www.nccih.nih.gov/health/rhodiola",
+          "publisher": "National Center for Complementary and Integrative Health (NCCIH)"
+        }
+      ],
+      "last_reviewed": "2026-07-12"
+    },
+    {
+      "id": "magnesium-antidiabetics",
+      "a": "magnesium",
+      "b": "antidiabetic medications",
+      "aliases_a": ["magnesium supplement", "magnesium citrate", "magnesium glycinate", "magnesium oxide", "magnesium chloride", "magnesium malate", "mag"],
+      "aliases_b": ["insulin", "sulfonylurea", "glipizide", "glucotrol", "glyburide", "diabeta", "micronase", "glimepiride", "amaryl", "glibenclamide", "tolbutamide", "chlorpropamide", "metformin", "glucophage", "blood sugar medication", "diabetes medication", "hypoglycemic agent"],
+      "category": "supplement-medication",
+      "severity": "low",
+      "mechanism": "Magnesium is a cofactor for insulin receptor tyrosine kinase and plays a central role in insulin signaling. The NIH ODS Magnesium fact sheet documents that magnesium deficiency is associated with impaired insulin secretion and action, and that adequate magnesium may enhance insulin sensitivity. High-dose magnesium supplementation could theoretically compound the blood glucose-lowering effect of insulin and sulfonylureas; however, the clinical evidence for this interaction causing significant hypoglycemia is limited and most effects are modest.",
+      "summary": "Magnesium plays a role in insulin signaling and glucose metabolism. High-dose supplementation may modestly enhance insulin sensitivity, which could add to the glucose-lowering effect of antidiabetic medications. The NIH ODS notes this relationship, though clinically significant hypoglycemia from this combination is uncommon. People managing diabetes who use magnesium supplements should monitor blood glucose, particularly at higher supplemental doses.",
+      "sources": [
+        {
+          "title": "Magnesium — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-12"
     }
   ]
 }

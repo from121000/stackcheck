@@ -206,5 +206,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/rhodiola-drug-interactions',
+      lastModified: new Date('2026-07-12'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/st-johns-wort-and-birth-control',
+      lastModified: new Date('2026-07-12'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }

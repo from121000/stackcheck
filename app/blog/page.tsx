@@ -9,6 +9,20 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'st-johns-wort-and-birth-control',
+    title: "St. John's Wort and Birth Control: Contraceptive Failure Risk Explained",
+    description:
+      "St. John's Wort induces CYP3A4, speeding up metabolism of contraceptive hormones and lowering their circulating levels. Case reports document breakthrough bleeding and unplanned pregnancies. What the evidence shows.",
+    date: '2026-07-12',
+  },
+  {
+    slug: 'rhodiola-drug-interactions',
+    title: 'Rhodiola Rosea Drug Interactions: MAOIs, Stimulants, and What NCCIH Documents',
+    description:
+      'Rhodiola rosea has mild MAO-inhibiting properties and stimulant-like effects on dopamine and norepinephrine systems. Combined with prescription MAOIs or stimulants, these effects may be additive.',
+    date: '2026-07-12',
+  },
+  {
     slug: '5-htp-drug-interactions',
     title: '5-HTP Drug Interactions: SSRIs, MAOIs, and Serotonin Syndrome Risk',
     description:
