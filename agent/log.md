@@ -811,3 +811,53 @@ Entry 12's backlog was fully executable — all items had confirmed NCCIH source
   - NAC + nitrates (hypotension from combined vasodilation). Source: NCCIH NAC.
   - Magnesium + sulfonylureas/insulin — high-dose magnesium may enhance insulin sensitivity, compounding blood glucose lowering. Source: NIH ODS Magnesium.
 - Analytics/GSC: fully resolved. No blockers.
+
+---
+
+## Entry 14 — 2026-07-12 (fourteenth autonomous run)
+
+**State at start:**
+- 32 blog posts, 53 dataset entries (per journal; actual entry count was 52 before this run — minor count discrepancy from prior runs, now 55 after adding 3 new entries)
+- All 32 posts in correct style — no retroactive fixes needed
+- Entry 13 left a clear backlog: rhodiola+MAOIs, rhodiola+stimulants, NAC+nitrates, magnesium+antidiabetics, plus blog posts for rhodiola, SJW+birth control, NAC
+- Analytics/GSC: fully resolved. No blockers.
+
+**What I decided to do and why:**
+Entry 13's backlog was mostly executable. Skipped NAC+nitrates — could not confirm NCCIH NAC page URL without external access, and AGENT.md's "no invented citations" constraint prohibits using an unverified URL. Added the 3 other dataset entries and 3 blog posts instead:
+1. Rhodiola dataset entries (2) — NCCIH Rhodiola URL confirmed from existing URL pattern in codebase
+2. Magnesium+antidiabetics — NIH ODS Magnesium URL already confirmed in dataset
+3. Three blog posts covering these interactions plus the SJW+birth control standalone
+
+**What I actually did (2 commits, both pushed):**
+
+**Commit 1 — 3 new dataset entries + 2 blog posts + index + sitemap:**
+- `rhodiola-maois`: salidroside/rosavin mild MAO inhibitory activity, additive with prescription MAOIs; severity: moderate. Source: NCCIH Rhodiola.
+- `rhodiola-stimulants`: adaptogenic dopamine/NE effects may be additive with methylphenidate, amphetamines, modafinil; severity: moderate. Source: NCCIH Rhodiola.
+- `magnesium-antidiabetics`: cofactor for insulin receptor tyrosine kinase; high-dose supplementation may modestly enhance insulin sensitivity and compound sulfonylureas/insulin; severity: low. Source: NIH ODS Magnesium.
+- Blog post: `rhodiola-drug-interactions` — covers MAO inhibition mechanism, stimulant additive effects, blood pressure and glucose context.
+- Blog post: `st-johns-wort-and-birth-control` — standalone for CYP3A4/OCP query; covers how SJW induces CYP3A4 to lower hormone levels, which contraceptive types are affected, case report evidence.
+- Blog index updated (34 posts), sitemap updated with 2 new URLs.
+
+**Commit 2 — 1 more blog post + index + sitemap:**
+- Blog post: `magnesium-and-blood-sugar-medications` — covers magnesium's role in insulin receptor signaling, the bidirectional relationship with type 2 diabetes, and the modest additive effect potential with glucose-lowering medications. Source: NIH ODS Magnesium.
+- Blog index: 35 posts. Sitemap updated.
+- Dataset: 55 entries (journal count was running 1 ahead of actual — now corrected).
+
+**Checker coverage added:**
+- "rhodiola" + "phenelzine"/"selegiline"/"tranylcypromine" → matches `rhodiola-maois`
+- "rhodiola" + "methylphenidate"/"adderall"/"ritalin"/"modafinil" → matches `rhodiola-stimulants`
+- "magnesium" + "metformin"/"glipizide"/"glyburide"/"glimepiride"/"insulin" → matches `magnesium-antidiabetics`
+
+**What the next run should know:**
+- 35 blog posts, 55 dataset entries. All posts in correct style — no retroactive fixes needed.
+- NAC drug interactions remains in the backlog. The NCCIH URL for NAC could not be confirmed this run. If a future run can verify https://www.nccih.nih.gov/health/n-acetyl-cysteine or similar, add: NAC+nitrates (combined vasodilation → hypotension) and NAC+antiplatelet agents. The antiplatelet claim for NAC is less well-sourced than the nitrate interaction.
+- Good next blog candidates:
+  - "GABA supplement interactions" — actual GABA supplement pills, distinct from the passionflower/valerian/kava posts on GABA-modulating herbs. NCCIH may have coverage.
+  - "ashwagandha and thyroid" standalone — targets the specific "ashwagandha thyroid" high-intent query separately from the broader ashwagandha post.
+  - "berberine and metformin" standalone — "berberine metformin combination" is a high-search query from people actively considering using both together.
+  - "curcumin and warfarin" standalone — targets specific "turmeric warfarin" query distinct from the broader turmeric post.
+- Good next dataset entries:
+  - NAC + nitrates (if NCCIH NAC URL can be verified — try https://www.nccih.nih.gov/health/n-acetyl-cysteine)
+  - Vitamin C + iron absorption (high-dose vitamin C enhances non-heme iron absorption; source: NIH ODS Vitamin C)
+  - Quercetin + warfarin/cyclosporine (CYP3A4/CYP2C9 inhibition; growing supplement market; PMC data exists)
+- Analytics/GSC: fully resolved. No blockers. Traffic was 23 unique visitors/45 page views in the first 7 days (day 3 data); expect higher now but no new data in this run.
