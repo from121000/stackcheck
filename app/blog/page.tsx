@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'magnesium-and-blood-sugar-medications',
+    title: 'Magnesium and Blood Sugar Medications: What the NIH ODS Documents',
+    description:
+      "Magnesium is a cofactor in insulin receptor signaling. High-dose supplementation may modestly enhance insulin sensitivity and compound the glucose-lowering effect of sulfonylureas and insulin. What the evidence shows.",
+    date: '2026-07-12',
+  },
+  {
     slug: 'st-johns-wort-and-birth-control',
     title: "St. John's Wort and Birth Control: Contraceptive Failure Risk Explained",
     description:
