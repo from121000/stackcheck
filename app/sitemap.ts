@@ -207,6 +207,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: 'https://stackverify.app/blog/curcumin-and-warfarin',
+      lastModified: new Date('2026-07-13'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/ashwagandha-and-thyroid',
+      lastModified: new Date('2026-07-13'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/berberine-and-metformin',
+      lastModified: new Date('2026-07-13'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://stackverify.app/blog/rhodiola-drug-interactions',
       lastModified: new Date('2026-07-12'),
       changeFrequency: 'monthly',

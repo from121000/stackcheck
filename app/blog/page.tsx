@@ -9,6 +9,27 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'curcumin-and-warfarin',
+    title: 'Curcumin and Warfarin: Antiplatelet Effects, INR Blind Spots, and What to Know',
+    description:
+      'Curcumin inhibits platelet aggregation through thromboxane B2 suppression — an effect INR testing does not capture. Combined with warfarin, the bleeding risk is broader than most people realize.',
+    date: '2026-07-13',
+  },
+  {
+    slug: 'ashwagandha-and-thyroid',
+    title: 'Ashwagandha and Thyroid Medications: What the Evidence Shows',
+    description:
+      'Ashwagandha raises T4 and T3 levels in human studies, creating a real interaction with levothyroxine. For people on thyroid medication, this additive effect can push hormone levels too high.',
+    date: '2026-07-13',
+  },
+  {
+    slug: 'berberine-and-metformin',
+    title: 'Berberine and Metformin Together: Additive Blood Sugar Effects Explained',
+    description:
+      'Both berberine and metformin activate AMPK to lower blood glucose, producing additive effects when combined. What this means for people managing type 2 diabetes with medication.',
+    date: '2026-07-13',
+  },
+  {
     slug: 'magnesium-and-blood-sugar-medications',
     title: 'Magnesium and Blood Sugar Medications: What the NIH ODS Documents',
     description:
