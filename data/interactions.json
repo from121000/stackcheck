@@ -1065,6 +1065,25 @@
         }
       ],
       "last_reviewed": "2026-07-12"
+    },
+    {
+      "id": "vitamin-c-iron-absorption",
+      "a": "vitamin c",
+      "b": "iron",
+      "aliases_a": ["ascorbic acid", "ascorbate", "vitamin c supplement", "l-ascorbic acid"],
+      "aliases_b": ["iron supplement", "ferrous sulfate", "ferrous gluconate", "ferrous fumarate", "iron bisglycinate", "ferric iron", "elemental iron"],
+      "category": "supplement-supplement",
+      "severity": "low",
+      "mechanism": "Ascorbic acid reduces ferric iron (Fe³⁺) to ferrous iron (Fe²⁺), the form transported across the intestinal wall by the DMT1 divalent metal transporter. Ascorbic acid also forms a chelate with iron in the gut lumen that remains soluble at the higher pH of the duodenum, preventing precipitation and keeping iron bioavailable for absorption. Together these effects can increase non-heme iron absorption 2- to 4-fold when vitamin C is consumed simultaneously with an iron supplement.",
+      "summary": "Vitamin C substantially enhances non-heme iron absorption by reducing ferric to ferrous iron and maintaining solubility in the gut. Taking iron supplements with vitamin C increases absorption, which is beneficial for people with iron deficiency but warrants attention for those with hemochromatosis or other iron overload conditions. Per the NIH ODS Vitamin C fact sheet, ascorbic acid is a recognized enhancer of non-heme iron absorption.",
+      "sources": [
+        {
+          "title": "Vitamin C — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-13"
     }
   ]
 }
