@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'omeprazole-and-iron-absorption',
+    title: 'Omeprazole and Iron Absorption: Does Your PPI Affect Iron Levels?',
+    description:
+      'Proton pump inhibitors like omeprazole suppress the gastric acid needed to convert dietary iron to its absorbable form. Long-term PPI use is associated with iron deficiency in epidemiological studies.',
+    date: '2026-07-14',
+  },
+  {
     slug: 'melatonin-and-alcohol',
     title: 'Melatonin and Alcohol: Sedation, Sleep Quality, and What to Know',
     description:

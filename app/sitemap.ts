@@ -260,5 +260,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/omeprazole-and-iron-absorption',
+      lastModified: new Date('2026-07-14'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }

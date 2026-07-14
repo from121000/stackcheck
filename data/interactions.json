@@ -1084,6 +1084,44 @@
         }
       ],
       "last_reviewed": "2026-07-13"
+    },
+    {
+      "id": "iron-ppis",
+      "a": "iron",
+      "b": "proton pump inhibitors",
+      "aliases_a": ["iron supplement", "ferrous sulfate", "ferrous gluconate", "ferrous fumarate", "iron bisglycinate", "ferric iron", "elemental iron", "fe"],
+      "aliases_b": ["ppi", "omeprazole", "prilosec", "lansoprazole", "prevacid", "pantoprazole", "protonix", "esomeprazole", "nexium", "rabeprazole", "aciphex", "dexlansoprazole"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Gastric acid is required to reduce ferric iron (Fe³⁺) to ferrous iron (Fe²⁺), the form absorbed by the DMT1 transporter in the small intestine. Proton pump inhibitors (PPIs) suppress gastric acid secretion, raising stomach pH and impairing this conversion. As a result, non-heme iron absorption from food and most iron supplements is reduced in people on PPI therapy.",
+      "summary": "Long-term PPI use may reduce non-heme iron absorption by suppressing gastric acid needed to convert Fe³⁺ to Fe²⁺. Epidemiological studies have found associations between chronic PPI use and iron deficiency; the NIH ODS Iron fact sheet identifies this as a clinically relevant interaction.",
+      "sources": [
+        {
+          "title": "Iron — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-14"
+    },
+    {
+      "id": "magnesium-ppis",
+      "a": "magnesium",
+      "b": "proton pump inhibitors",
+      "aliases_a": ["magnesium supplement", "magnesium glycinate", "magnesium citrate", "magnesium oxide", "magnesium malate", "mg", "magnesium chloride"],
+      "aliases_b": ["ppi", "omeprazole", "prilosec", "lansoprazole", "prevacid", "pantoprazole", "protonix", "esomeprazole", "nexium", "rabeprazole", "aciphex", "dexlansoprazole"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Long-term PPI use impairs active magnesium transport in the colon through a mechanism that is not fully characterized but appears to disrupt paracellular and transcellular transport pathways. The result is hypomagnesemia (low serum magnesium) that is resistant to oral supplementation in some individuals and may require IV magnesium or PPI discontinuation to correct. The FDA issued a safety communication in 2011 requiring PPI labeling to include this warning.",
+      "summary": "Prolonged PPI use (typically more than one year) is associated with hypomagnesemia, documented enough to warrant an FDA safety communication. Oral magnesium supplementation does not reliably correct PPI-induced hypomagnesemia in all affected individuals. People on long-term PPI therapy who are taking magnesium should monitor for symptoms of low magnesium. Per the NIH ODS Magnesium fact sheet, this interaction is clinically significant with long-term PPI use.",
+      "sources": [
+        {
+          "title": "Magnesium — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-14"
     }
   ]
 }
