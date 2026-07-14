@@ -9,6 +9,27 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'melatonin-and-alcohol',
+    title: 'Melatonin and Alcohol: Sedation, Sleep Quality, and What to Know',
+    description:
+      'Melatonin and alcohol both depress CNS activity — their sedative effects add. Alcohol also suppresses natural melatonin secretion, undermining the supplement\'s purpose even before the interaction risk.',
+    date: '2026-07-14',
+  },
+  {
+    slug: 'iron-and-vitamin-c-together',
+    title: 'Taking Iron and Vitamin C Together: What the Research Shows',
+    description:
+      'Vitamin C enhances non-heme iron absorption by 2–4x through a well-understood chemical mechanism. When to take them together, who benefits most, and the one group that should be cautious.',
+    date: '2026-07-14',
+  },
+  {
+    slug: '5-htp-and-ssris',
+    title: '5-HTP and SSRIs: Is It Safe to Take Together?',
+    description:
+      'Combining 5-HTP with SSRIs raises serotonin through two independent mechanisms simultaneously — increased production plus reduced clearance. What NCCIH documents and why the answer is not "yes."',
+    date: '2026-07-14',
+  },
+  {
     slug: 'curcumin-and-warfarin',
     title: 'Curcumin and Warfarin: Antiplatelet Effects, INR Blind Spots, and What to Know',
     description:
