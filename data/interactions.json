@@ -1122,6 +1122,63 @@
         }
       ],
       "last_reviewed": "2026-07-14"
+    },
+    {
+      "id": "calcium-iron",
+      "a": "calcium",
+      "b": "iron",
+      "aliases_a": ["calcium supplement", "calcium citrate", "calcium carbonate", "calcium gluconate", "calcium phosphate", "ca", "cal", "calcium carbonate supplement"],
+      "aliases_b": ["iron supplement", "ferrous sulfate", "ferrous gluconate", "ferrous fumarate", "iron bisglycinate", "elemental iron", "fe", "iron tablet"],
+      "category": "supplement-supplement",
+      "severity": "moderate",
+      "mechanism": "Calcium and iron compete for absorption at the DMT1 (divalent metal transporter 1) in the small intestinal lining. Both are divalent cations — Ca²⁺ and Fe²⁺ — and DMT1 handles multiple divalent metals with overlapping affinity. High supplemental doses of calcium taken simultaneously with an iron supplement reduce iron absorption, with reductions of 30–60% reported in human studies depending on calcium dose and iron source. The interaction is dose-dependent and most pronounced at supplemental concentrations, not typical dietary calcium intakes.",
+      "summary": "Taking high-dose calcium and iron supplements at the same time may significantly reduce iron absorption through competition at the DMT1 intestinal transporter. The NIH ODS Calcium fact sheet identifies this interaction as clinically relevant for people supplementing both minerals. Separating the two by at least two hours substantially reduces the competition.",
+      "sources": [
+        {
+          "title": "Calcium — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-15"
+    },
+    {
+      "id": "ppi-vitamin-b12",
+      "a": "proton pump inhibitors",
+      "b": "vitamin b12",
+      "aliases_a": ["ppi", "omeprazole", "prilosec", "lansoprazole", "prevacid", "pantoprazole", "protonix", "esomeprazole", "nexium", "rabeprazole", "aciphex", "dexlansoprazole", "proton pump inhibitor"],
+      "aliases_b": ["vitamin b12", "b12", "cobalamin", "cyanocobalamin", "methylcobalamin", "adenosylcobalamin", "vitamin b-12", "b-12"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Dietary vitamin B12 is bound to food proteins and must be released by gastric acid before it can bind to intrinsic factor (secreted by gastric parietal cells) and be absorbed in the ileum. Proton pump inhibitors suppress parietal cell acid secretion, raising stomach pH and impairing both the acid-mediated protein release of B12 and parietal cell function. Crystalline B12 in supplements is already unbound and does not require acid-mediated release — it only needs intrinsic factor — making high-dose crystalline supplements substantially less affected than dietary B12.",
+      "summary": "Long-term PPI use reduces dietary vitamin B12 absorption by impairing gastric acid-mediated release of B12 from food proteins. Crystalline B12 supplements (common in tablet or sublingual form) are less affected than dietary sources since they do not require the acid-dependent unbinding step. The NIH ODS Vitamin B12 fact sheet identifies chronic PPI use as a clinically relevant cause of B12 malabsorption.",
+      "sources": [
+        {
+          "title": "Vitamin B12 — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-15"
+    },
+    {
+      "id": "folate-methotrexate",
+      "a": "folic acid",
+      "b": "methotrexate",
+      "aliases_a": ["folate", "folate supplement", "folic acid supplement", "methylfolate", "l-methylfolate", "5-mthf", "vitamin b9", "b9", "folinic acid", "leucovorin"],
+      "aliases_b": ["mtx", "rheumatrex", "trexall", "otrexup", "methotrexate sodium"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Methotrexate competitively inhibits dihydrofolate reductase (DHFR), the enzyme that activates folate for DNA synthesis. At low doses used in rheumatoid arthritis and psoriasis, co-prescription of folic acid supplements is standard practice — it reduces GI toxicity, oral ulcers, and liver enzyme elevations without significantly diminishing anti-inflammatory efficacy, because the anti-inflammatory mechanism at low doses is independent of folate antagonism. At high doses used in cancer treatment, the anti-tumor mechanism depends on folate pathway inhibition, and supplemental folate can reduce chemotherapy efficacy by providing a folate reservoir that partially overcomes the DHFR blockade.",
+      "summary": "The interaction between folic acid and methotrexate differs fundamentally based on indication. In rheumatoid arthritis and psoriasis, folic acid co-supplementation is standard of care that reduces side effects. In cancer treatment, supplemental folate may reduce methotrexate's anti-tumor efficacy. Anyone on methotrexate should discuss folic acid supplementation explicitly with their prescribing physician — the right answer depends entirely on why they are taking methotrexate. Per the NIH ODS Folate fact sheet, this interaction is well-documented.",
+      "sources": [
+        {
+          "title": "Folate — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-15"
     }
   ]
 }
