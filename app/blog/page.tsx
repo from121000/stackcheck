@@ -9,6 +9,27 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'folic-acid-and-methotrexate',
+    title: 'Folic Acid and Methotrexate: Two Very Different Interactions',
+    description:
+      'In rheumatoid arthritis, folic acid co-prescription with methotrexate is standard of care that reduces toxicity. In cancer treatment, supplemental folate may reduce chemotherapy efficacy. The mechanism behind the difference.',
+    date: '2026-07-15',
+  },
+  {
+    slug: 'calcium-and-iron-absorption',
+    title: 'Taking Calcium and Iron Together: Why Timing Matters',
+    description:
+      'High-dose calcium and iron compete for the DMT1 intestinal transporter. Taking them together at supplement doses reduces iron absorption by 30–60%. What the research shows and how to take both effectively.',
+    date: '2026-07-15',
+  },
+  {
+    slug: 'ppis-and-nutrient-absorption',
+    title: 'PPIs and Nutrient Absorption: B12, Iron, Magnesium, and Calcium',
+    description:
+      'Long-term proton pump inhibitor use impairs absorption of vitamin B12, iron, magnesium, and calcium through four distinct mechanisms. What the NIH ODS fact sheets document for each nutrient.',
+    date: '2026-07-15',
+  },
+  {
     slug: 'omeprazole-and-iron-absorption',
     title: 'Omeprazole and Iron Absorption: Does Your PPI Affect Iron Levels?',
     description:

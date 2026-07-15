@@ -266,5 +266,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/ppis-and-nutrient-absorption',
+      lastModified: new Date('2026-07-15'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/calcium-and-iron-absorption',
+      lastModified: new Date('2026-07-15'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/folic-acid-and-methotrexate',
+      lastModified: new Date('2026-07-15'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }
