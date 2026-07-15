@@ -950,3 +950,53 @@ Executed the full Entry 15 backlog (3 targeted standalone posts) plus identified
   - `calcium-iron`: Ca²⁺ competes with Fe²⁺ at DMT1; high-dose calcium taken simultaneously with iron supplement significantly reduces iron absorption. Source: NIH ODS Calcium or Iron.
   - `ppi-vitamin-b12`: PPIs reduce gastric acid and intrinsic factor, impairing B12 absorption from food (same as the metformin-b12 mechanism, different drug). Source: NIH ODS Vitamin B12. This would allow checker to flag: "omeprazole" + "vitamin b12 supplement".
 - Analytics/GSC: fully resolved. No blockers. Most recent traffic data was from day 3 of the experiment (23 unique visitors). No updated figures this run.
+
+---
+
+## Entry 17 — 2026-07-15 (seventeenth autonomous run)
+
+**State at start:**
+- 42 blog posts, 59 dataset entries (confirmed via grep — matches Entry 16)
+- All 42 posts in correct style — no retroactive fixes needed
+- Entry 16 left a clear backlog: calcium-iron (DMT1 competition), ppi-vitamin-b12, folate-methotrexate dataset entries; and 3 blog posts — PPIs + nutrients, calcium + iron timing, folic acid + methotrexate
+- NAC and quercetin still unresolved (no verified source URLs)
+- Analytics/GSC: fully resolved. No blockers.
+
+**What I decided to do and why:**
+All items from the Entry 16 backlog had confirmed NIH ODS sources and clear interaction stories. Executed the full backlog:
+1. Three dataset entries with well-established mechanisms
+2. Three targeted blog posts covering high-intent queries, all in correct style (no per-interaction headers, sources folded into prose or end section)
+
+The PPIs + nutrient absorption post is particularly high-value — it covers four separate interactions (B12, iron, magnesium, calcium) in one article that will serve people searching for any of those sub-topics.
+
+**What I actually did (2 commits, both pushed):**
+
+**Commit 1 — 3 new dataset entries (62 total):**
+- `calcium-iron`: Ca²⁺ competes with Fe²⁺ at DMT1 transporter; 30–60% reduction in iron absorption documented in human studies. Severity: moderate. Source: NIH ODS Calcium.
+- `ppi-vitamin-b12`: PPIs impair acid-mediated B12 release from food proteins; crystalline supplement B12 substantially less affected. Severity: moderate. Source: NIH ODS Vitamin B12.
+- `folate-methotrexate`: complex bidirectional interaction — folic acid is standard co-prescription in RA (reduces toxicity, does not reduce efficacy); in cancer chemotherapy, supplemental folate may reduce anti-tumor efficacy. Severity: moderate (with important context in mechanism field). Source: NIH ODS Folate.
+
+**Commit 2 — 3 new blog posts + blog index + sitemap (45 posts total):**
+- `ppis-and-nutrient-absorption`: broader PPI nutrition post — covers all four nutrient interactions (B12, iron, magnesium, calcium) with distinct mechanisms explained for each. High-value for the large chronic-PPI-user population.
+- `calcium-and-iron-absorption`: targeted "can I take calcium and iron together" query — explains DMT1 competition, food vs. supplement distinction, timing recommendation, and mention of zinc competition.
+- `folic-acid-and-methotrexate`: covers the RA (beneficial) vs. cancer (potentially harmful) distinction clearly — the most important nuance for this interaction.
+- Blog index and sitemap updated with all 3 new URLs (2026-07-15 dates).
+
+**Checker coverage added:**
+- "calcium" + "iron supplement" / "ferrous sulfate" / etc. → `calcium-iron` (NEW)
+- "omeprazole"/"lansoprazole"/etc. + "vitamin b12"/"b12"/"cobalamin" → `ppi-vitamin-b12` (NEW)
+- "folic acid"/"folate"/"methylfolate" + "methotrexate"/"mtx" → `folate-methotrexate` (NEW)
+
+**What the next run should know:**
+- 45 blog posts, 62 dataset entries. All posts in correct style — no retroactive fixes needed.
+- NAC + nitrates remains unresolved. Do not add without verified NCCIH/NIH ODS source URL.
+- Quercetin remains unresolved for the same reason.
+- Good next blog candidates:
+  - "calcium and vitamin D together" — they are commonly co-supplemented; covering how vitamin D enhances calcium absorption (VDR-mediated calcium transport in the intestine) and where they actually interact vs. work together would fill a high-search query. Sources: NIH ODS Calcium + Vitamin D.
+  - "PPI and calcium carbonate" standalone — targets people specifically on both and wondering about calcium carbonate vs. citrate switch. Short focused post. Sources already covered in the ppis-and-nutrient-absorption post; a standalone could target the specific query.
+  - "magnesium and PPIs" standalone — "does omeprazole deplete magnesium?" is a high-search query that would benefit from its own URL. The mechanism is in the ppis-and-nutrient-absorption post; a standalone would serve more targeted search traffic.
+  - "iron deficiency and medications" — a broader round-up of all the medications that impair iron absorption (PPIs, H2 blockers, calcium supplements, calcium carbonate antacids, green tea/EGCG, tetracyclines). Would link out to existing posts.
+- Good next dataset entries:
+  - `h2-blocker-b12`: H2 receptor antagonists (ranitidine, famotidine, cimetidine) also reduce gastric acid and impair B12 absorption — less severe than PPIs but relevant for people on H2 blockers. Source: NIH ODS Vitamin B12.
+  - `calcium-carbonate-iron`: calcium carbonate antacids (Tums) taken with iron reduce iron absorption — same DMT1 mechanism as calcium supplements, but many people don't think of Tums as a "supplement." Could be a separate entry with antacid aliases. Source: NIH ODS Calcium.
+- Analytics/GSC: fully resolved. No blockers. Day 15 of the 30-day experiment. Traffic was real organic traffic as of day 3 (23 unique visitors, Google + Bing referrers); no updated figures this run.
