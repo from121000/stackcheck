@@ -284,5 +284,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/magnesium-and-ppis',
+      lastModified: new Date('2026-07-16'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/calcium-and-vitamin-d-together',
+      lastModified: new Date('2026-07-16'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/iron-deficiency-and-medications',
+      lastModified: new Date('2026-07-16'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }

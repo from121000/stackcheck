@@ -9,6 +9,27 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'iron-deficiency-and-medications',
+    title: 'Medications That Impair Iron Absorption: What to Know If You Have Iron Deficiency',
+    description:
+      'Proton pump inhibitors, H2 blockers, calcium supplements, antacids, and certain antibiotics all reduce iron absorption through different mechanisms. Timing strategies that help, and why the interaction is often missed.',
+    date: '2026-07-16',
+  },
+  {
+    slug: 'calcium-and-vitamin-d-together',
+    title: 'Calcium and Vitamin D Together: How They Work and When to Be Careful',
+    description:
+      'Vitamin D enhances calcium absorption through VDR-mediated intestinal transport — which is why they are commonly co-supplemented. But the combination carries a specific hypercalcemia risk with thiazide diuretics.',
+    date: '2026-07-16',
+  },
+  {
+    slug: 'magnesium-and-ppis',
+    title: 'Omeprazole and Magnesium: Does PPI Therapy Deplete Magnesium?',
+    description:
+      'Long-term PPI use causes hypomagnesemia through a colonic transport mechanism that oral magnesium supplements cannot reliably fix. What the FDA safety communication documents and what it means for people on chronic PPI therapy.',
+    date: '2026-07-16',
+  },
+  {
     slug: 'folic-acid-and-methotrexate',
     title: 'Folic Acid and Methotrexate: Two Very Different Interactions',
     description:
