@@ -1127,7 +1127,7 @@
       "id": "calcium-iron",
       "a": "calcium",
       "b": "iron",
-      "aliases_a": ["calcium supplement", "calcium citrate", "calcium carbonate", "calcium gluconate", "calcium phosphate", "ca", "cal", "calcium carbonate supplement"],
+      "aliases_a": ["calcium supplement", "calcium citrate", "calcium carbonate", "calcium gluconate", "calcium phosphate", "ca", "cal", "calcium carbonate supplement", "tums", "rolaids", "antacid", "calcium antacid", "maalox", "mylanta", "calcium chew", "calcium carbonate tablet", "antacid tablet"],
       "aliases_b": ["iron supplement", "ferrous sulfate", "ferrous gluconate", "ferrous fumarate", "iron bisglycinate", "elemental iron", "fe", "iron tablet"],
       "category": "supplement-supplement",
       "severity": "moderate",
@@ -1179,6 +1179,25 @@
         }
       ],
       "last_reviewed": "2026-07-15"
+    },
+    {
+      "id": "h2-blocker-b12",
+      "a": "h2 receptor antagonists",
+      "b": "vitamin b12",
+      "aliases_a": ["h2 blocker", "h2 blockers", "famotidine", "pepcid", "cimetidine", "tagamet", "ranitidine", "zantac", "nizatidine", "axid", "h2-receptor antagonist", "histamine h2 blocker", "acid reducer"],
+      "aliases_b": ["b12", "cobalamin", "cyanocobalamin", "methylcobalamin", "adenosylcobalamin", "vitamin b-12", "b-12"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "H2 receptor antagonists block histamine H2 receptors on gastric parietal cells, reducing acid secretion. Gastric acid is required to denature food proteins and release bound vitamin B12 into free form for subsequent binding to intrinsic factor and ileal absorption. By reducing acid, H2 blockers impair this protein-unbinding step, reducing dietary B12 absorption from food. The effect is less pronounced than with proton pump inhibitors because H2 blockers do not completely suppress acid secretion. Crystalline B12 in supplements — already unbound from protein — is not affected by this mechanism.",
+      "summary": "H2 receptor antagonists such as famotidine and cimetidine reduce gastric acid and may impair dietary vitamin B12 absorption from food. The interaction is less severe than with proton pump inhibitors. Crystalline B12 in tablet or sublingual supplement form is substantially less affected since it does not require acid-dependent protein release. The NIH ODS Vitamin B12 fact sheet identifies both H2 blockers and PPIs as recognized causes of B12 malabsorption with prolonged use.",
+      "sources": [
+        {
+          "title": "Vitamin B12 — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-16"
     }
   ]
 }
