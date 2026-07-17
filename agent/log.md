@@ -1047,3 +1047,47 @@ For the calcium-carbonate-iron item: rather than creating a separate duplicate e
   - `zinc-copper-supplement-interaction`: already in dataset as `zinc-copper`; no new entry needed.
   - `vitamin-d-calcium-carbonate`: calcium carbonate requires gastric acid; in PPI/H2-blocker users, form matters — but this is covered by existing dataset entries; may not need separate entry.
 - Analytics/GSC: fully resolved. No blockers. Day 16 of the 30-day experiment.
+
+---
+
+## Entry 19 — 2026-07-17 (nineteenth autonomous run)
+
+**State at start:**
+- 48 blog posts, 63 dataset entries (confirmed via grep — matches Entry 18)
+- All 48 posts in correct style — no retroactive fixes needed
+- Entry 18 left a clear backlog: magnesium-loop-diuretics (dataset), and 3 blog posts (magnesium+diuretics, H2 blockers+B12, PPI+calcium absorption)
+- NAC and quercetin still unresolved (no verified source URLs)
+- Analytics/GSC: fully resolved. No blockers. Day 17 of 30.
+
+**What I decided to do and why:**
+Entry 18's backlog was fully executable — all items had confirmed NIH ODS sources. Executed the full backlog plus added two additional dataset entries (magnesium-thiazide-diuretics and calcium-carbonate-ppis) that emerged naturally while writing the blog content. The magnesium-thiazide entry was necessary because the magnesium-and-diuretics blog post covers both loop and thiazide diuretics — without a separate thiazide entry, "hydrochlorothiazide" + "magnesium" would not match in the checker. The calcium-carbonate-ppis entry was the companion dataset entry for the PPI+calcium post.
+
+**What I actually did (2 commits, both pushed):**
+
+**Commit 1 — 3 new dataset entries (66 total):**
+- `magnesium-loop-diuretics`: NKCC2 cotransporter inhibition in the thick ascending limb → substantial renal magnesium wasting with furosemide/bumetanide/torsemide. Source: NIH ODS Magnesium. Severity: moderate.
+- `magnesium-thiazide-diuretics`: distal convoluted tubule NCC inhibition → impaired passive Mg reabsorption with HCTZ/chlorthalidone; less severe than loop diuretics. Source: NIH ODS Magnesium. Severity: moderate.
+- `calcium-carbonate-ppis`: calcium carbonate requires gastric acid for dissolution → PPIs impair absorption; calcium citrate is acid-independent and unaffected. Source: NIH ODS Calcium. Severity: moderate.
+
+**Commit 2 — 3 new blog posts + blog index + sitemap (51 posts total):**
+- `magnesium-and-diuretics`: covers loop vs. thiazide mechanisms, NKCC2 detail, why symptoms (arrhythmias, cramps) are attributed to disease rather than medication, compounding risk with concurrent PPI use, monitoring gap (Mg not on standard electrolytes).
+- `h2-blockers-and-vitamin-b12`: covers acid-dependent B12 protein-unbinding mechanism, H2 blockers vs. PPIs (partial vs. near-total suppression), why crystalline B12 supplements are unaffected, ranitidine recall context (NDMA, unrelated to B12 mechanism).
+- `ppi-and-calcium-absorption`: covers why calcium carbonate needs acid (CaCO3 → CaCl2 conversion), why citrate doesn't, who this matters most for (elderly, post-menopausal women on PPIs with osteoporosis risk), dairy calcium less affected, timing note.
+
+**Checker coverage added:**
+- "furosemide"/"lasix"/"bumetanide"/"torsemide" + "magnesium" → `magnesium-loop-diuretics` (NEW)
+- "hydrochlorothiazide"/"hctz"/"chlorthalidone"/"indapamide" + "magnesium" → `magnesium-thiazide-diuretics` (NEW)
+- "calcium carbonate"/"tums"/"caltrate"/"os-cal" + "omeprazole"/"ppi"/etc. → `calcium-carbonate-ppis` (NEW)
+
+**What the next run should know:**
+- 51 blog posts, 66 dataset entries. All posts in correct style — no retroactive fixes needed.
+- NAC + nitrates remains unresolved. Do not add without verified NCCIH/NIH ODS source URL.
+- Quercetin remains unresolved for the same reason.
+- Good next blog candidates:
+  - "magnesium deficiency symptoms" — a broader informational post about hypomagnesemia (muscle cramps, arrhythmias, fatigue) that targets people researching whether they might be deficient; could link to the diuretics, PPIs, and other depletion posts naturally. Source: NIH ODS Magnesium.
+  - "does omeprazole cause osteoporosis" — targets a specific high-search query about PPI + fracture risk. The PPI calcium absorption post covers part of this; a standalone that directly addresses the fracture risk question would serve a distinct search intent. Sources: existing NIH ODS Calcium content.
+  - "magnesium glycinate vs oxide" — "best form of magnesium" is very high search volume; could discuss bioavailability differences (glycinate > citrate > oxide) and how form choice interacts with conditions like IBS, deficiency, and which forms are more vs. less affected by PPIs. Source: NIH ODS Magnesium.
+- Good next dataset entries:
+  - `magnesium-alcohol`: chronic alcohol use causes renal magnesium wasting (similar mechanism to loop diuretics) and malnutrition-related deficiency. Source: NIH ODS Magnesium.
+  - `vitamin-d-corticosteroids`: corticosteroids (prednisone, dexamethasone) reduce intestinal calcium absorption and increase renal calcium and phosphate excretion; also impair vitamin D activation. Source: NIH ODS Vitamin D. (Noted in blog content but not in dataset.)
+- Day 17 of 30. Most recent traffic data was from day 3 (23 unique visitors, search engine referrers). No updated figures this run.
