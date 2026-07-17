@@ -1198,6 +1198,63 @@
         }
       ],
       "last_reviewed": "2026-07-16"
+    },
+    {
+      "id": "magnesium-loop-diuretics",
+      "a": "magnesium",
+      "b": "loop diuretics",
+      "aliases_a": ["magnesium supplement", "magnesium glycinate", "magnesium citrate", "magnesium oxide", "magnesium malate", "magnesium threonate", "mg supplement"],
+      "aliases_b": ["furosemide", "lasix", "torsemide", "demadex", "bumetanide", "bumex", "ethacrynic acid", "edecrin", "loop diuretic"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Loop diuretics inhibit the NKCC2 cotransporter in the thick ascending limb of the loop of Henle, which is responsible for reabsorbing sodium, potassium, chloride, and magnesium from the tubular filtrate back into the bloodstream. By blocking NKCC2, loop diuretics substantially increase renal magnesium excretion. The magnitude of magnesium wasting is greater with loop diuretics than with thiazide diuretics, and is proportional to dose and duration of use. Chronic loop diuretic therapy is a recognized cause of hypomagnesemia.",
+      "summary": "Loop diuretics such as furosemide and bumetanide increase renal magnesium excretion by blocking the NKCC2 transporter in the kidney. Chronic use is associated with hypomagnesemia, which may manifest as muscle cramps, weakness, and cardiac arrhythmias. The NIH ODS Magnesium fact sheet identifies loop diuretics as a clinically significant cause of magnesium depletion. Magnesium supplementation may be warranted in people on chronic loop diuretic therapy.",
+      "sources": [
+        {
+          "title": "Magnesium — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-17"
+    },
+    {
+      "id": "magnesium-thiazide-diuretics",
+      "a": "magnesium",
+      "b": "thiazide diuretics",
+      "aliases_a": ["magnesium supplement", "magnesium glycinate", "magnesium citrate", "magnesium oxide", "magnesium malate", "mg supplement"],
+      "aliases_b": ["hydrochlorothiazide", "hctz", "chlorthalidone", "indapamide", "metolazone", "bendroflumethiazide", "thiazide", "thiazide diuretic"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Thiazide diuretics act on the distal convoluted tubule to inhibit the NCC sodium-chloride cotransporter, increasing urinary excretion of sodium and water. This also increases urinary magnesium excretion, though through a less direct mechanism than loop diuretics — reduced distal tubular sodium reabsorption impairs the electrochemical gradient that drives passive magnesium reabsorption. The effect is less severe than loop diuretics but clinically significant with chronic use, particularly at higher doses.",
+      "summary": "Thiazide diuretics such as hydrochlorothiazide and chlorthalidone increase urinary magnesium excretion and may cause hypomagnesemia with chronic use, though less severely than loop diuretics. The NIH ODS Magnesium fact sheet identifies thiazide diuretics as a recognized cause of magnesium depletion. People on long-term thiazide therapy may benefit from monitoring magnesium levels.",
+      "sources": [
+        {
+          "title": "Magnesium — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-17"
+    },
+    {
+      "id": "calcium-carbonate-ppis",
+      "a": "calcium carbonate",
+      "b": "proton pump inhibitors",
+      "aliases_a": ["calcium carbonate supplement", "tums", "rolaids", "caltrate", "viactiv", "os-cal", "calcium carbonate tablet", "calcium chew", "antacid calcium"],
+      "aliases_b": ["ppi", "omeprazole", "prilosec", "lansoprazole", "prevacid", "pantoprazole", "protonix", "esomeprazole", "nexium", "rabeprazole", "aciphex", "dexlansoprazole", "proton pump inhibitor"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Calcium carbonate is poorly soluble at neutral pH. Gastric acid converts it to calcium chloride, which is highly soluble and absorbable in the small intestine. Proton pump inhibitors suppress gastric acid secretion, raising stomach pH. At higher pH, calcium carbonate dissolves less completely and converts less efficiently to the chloride form, reducing its bioavailability. Calcium citrate does not require an acidic environment for dissolution and absorption, making it substantially less affected by PPI therapy.",
+      "summary": "Calcium carbonate supplements require gastric acid for optimal absorption. Proton pump inhibitors reduce stomach acid and may impair calcium carbonate absorption, while calcium citrate is not significantly affected. The NIH ODS Calcium fact sheet notes this form-dependent difference in absorption under low-acid conditions. For people on chronic PPI therapy who need calcium supplementation, calcium citrate is generally better absorbed.",
+      "sources": [
+        {
+          "title": "Calcium — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-17"
     }
   ]
 }
