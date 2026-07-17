@@ -1091,3 +1091,160 @@ Entry 18's backlog was fully executable — all items had confirmed NIH ODS sour
   - `magnesium-alcohol`: chronic alcohol use causes renal magnesium wasting (similar mechanism to loop diuretics) and malnutrition-related deficiency. Source: NIH ODS Magnesium.
   - `vitamin-d-corticosteroids`: corticosteroids (prednisone, dexamethasone) reduce intestinal calcium absorption and increase renal calcium and phosphate excretion; also impair vitamin D activation. Source: NIH ODS Vitamin D. (Noted in blog content but not in dataset.)
 - Day 17 of 30. Most recent traffic data was from day 3 (23 unique visitors, search engine referrers). No updated figures this run.
+
+---
+
+## Human note — 2026-07-17 (from Kim, not the agent)
+
+**Critical SEO fix: canonical tags missing on all pages.**
+
+Diagnosed via Google Search Console URL Inspection tool. Google is crawling
+and fetching pages successfully, but choosing `https://www.stackverify.app`
+as the canonical for all pages, while the GSC property is set up as
+`https://stackverify.app` (no www). This means Google is indexing the www
+variant while our tracking covers the non-www variant — a mismatch that
+makes everything appear unindexed in GSC even though Google is actively
+serving the pages in search results.
+
+Root cause: no `<link rel="canonical">` tag is set on any page, so Google
+is making its own canonical choice, and it's picking www. We need to
+explicitly declare the non-www version as canonical on every page.
+
+Fix: add `alternates.canonical` to the `metadata` export in every page.tsx
+across the entire site. In Next.js App Router this looks like:
+
+```typescript
+export const metadata: Metadata = {
+  title: "...",
+  description: "...",
+  alternates: {
+    canonical: "https://stackverify.app/blog/green-tea-drug-interactions",
+  },
+}
+```
+
+The canonical URL should always use `https://stackverify.app` (no www),
+matching the GSC property. Every page needs this — homepage, blog index,
+and every individual blog post. The URL must be the full absolute URL for
+the specific page, not a relative path.
+
+Do this as the highest priority task this run, before any content work.
+Once deployed, Google will re-crawl and update its canonical choice, which
+should bring the indexed pages into the correct GSC property and make
+the indexing report start reflecting reality.
+
+After fixing canonicals, also check `app/layout.tsx` — if there is a
+`metadataBase` set, confirm it points to `https://stackverify.app` (no
+www). If it is missing entirely, add it:
+
+```typescript
+export const metadata: Metadata = {
+  metadataBase: new URL("https://stackverify.app"),
+  // ... rest of metadata
+}
+```
+
+Setting `metadataBase` correctly means relative URLs in metadata across
+the site will resolve to the non-www canonical automatically.
+
+**Journal entry style: stop carrying forward resolved status lines.**
+
+Recent entries have been ending with "Analytics/GSC: fully resolved. No
+blockers." at both the start and end of each entry. This was useful when
+those were active blockers — it's now boilerplate that adds nothing. Stop
+including it.
+
+General rule: only log open blockers and things the next run actually needs
+to act on. Don't carry forward resolved items, don't repeat status that
+hasn't changed, don't end entries with a "no blockers" line unless there's
+a specific reason to flag it. Keep entries lean — every line should be
+something the next run needs to know, not a status report on things that
+are fine and have been fine for a week.
+
+**SEO improvements — three concrete tasks for upcoming runs.**
+
+**1. Meta descriptions on all blog posts (do this first).**
+
+Checked Google search results for stackverify.app — 6 pages indexed, but
+every result shows the same generic snippet ending with the footer
+disclaimer text. This hurts click-through rate.
+
+Fix: add an explicit `metadata` export with a `description` field to every
+blog post's `page.tsx`. In Next.js App Router:
+
+```typescript
+export const metadata: Metadata = {
+  title: "Melatonin Drug Interactions: Sedatives, Warfarin, and More",
+  description: "Melatonin interacts with sedatives, fluvoxamine, and warfarin. Here's what the evidence shows and why the mechanisms differ.",
+}
+```
+
+Each description should be 140-160 characters, specific to that post's
+content, written to make someone searching that topic want to click. Don't
+use the disclaimer text. Don't start with "This article" or "In this post".
+Write it like a direct answer to the search query the post targets. Do this
+for all existing posts and make it standard for all new ones.
+
+**2. Internal linking — wire the posts together.**
+
+Currently the blog posts are largely isolated from each other. Google uses
+internal links to understand site structure and distribute authority across
+pages. Fix this systematically:
+
+- Every blog post should link to 2-3 genuinely related posts where relevant.
+  Example: the fish oil post should mention and link to the warfarin/vitamin
+  K post; the melatonin post should link to the CNS depressants content.
+- Every blog post should include at least one contextual link back to the
+  checker tool on the homepage — something like "you can check your specific
+  combination using the StackVerify checker" linked to /.
+- Don't force links that aren't natural — they should read as genuinely
+  useful suggestions, not SEO boilerplate.
+
+Add internal links to all existing posts and make this standard practice
+for new posts going forward.
+
+**3. Structured data (JSON-LD schema) on blog posts.**
+
+Add JSON-LD markup to each blog post so Google explicitly understands the
+content type, publication date, and topic. Use `Article` schema as the base.
+In Next.js, add a `<script>` tag in the page's metadata or directly in the
+component:
+
+```tsx
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Post title here",
+      "datePublished": "2026-06-30",
+      "publisher": {
+        "@type": "Organization",
+        "name": "StackVerify"
+      }
+    })
+  }}
+/>
+```
+
+Add this to all existing posts and make it standard for new ones.
+
+**4. Mix in longer, more comprehensive posts.**
+
+Some of the current posts are concise (600-800 words). That's fine for
+specific narrow queries, but Google tends to rank longer, more thorough
+content for broader informational queries. Aim for a mix: keep the
+narrow-topic posts as they are, but occasionally write a longer 1500-2000
+word deep-dive on a high-value topic. Good candidates:
+
+- An expanded St. John's Wort post (already getting traffic) covering all
+  known interactions in depth — CYP3A4 induction mechanism, full drug list,
+  clinical significance by drug class.
+- A "supplement interactions overview" or "how to check your stack" guide
+  targeting broader queries from people who are new to the topic.
+
+Don't pad posts with filler to hit a word count — length should come from
+genuine depth and additional sourced information, not repetition.
+
+---

@@ -158,3 +158,20 @@ of the site, recent analytics if available), what you decided to do and
 why, what you actually did, and anything the next run should know. This is
 your only memory across runs — write it for a version of yourself with no
 other context.
+
+## Journal discipline
+
+Keep entries lean. Every line in a journal entry should be something the
+next run needs to know or act on. Specifically:
+
+- Don't carry forward resolved items. Once something is fixed and no longer
+  needs action, stop mentioning it. "Analytics/GSC: fully resolved" was
+  useful when those were blocked; repeating it every entry afterward is
+  noise.
+- Don't end entries with a "no blockers" summary line unless there's a
+  specific reason to flag it.
+- Don't mirror the structure of previous entries just because they had a
+  particular section. Ask whether each section still serves a purpose.
+- Backlog items that don't get acted on should carry forward once, maybe
+  twice — after that, either do them or drop them. A backlog that grows
+  indefinitely without action is not a backlog, it's clutter.
