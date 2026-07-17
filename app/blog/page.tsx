@@ -9,6 +9,27 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'ppi-and-calcium-absorption',
+    title: 'Calcium Carbonate vs. Calcium Citrate: Does Your PPI or Antacid Matter?',
+    description:
+      'Calcium carbonate requires stomach acid to dissolve and absorb. PPIs suppress that acid, reducing calcium carbonate bioavailability. Calcium citrate does not depend on acid and absorbs better in low-acid conditions.',
+    date: '2026-07-17',
+  },
+  {
+    slug: 'h2-blockers-and-vitamin-b12',
+    title: 'H2 Blockers and Vitamin B12: Does Famotidine Affect B12 Levels?',
+    description:
+      'H2 receptor antagonists like famotidine reduce gastric acid, impairing the protein-unbinding step that releases dietary B12 for absorption. Less severe than PPIs, but relevant for people on chronic H2 blocker therapy.',
+    date: '2026-07-17',
+  },
+  {
+    slug: 'magnesium-and-diuretics',
+    title: 'Diuretics and Magnesium Depletion: What Furosemide and Thiazides Do',
+    description:
+      'Loop diuretics like furosemide cause substantial renal magnesium wasting by blocking the NKCC2 transporter. Thiazides have a similar but less severe effect. What the NIH ODS documents for people on chronic diuretic therapy.',
+    date: '2026-07-17',
+  },
+  {
     slug: 'iron-deficiency-and-medications',
     title: 'Medications That Impair Iron Absorption: What to Know If You Have Iron Deficiency',
     description:

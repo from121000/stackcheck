@@ -302,5 +302,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/magnesium-and-diuretics',
+      lastModified: new Date('2026-07-17'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/h2-blockers-and-vitamin-b12',
+      lastModified: new Date('2026-07-17'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/ppi-and-calcium-absorption',
+      lastModified: new Date('2026-07-17'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }
