@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-01',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/melatonin-drug-interactions",
+  },
 };
 
 export default function MelatoninDrugInteractions() {

@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-06-30',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/magnesium-drug-interactions",
+  },
 };
 
 export default function MagnesiumDrugInteractions() {

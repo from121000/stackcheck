@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-14',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/iron-and-vitamin-c-together",
+  },
 };
 
 export default function IronAndVitaminCTogether() {

@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-04',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/red-yeast-rice-and-statins",
+  },
 };
 
 export default function RedYeastRiceAndStatins() {

@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-12',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/st-johns-wort-and-birth-control",
+  },
 };
 
 export default function SJWBirthControl() {

@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-10',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/green-tea-drug-interactions",
+  },
 };
 
 export default function GreenTeaDrugInteractions() {

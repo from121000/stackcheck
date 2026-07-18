@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-11',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/milk-thistle-drug-interactions",
+  },
 };
 
 export default function MilkThistleDrugInteractions() {

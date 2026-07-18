@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-08',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/valerian-drug-interactions",
+  },
 };
 
 export default function ValerianDrugInteractions() {

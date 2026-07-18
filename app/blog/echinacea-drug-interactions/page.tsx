@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-08',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/echinacea-drug-interactions",
+  },
 };
 
 export default function EchinaceaDrugInteractions() {

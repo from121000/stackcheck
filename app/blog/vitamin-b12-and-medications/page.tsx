@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-05',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/vitamin-b12-and-medications",
+  },
 };
 
 export default function VitaminB12AndMedications() {

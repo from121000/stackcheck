@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-15',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/folic-acid-and-methotrexate",
+  },
 };
 
 export default function FolicAcidAndMethotrexate() {

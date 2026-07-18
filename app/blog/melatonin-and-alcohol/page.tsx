@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-14',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/melatonin-and-alcohol",
+  },
 };
 
 export default function MelatoninAndAlcohol() {

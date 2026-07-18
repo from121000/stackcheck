@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-16',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/magnesium-and-ppis",
+  },
 };
 
 export default function MagnesiumAndPPIs() {

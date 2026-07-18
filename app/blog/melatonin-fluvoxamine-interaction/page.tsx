@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-03',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/melatonin-fluvoxamine-interaction",
+  },
 };
 
 export default function MelatoninFluvoxamineInteraction() {

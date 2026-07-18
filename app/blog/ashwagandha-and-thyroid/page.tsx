@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-13',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/ashwagandha-and-thyroid",
+  },
 };
 
 export default function AshwagandhaAndThyroid() {

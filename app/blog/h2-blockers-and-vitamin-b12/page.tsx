@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-17',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/h2-blockers-and-vitamin-b12",
+  },
 };
 
 export default function H2BlockersAndVitaminB12() {

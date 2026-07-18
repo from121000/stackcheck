@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     siteName: 'StackVerify',
     type: 'website',
   },
+  alternates: {
+    canonical: "https://stackverify.app",
+  },
 };
 
 export default function Home() {

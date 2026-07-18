@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-02',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/ginkgo-biloba-drug-interactions",
+  },
 };
 
 export default function GinkgoBilobaDrugInteractions() {

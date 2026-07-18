@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-06',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/berberine-drug-interactions",
+  },
 };
 
 export default function BerberineDrugInteractions() {

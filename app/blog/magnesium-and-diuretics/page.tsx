@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-17',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/magnesium-and-diuretics",
+  },
 };
 
 export default function MagnesiumAndDiuretics() {

@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-07',
   },
+  alternates: {
+    canonical: "https://stackverify.app/blog/turmeric-drug-interactions",
+  },
 };
 
 export default function TurmericDrugInteractions() {

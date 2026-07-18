@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Blog — Supplement & Drug Interaction Research',
   description:
     'In-depth articles on supplement and medication interactions: mechanisms, evidence, and what the research actually says.',
+  alternates: {
+    canonical: 'https://stackverify.app/blog',
+  },
 };
 
 const posts = [
