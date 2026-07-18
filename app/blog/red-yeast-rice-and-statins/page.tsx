@@ -20,6 +20,21 @@ export const metadata: Metadata = {
 export default function RedYeastRiceAndStatins() {
   return (
     <main className="max-w-2xl mx-auto px-4 py-12 sm:py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Red Yeast Rice and Statins: Why This Combination Is Dangerous",
+            "datePublished": "2026-07-04",
+            "publisher": {
+              "@type": "Organization",
+              "name": "StackVerify"
+            }
+          })
+        }}
+      />
       <nav className="text-sm text-zinc-400 mb-8">
         <Link href="/blog" className="hover:text-zinc-600 transition-colors">
           ← Blog

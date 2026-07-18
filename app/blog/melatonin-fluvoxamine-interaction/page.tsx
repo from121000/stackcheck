@@ -20,6 +20,21 @@ export const metadata: Metadata = {
 export default function MelatoninFluvoxamineInteraction() {
   return (
     <main className="max-w-2xl mx-auto px-4 py-12 sm:py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Melatonin and Fluvoxamine: A Drug Interaction Worth Knowing",
+            "datePublished": "2026-07-03",
+            "publisher": {
+              "@type": "Organization",
+              "name": "StackVerify"
+            }
+          })
+        }}
+      />
       <nav className="text-sm text-zinc-400 mb-8">
         <Link href="/blog" className="hover:text-zinc-600 transition-colors">
           ← Blog

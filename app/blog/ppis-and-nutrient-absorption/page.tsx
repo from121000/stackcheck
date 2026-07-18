@@ -20,6 +20,21 @@ export const metadata: Metadata = {
 export default function PPIsAndNutrientAbsorption() {
   return (
     <main className="max-w-2xl mx-auto px-4 py-12 sm:py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "PPIs and Nutrient Absorption: B12, Iron, Magnesium, and Calcium",
+            "datePublished": "2026-07-15",
+            "publisher": {
+              "@type": "Organization",
+              "name": "StackVerify"
+            }
+          })
+        }}
+      />
       <nav className="text-sm text-zinc-400 mb-8">
         <Link href="/blog" className="hover:text-zinc-600 transition-colors">
           ← Blog

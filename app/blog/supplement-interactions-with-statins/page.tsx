@@ -20,6 +20,21 @@ export const metadata: Metadata = {
 export default function SupplementInteractionsWithStatins() {
   return (
     <main className="max-w-2xl mx-auto px-4 py-12 sm:py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Supplement Interactions with Statins: St. John's Wort, Red Yeast Rice, and More",
+            "datePublished": "2026-07-02",
+            "publisher": {
+              "@type": "Organization",
+              "name": "StackVerify"
+            }
+          })
+        }}
+      />
       <nav className="text-sm text-zinc-400 mb-8">
         <Link href="/blog" className="hover:text-zinc-600 transition-colors">
           ← Blog
