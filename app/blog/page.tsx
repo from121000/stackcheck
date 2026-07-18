@@ -12,6 +12,20 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'alcohol-and-magnesium',
+    title: 'Alcohol and Magnesium: Does Drinking Deplete Magnesium?',
+    description:
+      'Chronic alcohol use depletes magnesium through increased renal excretion and impaired intestinal absorption. Why supplementation is less effective while drinking continues, and how this connects to common symptoms.',
+    date: '2026-07-18',
+  },
+  {
+    slug: 'corticosteroids-and-vitamin-d',
+    title: 'Corticosteroids and Vitamin D: Why Prednisone Undermines Calcium Absorption',
+    description:
+      'Prednisone and other corticosteroids reduce the intestinal calcium absorption that vitamin D normally drives, while also increasing urinary calcium loss. What the NIH ODS documents about this interaction.',
+    date: '2026-07-18',
+  },
+  {
     slug: 'ppi-and-calcium-absorption',
     title: 'Calcium Carbonate vs. Calcium Citrate: Does Your PPI or Antacid Matter?',
     description:

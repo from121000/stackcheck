@@ -320,5 +320,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://stackverify.app/blog/alcohol-and-magnesium',
+      lastModified: new Date('2026-07-18'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://stackverify.app/blog/corticosteroids-and-vitamin-d',
+      lastModified: new Date('2026-07-18'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }

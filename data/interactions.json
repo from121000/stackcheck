@@ -1255,6 +1255,44 @@
         }
       ],
       "last_reviewed": "2026-07-17"
+    },
+    {
+      "id": "magnesium-alcohol",
+      "a": "magnesium",
+      "b": "alcohol",
+      "aliases_a": ["magnesium supplement", "magnesium glycinate", "magnesium citrate", "magnesium oxide", "magnesium malate", "mg supplement"],
+      "aliases_b": ["ethanol", "drinking", "beer", "wine", "spirits", "alcoholic beverages"],
+      "category": "supplement-supplement",
+      "severity": "moderate",
+      "mechanism": "Chronic alcohol use causes magnesium depletion through two mechanisms: increased renal magnesium excretion (alcohol impairs tubular reabsorption of magnesium) and reduced dietary magnesium intake due to alcohol-associated poor nutrition. Alcohol also impairs gastrointestinal magnesium absorption. The combination means heavy drinkers are substantially more likely to have hypomagnesemia. Magnesium supplementation may be less effective in actively drinking individuals because the ongoing renal losses and absorption impairment continue.",
+      "summary": "Chronic alcohol use is associated with significant magnesium depletion through increased renal excretion and impaired intestinal absorption. The NIH ODS Magnesium fact sheet identifies alcoholism as a recognized cause of hypomagnesemia. Magnesium supplementation may help, but is less effective if drinking continues, since the underlying losses persist.",
+      "sources": [
+        {
+          "title": "Magnesium — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-18"
+    },
+    {
+      "id": "vitamin-d-corticosteroids",
+      "a": "vitamin d",
+      "b": "corticosteroids",
+      "aliases_a": ["vitamin d3", "cholecalciferol", "vitamin d2", "ergocalciferol", "calcitriol", "vit d"],
+      "aliases_b": ["prednisone", "prednisolone", "dexamethasone", "methylprednisolone", "hydrocortisone", "cortisone", "budesonide", "beclomethasone", "fluticasone", "triamcinolone", "corticosteroid", "steroid medication"],
+      "category": "supplement-medication",
+      "severity": "moderate",
+      "mechanism": "Corticosteroids reduce intestinal calcium absorption by decreasing the expression of intestinal calcium transport proteins (calbindin-D9k and TRPV6), which are normally upregulated by the active form of vitamin D (calcitriol). They also increase renal calcium excretion and may impair hepatic 25-hydroxylation of vitamin D. The net effect is a negative calcium balance that depletes bone, contributing to corticosteroid-induced osteoporosis. Vitamin D supplementation is typically co-prescribed with corticosteroids precisely because of this antagonism, though corticosteroids may limit vitamin D's full effect on calcium absorption.",
+      "summary": "Corticosteroids such as prednisone reduce the intestinal calcium absorption that vitamin D normally stimulates, increase renal calcium excretion, and may impair vitamin D activation. This combination contributes to bone loss with long-term steroid use. The NIH ODS Vitamin D fact sheet identifies corticosteroids as a recognized cause of vitamin D deficiency and reduced calcium absorption. Supplemental vitamin D is routinely recommended with chronic corticosteroid therapy.",
+      "sources": [
+        {
+          "title": "Vitamin D — Health Professional Fact Sheet",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+          "publisher": "NIH Office of Dietary Supplements"
+        }
+      ],
+      "last_reviewed": "2026-07-18"
     }
   ]
 }
