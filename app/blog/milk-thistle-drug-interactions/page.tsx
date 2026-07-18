@@ -151,6 +151,15 @@ export default function MilkThistleDrugInteractions() {
         </section>
       </div>
 
+      <div className="mt-10 border-t border-zinc-100 pt-6">
+        <h3 className="text-sm font-semibold text-zinc-700 mb-3">Related</h3>
+        <ul className="space-y-1 text-sm">
+          <li><Link href="/blog/turmeric-drug-interactions" className="underline hover:text-zinc-900">Turmeric and Drug Interactions: Warfarin, CYP Enzymes, and More</Link></li>
+          <li><Link href="/blog/berberine-drug-interactions" className="underline hover:text-zinc-900">Berberine Drug Interactions: Blood Sugar, CYP Enzymes, and Warfarin</Link></li>
+          <li><Link href="/blog/supplement-interactions-with-statins" className="underline hover:text-zinc-900">Supplement Interactions with Statins: St. John's Wort, Red Yeast Rice</Link></li>
+        </ul>
+      </div>
+
       <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
         <strong className="text-zinc-800">Check your stack:</strong> Enter milk thistle
         alongside warfarin, cyclosporine, or tacrolimus in the{' '}

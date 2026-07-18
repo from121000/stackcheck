@@ -123,6 +123,15 @@ export default function AshwagandhaAndThyroid() {
         </section>
       </div>
 
+      <div className="mt-10 border-t border-zinc-100 pt-6">
+        <h3 className="text-sm font-semibold text-zinc-700 mb-3">Related</h3>
+        <ul className="space-y-1 text-sm">
+          <li><Link href="/blog/ashwagandha-drug-interactions" className="underline hover:text-zinc-900">Ashwagandha Drug Interactions: Thyroid Medications, Immunosuppressants</Link></li>
+          <li><Link href="/blog/iron-levothyroxine-interaction" className="underline hover:text-zinc-900">Iron Supplements and Levothyroxine: A Clinically Important Interaction</Link></li>
+          <li><Link href="/blog/calcium-supplement-interactions" className="underline hover:text-zinc-900">Calcium Supplement Drug Interactions: What Gets Affected</Link></li>
+        </ul>
+      </div>
+
       <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
         <strong className="text-zinc-800">Check your stack:</strong> Enter ashwagandha alongside
         levothyroxine, Synthroid, or methimazole in the{' '}

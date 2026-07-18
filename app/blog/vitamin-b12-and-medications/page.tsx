@@ -137,6 +137,15 @@ export default function VitaminB12AndMedications() {
         </section>
       </div>
 
+      <div className="mt-10 border-t border-zinc-100 pt-6">
+        <h3 className="text-sm font-semibold text-zinc-700 mb-3">Related</h3>
+        <ul className="space-y-1 text-sm">
+          <li><Link href="/blog/ppis-and-nutrient-absorption" className="underline hover:text-zinc-900">PPIs and Nutrient Absorption: B12, Iron, Magnesium, and Calcium</Link></li>
+          <li><Link href="/blog/h2-blockers-and-vitamin-b12" className="underline hover:text-zinc-900">H2 Blockers and Vitamin B12: Does Famotidine Affect B12 Levels?</Link></li>
+          <li><Link href="/blog/omeprazole-and-iron-absorption" className="underline hover:text-zinc-900">Omeprazole and Iron Absorption: Does Your PPI Affect Iron Levels?</Link></li>
+        </ul>
+      </div>
+
       <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
         <strong className="text-zinc-800">Check your stack:</strong> Enter metformin alongside
         vitamin B12 in the{' '}

@@ -128,6 +128,15 @@ export default function SawPalmettoDrugInteractions() {
         </section>
       </div>
 
+      <div className="mt-10 border-t border-zinc-100 pt-6">
+        <h3 className="text-sm font-semibold text-zinc-700 mb-3">Related</h3>
+        <ul className="space-y-1 text-sm">
+          <li><Link href="/blog/fish-oil-blood-thinners" className="underline hover:text-zinc-900">Fish Oil and Blood Thinners: What the Evidence Shows</Link></li>
+          <li><Link href="/blog/feverfew-drug-interactions" className="underline hover:text-zinc-900">Feverfew Drug Interactions: Antiplatelet Effects, Warfarin</Link></li>
+          <li><Link href="/blog/grape-seed-extract-drug-interactions" className="underline hover:text-zinc-900">Grape Seed Extract Drug Interactions: Antiplatelet Effects</Link></li>
+        </ul>
+      </div>
+
       <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
         <strong className="text-zinc-800">Check your stack:</strong> Enter saw palmetto
         alongside warfarin, aspirin, or clopidogrel in the{' '}

@@ -141,6 +141,15 @@ export default function FishOilBloodThinners() {
           (NIH Office of Dietary Supplements)
         </p>
 
+        <div className="mt-10 border-t border-zinc-100 pt-6">
+          <h3 className="text-sm font-semibold text-zinc-700 mb-3">Related</h3>
+          <ul className="space-y-1 text-sm">
+            <li><Link href="/blog/vitamin-e-blood-thinners" className="underline hover:text-zinc-900">Vitamin E and Blood Thinners: What High-Dose Supplements Can Do</Link></li>
+            <li><Link href="/blog/ginkgo-biloba-drug-interactions" className="underline hover:text-zinc-900">Ginkgo Biloba Drug Interactions: Warfarin, Antiplatelet Drugs, and More</Link></li>
+            <li><Link href="/blog/garlic-supplement-interactions" className="underline hover:text-zinc-900">Garlic Supplement Drug Interactions: Warfarin, HIV Medications</Link></li>
+          </ul>
+        </div>
+
         <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
           <strong className="text-zinc-800">Check your stack:</strong> Enter fish oil or omega-3
           alongside warfarin or other medications in the{' '}

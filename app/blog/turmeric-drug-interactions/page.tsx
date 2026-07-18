@@ -122,6 +122,15 @@ export default function TurmericDrugInteractions() {
         </section>
       </div>
 
+      <div className="mt-10 border-t border-zinc-100 pt-6">
+        <h3 className="text-sm font-semibold text-zinc-700 mb-3">Related</h3>
+        <ul className="space-y-1 text-sm">
+          <li><Link href="/blog/curcumin-and-warfarin" className="underline hover:text-zinc-900">Curcumin and Warfarin: Antiplatelet Effects, INR Blind Spots</Link></li>
+          <li><Link href="/blog/garlic-supplement-interactions" className="underline hover:text-zinc-900">Garlic Supplement Drug Interactions: Warfarin, HIV Medications</Link></li>
+          <li><Link href="/blog/milk-thistle-drug-interactions" className="underline hover:text-zinc-900">Milk Thistle Drug Interactions: CYP Enzymes, Warfarin, and More</Link></li>
+        </ul>
+      </div>
+
       <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
         <strong className="text-zinc-800">Check your stack:</strong> Enter turmeric or curcumin
         alongside warfarin, cyclosporine, or tacrolimus in the{' '}

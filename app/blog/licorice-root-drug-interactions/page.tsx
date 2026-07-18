@@ -129,6 +129,14 @@ export default function LicoriceRootDrugInteractions() {
         </section>
       </div>
 
+      <div className="mt-10 border-t border-zinc-100 pt-6">
+        <h3 className="text-sm font-semibold text-zinc-700 mb-3">Related</h3>
+        <ul className="space-y-1 text-sm">
+          <li><Link href="/blog/potassium-and-medications" className="underline hover:text-zinc-900">Potassium Supplements and Medications: Hyperkalemia Risk</Link></li>
+          <li><Link href="/blog/magnesium-and-diuretics" className="underline hover:text-zinc-900">Diuretics and Magnesium Depletion: What Furosemide and Thiazides Do</Link></li>
+        </ul>
+      </div>
+
       <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
         <strong className="text-zinc-800">Check your stack:</strong> Enter licorice root
         alongside lisinopril, furosemide, or other antihypertensives in the{' '}

@@ -130,6 +130,15 @@ export default function MelatoninDrugInteractions() {
           (NIH Office of Dietary Supplements)
         </p>
 
+        <div className="mt-10 border-t border-zinc-100 pt-6">
+          <h3 className="text-sm font-semibold text-zinc-700 mb-3">Related</h3>
+          <ul className="space-y-1 text-sm">
+            <li><Link href="/blog/melatonin-and-alcohol" className="underline hover:text-zinc-900">Melatonin and Alcohol: Sedation, Sleep Quality, and What to Know</Link></li>
+            <li><Link href="/blog/melatonin-fluvoxamine-interaction" className="underline hover:text-zinc-900">Melatonin and Fluvoxamine: A Drug Interaction Worth Knowing</Link></li>
+            <li><Link href="/blog/valerian-drug-interactions" className="underline hover:text-zinc-900">Valerian Drug Interactions: Sedatives, Sleep Medications, and More</Link></li>
+          </ul>
+        </div>
+
         <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
           <strong className="text-zinc-800">Check your stack:</strong> Enter melatonin alongside your
           other medications in the{' '}

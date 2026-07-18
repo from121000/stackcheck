@@ -130,6 +130,14 @@ export default function BlackCohoshDrugInteractions() {
         </section>
       </div>
 
+      <div className="mt-10 border-t border-zinc-100 pt-6">
+        <h3 className="text-sm font-semibold text-zinc-700 mb-3">Related</h3>
+        <ul className="space-y-1 text-sm">
+          <li><Link href="/blog/supplement-interactions-with-statins" className="underline hover:text-zinc-900">Supplement Interactions with Statins: St. John's Wort, Red Yeast Rice</Link></li>
+          <li><Link href="/blog/st-johns-wort-drug-interactions" className="underline hover:text-zinc-900">St. John's Wort Drug Interactions: What the Evidence Shows</Link></li>
+        </ul>
+      </div>
+
       <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
         <strong className="text-zinc-800">Check your stack:</strong> Enter black cohosh alongside
         tamoxifen in the{' '}

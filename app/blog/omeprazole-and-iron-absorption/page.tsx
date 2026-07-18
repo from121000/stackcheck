@@ -147,6 +147,15 @@ export default function OmeprazoleAndIronAbsorption() {
         </section>
       </div>
 
+      <div className="mt-10 border-t border-zinc-100 pt-6">
+        <h3 className="text-sm font-semibold text-zinc-700 mb-3">Related</h3>
+        <ul className="space-y-1 text-sm">
+          <li><Link href="/blog/ppis-and-nutrient-absorption" className="underline hover:text-zinc-900">PPIs and Nutrient Absorption: B12, Iron, Magnesium, and Calcium</Link></li>
+          <li><Link href="/blog/iron-and-vitamin-c-together" className="underline hover:text-zinc-900">Taking Iron and Vitamin C Together: What the Research Shows</Link></li>
+          <li><Link href="/blog/iron-deficiency-and-medications" className="underline hover:text-zinc-900">Medications That Impair Iron Absorption: What to Know If You Take Iron</Link></li>
+        </ul>
+      </div>
+
       <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
         <strong className="text-zinc-800">Check your stack:</strong> Enter your PPI alongside
         iron or magnesium in the{' '}

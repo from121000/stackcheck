@@ -133,6 +133,15 @@ export default function H2BlockersAndVitaminB12() {
         </section>
       </div>
 
+      <div className="mt-10 border-t border-zinc-100 pt-6">
+        <h3 className="text-sm font-semibold text-zinc-700 mb-3">Related</h3>
+        <ul className="space-y-1 text-sm">
+          <li><Link href="/blog/vitamin-b12-and-medications" className="underline hover:text-zinc-900">Vitamin B12 and Medications: What Depletes It and Why</Link></li>
+          <li><Link href="/blog/ppis-and-nutrient-absorption" className="underline hover:text-zinc-900">PPIs and Nutrient Absorption: B12, Iron, Magnesium, and Calcium</Link></li>
+          <li><Link href="/blog/omeprazole-and-iron-absorption" className="underline hover:text-zinc-900">Omeprazole and Iron Absorption: Does Your PPI Affect Iron Levels?</Link></li>
+        </ul>
+      </div>
+
       <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
         <strong className="text-zinc-800">Check your stack:</strong> Enter famotidine or another
         H2 blocker alongside a B12 supplement in the{' '}

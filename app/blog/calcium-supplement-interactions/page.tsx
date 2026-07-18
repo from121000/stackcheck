@@ -147,6 +147,15 @@ export default function CalciumSupplementInteractions() {
           (NIH ODS)
         </p>
 
+        <div className="mt-10 border-t border-zinc-100 pt-6">
+          <h3 className="text-sm font-semibold text-zinc-700 mb-3">Related</h3>
+          <ul className="space-y-1 text-sm">
+            <li><Link href="/blog/iron-levothyroxine-interaction" className="underline hover:text-zinc-900">Iron Supplements and Levothyroxine: A Clinically Important Interaction</Link></li>
+            <li><Link href="/blog/calcium-and-iron-absorption" className="underline hover:text-zinc-900">Taking Calcium and Iron Together: Why Timing Matters</Link></li>
+            <li><Link href="/blog/calcium-and-vitamin-d-together" className="underline hover:text-zinc-900">Calcium and Vitamin D Together: How They Work and When to Be Careful</Link></li>
+          </ul>
+        </div>
+
         <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
           <strong className="text-zinc-800">Check your stack:</strong> Enter calcium alongside
           your other supplements and medications in the{' '}

@@ -141,6 +141,14 @@ export default function FiveHTPAndSSRIs() {
         </section>
       </div>
 
+      <div className="mt-10 border-t border-zinc-100 pt-6">
+        <h3 className="text-sm font-semibold text-zinc-700 mb-3">Related</h3>
+        <ul className="space-y-1 text-sm">
+          <li><Link href="/blog/5-htp-drug-interactions" className="underline hover:text-zinc-900">5-HTP Drug Interactions: SSRIs, MAOIs, and Serotonin Syndrome</Link></li>
+          <li><Link href="/blog/melatonin-drug-interactions" className="underline hover:text-zinc-900">Melatonin Drug Interactions: Sedatives, Warfarin, and More</Link></li>
+        </ul>
+      </div>
+
       <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
         <strong className="text-zinc-800">Check your stack:</strong> Enter 5-HTP alongside
         your antidepressant in the{' '}

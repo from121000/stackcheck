@@ -130,6 +130,15 @@ export default function PassionflowerDrugInteractions() {
         </section>
       </div>
 
+      <div className="mt-10 border-t border-zinc-100 pt-6">
+        <h3 className="text-sm font-semibold text-zinc-700 mb-3">Related</h3>
+        <ul className="space-y-1 text-sm">
+          <li><Link href="/blog/valerian-drug-interactions" className="underline hover:text-zinc-900">Valerian Drug Interactions: Sedatives, Sleep Medications, and More</Link></li>
+          <li><Link href="/blog/kava-drug-interactions" className="underline hover:text-zinc-900">Kava Drug Interactions: Sedation, Liver Risk, and More</Link></li>
+          <li><Link href="/blog/melatonin-drug-interactions" className="underline hover:text-zinc-900">Melatonin Drug Interactions: Sedatives, Warfarin, and More</Link></li>
+        </ul>
+      </div>
+
       <div className="mt-10 p-4 bg-zinc-50 border border-zinc-200 rounded-lg text-sm text-zinc-600">
         <strong className="text-zinc-800">Check your stack:</strong> Enter passionflower
         alongside zolpidem, diazepam, or lorazepam in the{' '}
